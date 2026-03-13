@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import VLazyImage from "v-lazy-image";
+import VLazyImage from 'v-lazy-image'
 import { computed, ref } from 'vue'
 import { POLYTECH_SPECIALITIES, type SpecialitePolytech } from '@/lib/constants'
 import { plannings } from '@/lib/plannings'
@@ -7,7 +7,7 @@ import { plannings } from '@/lib/plannings'
 const selectedSpecialityName = ref<SpecialitePolytech | null>(null)
 
 const speciality = computed(() => {
-  if (!selectedSpecialityName.value) return null;
+  if (!selectedSpecialityName.value) return null
   return POLYTECH_SPECIALITIES.find((s) => s.name === selectedSpecialityName.value) || null
 })
 
@@ -18,35 +18,49 @@ const planning = computed(() => {
 </script>
 
 <template>
-  <img v-if="speciality" :src="speciality.logo" :alt="`Logo de la filière ${selectedSpecialityName}`" height="90" class="logo-filiere" />
+  <img
+    v-if="speciality"
+    :src="speciality.logo"
+    :alt="`Logo de la filière ${selectedSpecialityName}`"
+    height="90"
+    class="logo-filiere"
+  />
   <h1>Planning {{ selectedSpecialityName }}</h1>
   <div v-if="selectedSpecialityName">
     <button @click="selectedSpecialityName = null" class="back-btn">
-      <img src="/images/icons/angle-left.svg" alt="<" width="16" height="16" />
+      <img src="/images/icons/angle-left.svg" alt="<" width="16" height="16" fetchpriority="high" />
       Revenir
     </button>
 
     <ul class="planning">
       <li v-for="event in planning" :key="event.startHour.toDateString()" class="planning-event">
-        <span class="event-time">{{ event.startHour.toLocaleTimeString(undefined, {
-          hour: '2-digit',
-          minute: '2-digit',
-        }) }} - {{ event.endHour.toLocaleTimeString(undefined, {
-          hour: '2-digit',
-          minute: '2-digit',
-        }) }}</span>
+        <span class="event-time"
+          >{{
+            event.startHour.toLocaleTimeString(undefined, {
+              hour: '2-digit',
+              minute: '2-digit',
+            })
+          }}
+          -
+          {{
+            event.endHour.toLocaleTimeString(undefined, {
+              hour: '2-digit',
+              minute: '2-digit',
+            })
+          }}</span
+        >
         <div v-if="event.companies">
-        <strong>{{ event.companies.length > 1 ? "Entreprises" : "Entreprise" }} : </strong>
-        {{ event.companies.map((c) => c.name).join(', ') }}
-
+          <strong>{{ event.companies.length > 1 ? 'Entreprises' : 'Entreprise' }} : </strong>
+          {{ event.companies.map((c) => c.name).join(', ') }}
         </div>
         <div v-if="event.speakers">
-        <strong>{{ event.speakers.length > 1 ? "Intervenants" : "Intervenant" }} : </strong>
+          <strong>{{ event.speakers.length > 1 ? 'Intervenants' : 'Intervenant' }} : </strong>
           {{ event.speakers.map((s) => s.name).join(', ') }}
         </div>
       </li>
     </ul>
   </div>
+
   <div v-else class="grid">
     <button
       v-for="speciality in POLYTECH_SPECIALITIES"

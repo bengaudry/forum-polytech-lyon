@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import './styles/common.css'
-import { ref } from "vue"
+import { ref } from 'vue'
 import { RouterLink, RouterView, useRouter } from 'vue-router'
 
 const { currentRoute } = useRouter()
@@ -18,14 +18,23 @@ const isMenuExpanded = ref(false)
   <nav class="header-nav">
     <div class="header-nav-content">
       <RouterLink class="header-brand" to="/">
-        <img src="/images/logos/polytech.webp" alt="Logo Polytech Lyon" class="header-nav-logo" />
+        <img
+          src="/images/logos/polytech.webp"
+          alt="Logo Polytech Lyon"
+          class="header-nav-logo"
+          fetchpriority="high"
+        />
         <p class="header-nav-title">
           <strong>Forum 2026</strong>
           <span>Polytech Lyon</span>
         </p>
       </RouterLink>
 
-      <button class="menu-toggle" @click="isMenuExpanded = !isMenuExpanded" aria-label="Toggle navigation menu">
+      <button
+        class="menu-toggle"
+        @click="isMenuExpanded = !isMenuExpanded"
+        aria-label="Toggle navigation menu"
+      >
         <img src="/images/icons/menu-burger.svg" alt="MENU" width="32" height="32" />
       </button>
 

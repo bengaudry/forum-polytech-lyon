@@ -7,7 +7,12 @@ const companies = useFilteredCompaniesData()
 
 <template>
   <div class="companies-grid">
-    <CompanyCard v-for="(company, key) in companies" :key="key" :company="company" />
+    <CompanyCard
+      v-for="(company, key, index) in companies"
+      :key="key"
+      :company="company"
+      :index="index"
+    />
   </div>
 </template>
 
