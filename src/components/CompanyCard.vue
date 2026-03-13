@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import VLazyImage from "v-lazy-image";
 import { useFilters } from '@/composables/useFilters'
 import type { CompanyData } from '../lib/companiesData'
 import { useModalContent } from '@/composables/useModalContent'
@@ -20,7 +21,7 @@ const handleCardClick = (company: CompanyData) => {
 
 <template>
   <button class="company-card" @click="handleCardClick(company)">
-    <img :src="company.logo" :alt="`Logo de ${company.name}`" class="company-logo" />
+    <VLazyImage :src="company.logo" :alt="`Logo de ${company.name}`" class="company-logo" />
     <span class="company-name">{{ company.name }}</span>
     <span class="company-description">{{ company.shortDescription }}</span>
 
