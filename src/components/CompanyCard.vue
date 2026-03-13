@@ -22,17 +22,15 @@ const handleCardClick = (company: CompanyData) => {
   <button class="company-card" @click="handleCardClick(company)">
     <img :src="company.logo" :alt="`Logo de ${company.name}`" class="company-logo" />
     <span class="company-name">{{ company.name }}</span>
-    <p class="company-description">{{ company.shortDescription }}</p>
+    <span class="company-description">{{ company.shortDescription }}</span>
 
-    <div>
-      <span
+     <span
         v-for="field in company.relatedFields"
         :key="field"
         :class="`related-field ${field === selectedField ? 'related-field-selected' : ''}`"
       >
         {{ field }}
       </span>
-    </div>
   </button>
 </template>
 
@@ -48,11 +46,10 @@ const handleCardClick = (company: CompanyData) => {
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  color: black;
+  color: inherit;
   cursor: pointer;
   border: none;
-  padding: 32px;
-  padding-top: 48px;
+  padding: 48px 32px 32px;
   transition: transform 0.2s;
 }
 
