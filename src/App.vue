@@ -35,6 +35,10 @@ import { RouterLink, RouterView } from 'vue-router'
   <main>
     <RouterView />
   </main>
+
+  <footer>
+    <p>© 2026 <a href="https://polytech.univ-lyon1.fr/" target="_blank">Polytech Lyon</a></p>
+  </footer>
 </template>
 
 <style scoped>
@@ -42,7 +46,20 @@ main {
   padding: 0px 20px 20px 20px;
 }
 
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .header-nav {
+  user-select: none;
   position: fixed;
   z-index: 20;
   top: 0;
