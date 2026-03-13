@@ -21,7 +21,7 @@ const handleCardClick = (company: CompanyData) => {
 <template>
   <button class="company-card" @click="handleCardClick(company)">
     <img :src="company.logo" :alt="`Logo de ${company.name}`" class="company-logo" />
-    <h2 class="company-name">{{ company.name }}</h2>
+    <span class="company-name">{{ company.name }}</span>
     <p class="company-description">{{ company.shortDescription }}</p>
 
     <div>
@@ -40,7 +40,7 @@ const handleCardClick = (company: CompanyData) => {
 /* Style des cartes */
 .company-card {
   display: flex;
-  width: 400px;
+  max-width: 400px;
   text-align: left;
   flex-direction: column;
   justify-content: center;
@@ -63,7 +63,7 @@ const handleCardClick = (company: CompanyData) => {
   max-width: 80%;
   height: 60px;
   object-fit: contain;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.15rem;
 }
 
 .company-name {

@@ -70,7 +70,8 @@ const planning = computed(() => {
 }
 
 .back-btn {
-  width: 480px;
+  width: 100%;
+  max-width: 480px;
   margin: 0 auto;
   background-color: transparent;
   font-size: 1.1rem;
