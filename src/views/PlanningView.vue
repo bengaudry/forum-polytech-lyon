@@ -141,7 +141,7 @@ const planning = computed(() => {
 
 .speciality-link {
   background-color: #fff;
-  border: 1px solid #e6e6e6;
+  border: none;
   display: flex;
   flex-grow: 1;
   flex-shrink: 0;
