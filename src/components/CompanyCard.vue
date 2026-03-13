@@ -27,6 +27,7 @@ const handleCardClick = (company: CompanyData) => {
     <div>
       <span
         v-for="field in company.relatedFields"
+        :key="field"
         :class="`related-field ${field === selectedField ? 'related-field-selected' : ''}`"
       >
         {{ field }}
