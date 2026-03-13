@@ -98,7 +98,7 @@ const handleCardClick = (company: CompanyData) => {
   color: rgb(var(--polytech-color-foreground));
   padding: 5px 10px;
   border-radius: 15px;
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
 
 .related-field-selected {
