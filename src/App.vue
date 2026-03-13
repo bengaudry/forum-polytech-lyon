@@ -118,7 +118,7 @@ footer a {
 
 .header-nav-logo {
   width: 32px;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: auto;
 }
 
 @media screen and (min-width: 480px) {
