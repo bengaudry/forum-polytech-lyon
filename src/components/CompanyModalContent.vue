@@ -68,6 +68,7 @@ const { currentCompany } = useModalContent()
 
 <style scoped>
 .modal-logo {
+  user-select: none;
   max-width: 200px;
   height: 80px;
   display: block;
@@ -95,6 +96,7 @@ const { currentCompany } = useModalContent()
   padding: 12px 24px;
   border-radius: 9999px;
   text-decoration: none;
+  user-select: none;
 }
 
 .modal-company-website-link > span {

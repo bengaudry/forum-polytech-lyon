@@ -1,9 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import CompaniesView from '../views/CompaniesView.vue'
-
 const routes = [
-  { path: '/', component: CompaniesView },
+  { path: '/', component: () => import('../views/CompaniesView.vue') },
+  { path: '/planning', component: () => import('../views/PlanningView.vue') },
   {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',

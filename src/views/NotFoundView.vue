@@ -9,6 +9,5 @@
 <style scoped>
 .not-found {
   text-align: center;
-  padding: 50px;
 }
 </style>
