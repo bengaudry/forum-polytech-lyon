@@ -18,7 +18,7 @@ const isMenuExpanded = ref(false)
   <nav class="header-nav">
     <div class="header-nav-content">
       <RouterLink class="header-brand" to="/">
-        <img src="/images/logos/polytech.png" alt="Logo Polytech Lyon" class="header-nav-logo" />
+        <img src="/images/logos/polytech.webp" alt="Logo Polytech Lyon" class="header-nav-logo" />
         <p class="header-nav-title">
           <strong>Forum 2026</strong>
           <span>Polytech Lyon</span>
