@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import './styles/common.css'
+import { ref } from "vue"
 import { RouterLink, RouterView, useRouter } from 'vue-router'
 
 const { currentRoute } = useRouter()
@@ -9,6 +10,8 @@ const links = [
   { name: 'Plan', path: '/plan' },
   { name: 'Planning', path: '/planning' },
 ]
+
+const isMenuExpanded = ref(false)
 </script>
 
 <template>
@@ -22,16 +25,17 @@ const links = [
         </p>
       </RouterLink>
 
-      <button id="menu-toggle">
+      <button class="menu-toggle" @click="isMenuExpanded = !isMenuExpanded" aria-label="Toggle navigation menu">
         <img src="/images/icons/menu-burger.svg" alt="MENU" width="32" height="32" />
       </button>
 
-      <ul id="nav-items-container" class="nav-items">
+      <ul id="nav-items-container" class="nav-items" :class="{ expanded: isMenuExpanded }">
         <li v-for="link in links" :key="link.path">
           <RouterLink
             class="nav-link"
             :class="{ current: currentRoute.path === link.path }"
             :to="link.path"
+            @click="isMenuExpanded = false"
           >
             {{ link.name }}
           </RouterLink>
@@ -132,13 +136,13 @@ footer a {
   }
 }
 
-#menu-toggle {
+.menu-toggle {
   background: none;
   border: none;
   outline: none;
 }
 
-#menu-toggle > img {
+.menu-toggle > img {
   width: 28px;
   height: 28px;
 }
