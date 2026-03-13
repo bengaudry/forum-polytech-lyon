@@ -23,7 +23,7 @@ const { currentCompany } = useModalContent()
         class="modal-company-website-link"
       >
         <span>Site Web</span>
-        <img src="../../images/icons/arrow-up-right-from-square.svg" />
+        <img src="/images/icons/arrow-up-right-from-square.svg" />
       </a>
 
       <a
@@ -34,7 +34,7 @@ const { currentCompany } = useModalContent()
         class="modal-company-website-link"
       >
         <span>Site Web</span>
-        <img src="../../images/icons/arrow-up-right-from-square.svg" />
+        <img src="/images/icons/arrow-up-right-from-square.svg" />
       </a>
     </div>
 
@@ -44,7 +44,7 @@ const { currentCompany } = useModalContent()
     <div v-if="currentCompany.details.points">
       <h3 class="modal-section-title">Informations pour les élèves ingénieurs</h3>
       <ul>
-        <li v-for="point in currentCompany.details.points">
+        <li v-for="point in currentCompany.details.points" :key="point.title">
           <strong>{{ point.title }} : </strong>{{ point.content }}
         </li>
       </ul>
@@ -58,7 +58,7 @@ const { currentCompany } = useModalContent()
     <div v-if="currentCompany.details.offers && currentCompany.details.offers.length > 0">
       <h3 class="modal-section-title">Offres de Stage</h3>
       <ul class="offer-list">
-        <li v-for="offer in currentCompany.details.offers">
+        <li v-for="offer in currentCompany.details.offers" :key="offer.title">
           <a :href="offer.file" target="_blank" rel="noopener noreferrer">📄 {{ offer.title }}</a>
         </li>
       </ul>

@@ -25,7 +25,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'Agixis',
     shortDescription:
       "Un expert du développement logiciel spécialisé dans les secteurs innovants de la santé, de l'IoT et de la transformation digitale.",
-    logo: 'images/logos/compressed/agixis.png',
+    logo: '/images/logos/compressed/agixis.png',
     relatedFields: ['INFO', 'GBM', 'MAM', 'SIR'],
     details: {
       websiteUrl: 'https://www.agixis.com',
@@ -65,7 +65,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'PHAREA',
     shortDescription:
       'Un groupe multi-expertises accompagnant les grands projets industriels via la conception, la simulation numérique et le génie électrique.',
-    logo: 'images/logos/compressed/pharea.png',
+    logo: '/images/logos/compressed/pharea.png',
     relatedFields: ['SIR', 'MECA'],
     details: {
       websiteUrl: 'https://www.pharea.com/',
@@ -106,7 +106,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'Dymasco',
     shortDescription:
       "Spécialiste de l'Industrie 4.0 et partenaire de Dassault Systèmes, pilotant la transformation digitale des usines via des solutions MES.",
-    logo: 'images/logos/compressed/dymasco.png',
+    logo: '/images/logos/compressed/dymasco.png',
     relatedFields: ['INFO', 'MAM', 'SIR'],
     details: {
       websiteUrl: 'https://www.dymasco.com/fr',
@@ -154,7 +154,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'Carrier',
     shortDescription:
       "Un leader industriel mondial dédié à la conception et fabrication d'équipements thermiques de haute technicité pour le CVC et la réfrigération.",
-    logo: 'images/logos/compressed/carrier.png',
+    logo: '/images/logos/compressed/carrier.png',
     relatedFields: ['INFO', 'MAM', 'SIR', 'MAT', 'MECA'],
     details: {
       websiteUrl: 'https://www.carrier.com/commercial/fr/fr/a-propos/carrier-france/',
@@ -190,7 +190,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'Healthcare Public Procurement - HeCaPP',
     shortDescription:
       "Une centrale d'achat stratégique dédiée au secteur de la santé, alliant expertise réglementaire et gestion des approvisionnements publics.",
-    logo: 'images/logos/compressed/hecapp.png',
+    logo: '/images/logos/compressed/hecapp.png',
     relatedFields: ['GBM'],
     details: {
       websiteUrl: 'https://hecapp.be/',
@@ -226,7 +226,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'Atos',
     shortDescription:
       "Leader international du numérique transformant la société à travers le cloud, la cybersécurité, l'IA et la décarbonation.",
-    logo: 'images/logos/compressed/atos.png',
+    logo: '/images/logos/compressed/atos.png',
     relatedFields: ['INFO'],
     details: {
       websiteUrl: 'https://atos.net/fr/',
@@ -263,7 +263,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'BASSETTI',
     shortDescription:
       'Éditeur de logiciels spécialisé dans la gestion des données techniques et scientifiques pour optimiser la performance industrielle et le PLM.',
-    logo: 'images/logos/compressed/bassetti.png',
+    logo: '/images/logos/compressed/bassetti.png',
     relatedFields: ['INFO', 'GBM', 'MAM', 'SIR', 'MAT', 'MECA'],
     details: {
       websiteUrl:
@@ -322,7 +322,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'WORLDLINE',
     shortDescription:
       'Leader européen des services de paiement, repoussant les frontières de la fintech, de la blockchain et des transactions numériques sécurisées.',
-    logo: 'images/logos/compressed/worldline.png',
+    logo: '/images/logos/compressed/worldline.png',
     relatedFields: ['INFO'],
     details: {
       websiteUrl: 'https://worldline.com/fr-fr/home',
@@ -358,7 +358,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'THELIO',
     shortDescription:
       'Cabinet de conseil 100% data, expert en ingénierie, analytics et intelligence artificielle pour piloter la performance des entreprises.',
-    logo: 'images/logos/compressed/thelio.png',
+    logo: '/images/logos/compressed/thelio.png',
     relatedFields: ['INFO', 'MAM'],
     details: {
       websiteUrl: 'https://www.thelio.fr/',
@@ -400,7 +400,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'LES MOTS JUSTES',
     shortDescription:
       'Une experte en relecture et correction professionnelle pour garantir la qualité rédactionnelle de vos mémoires, thèses et rapports techniques.',
-    logo: 'images/logos/compressed/les-mots-justes.png',
+    logo: '/images/logos/compressed/les-mots-justes.png',
     relatedFields: ['INFO', 'GBM', 'MAM', 'SIR', 'MAT', 'MECA'],
     details: {
       presentation:
@@ -435,7 +435,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'VICINITY',
     shortDescription:
       "Cabinet de conseil lyonnais à taille humaine, expert en ingénierie et IT, axé sur la proximité et l'engagement sociétal.",
-    logo: 'images/logos/compressed/vicinity.png',
+    logo: '/images/logos/compressed/vicinity.png',
     relatedFields: ['INFO', 'SIR', 'MECA'],
     details: {
       websiteUrl: 'https://www.vicinity-group.fr/',
@@ -491,7 +491,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'Dattico',
     shortDescription:
       'Cabinet de conseil spécialisé dans la création de plateformes de données uniques qui génèrent une valeur stratégique pour les entreprises.',
-    logo: 'images/logos/originals/dattico.svg',
+    logo: '/images/logos/originals/dattico.svg',
     relatedFields: ['INFO'],
     details: {
       websiteUrl: 'https://www.dattico.com',
@@ -523,7 +523,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'Capgemini',
     shortDescription:
       "Géant mondial de la tech accompagnant la transformation des entreprises à travers l'IA, le Cloud, la Data et l'ingénierie durable.",
-    logo: 'images/logos/compressed/capgemini.png',
+    logo: '/images/logos/compressed/capgemini.png',
     relatedFields: ['INFO', 'MAM', 'SIR', 'MECA'],
     details: {
       websiteUrl: 'https://www.capgemini.com/fr-fr/',
@@ -560,7 +560,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'Amiltone',
     shortDescription:
       "Une agence digitale agile intervenant sur la conception d'applications web, mobiles et les infrastructures numériques.",
-    logo: 'images/logos/compressed/amiltone.png',
+    logo: '/images/logos/compressed/amiltone.png',
     relatedFields: ['INFO'],
     details: {
       websiteUrl: 'https://www.amiltone.com/',
@@ -585,7 +585,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'Groupama Support & Service',
     shortDescription:
       "GIE informatique du Groupe Groupama, spécialisé dans la transformation digitale et l'innovation technologique pour les entreprises du groupe.",
-    logo: 'images/logos/compressed/g2s.png',
+    logo: '/images/logos/compressed/g2s.png',
     relatedFields: ['INFO'],
     details: {
       websiteUrl: 'https://www.g2s-groupama-technologies.fr/',
@@ -619,7 +619,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'COEXYA',
     shortDescription:
       'Acteur multi-spécialiste du numérique, combinant conseil, édition logicielle et intégration pour accélérer la transformation digitale.',
-    logo: 'images/logos/compressed/coexya.png',
+    logo: '/images/logos/compressed/coexya.png',
     relatedFields: ['INFO'],
     details: {
       websiteUrl: 'https://www.coexya.eu',
@@ -681,7 +681,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'Next Decision',
     shortDescription:
       "Cabinet d'experts en Data & IA accompagnant les organisations dans l'optimisation de leur SI et de leurs enjeux RSE.",
-    logo: 'images/logos/compressed/next-decision.png',
+    logo: '/images/logos/compressed/next-decision.png',
     relatedFields: ['INFO'],
     details: {
       websiteUrl: 'https://www.next-decision.fr/',
@@ -717,7 +717,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'PARLYM',
     shortDescription:
       "Référence de l'ingénierie industrielle gérant des projets complexes dans l'énergie, le nucléaire et la défense à l'échelle mondiale.",
-    logo: 'images/logos/originals/parlym.svg',
+    logo: '/images/logos/originals/parlym.svg',
     relatedFields: ['MECA'],
     details: {
       websiteUrl: 'https://www.parlym.com/',
@@ -753,7 +753,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'SOPRA STERIA GROUP',
     shortDescription:
       "Leader européen de la tech explorant les frontières de l'IA, du cyber et du quantique pour sécuriser le monde numérique de demain.",
-    logo: 'images/logos/compressed/soprasteria.png',
+    logo: '/images/logos/compressed/soprasteria.png',
     relatedFields: ['INFO', 'MAM', 'SIR'],
     details: {
       websiteUrl: 'https://www.soprasteria.fr/accueil',
@@ -789,7 +789,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'Technord France',
     shortDescription:
       "Ensemblier industriel spécialisé dans l'intégration de solutions d'électricité, d'automatisme et d'informatique industrielle (MES).",
-    logo: 'images/logos/compressed/technord.png',
+    logo: '/images/logos/compressed/technord.png',
     relatedFields: ['INFO', 'SIR'],
     details: {
       websiteUrl: 'https://www.technord.com/',
@@ -827,7 +827,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'Foselev',
     shortDescription:
       "Groupe indépendant leader dans les services à l'industrie, au BTP et au nucléaire.",
-    logo: 'images/logos/compressed/foselev.png',
+    logo: '/images/logos/compressed/foselev.png',
     relatedFields: ['MECA'],
     details: {
       websiteUrl: 'https://www.foselev.com/',
@@ -861,7 +861,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'Lhoist France',
     shortDescription:
       'Leader mondial de la production de chaux et minéraux essentiels aux processus industriels.',
-    logo: 'images/logos/originals/lhoist.svg',
+    logo: '/images/logos/originals/lhoist.svg',
     relatedFields: ['MAT', 'MECA', 'SIR'],
     details: {
       websiteUrl: 'https://www.lhoist.com/fr-FR',
@@ -896,7 +896,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'SFEN Rhône-Ain-loire',
     shortDescription:
       "Société savante et carrefour de connaissances dédié à l'énergie nucléaire et ses applications.",
-    logo: 'images/logos/compressed/sfen.png',
+    logo: '/images/logos/compressed/sfen.png',
     relatedFields: ['MAT', 'MECA'],
     details: {
       websiteUrl: 'https://sfenral.fr/',
@@ -932,7 +932,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'CGI',
     shortDescription:
       'Leader mondial du conseil et des services numériques accompagnant la transformation des organisations.',
-    logo: 'images/logos/compressed/cgi.png',
+    logo: '/images/logos/compressed/cgi.png',
     relatedFields: ['INFO'],
     details: {
       websiteUrl: 'https://www.cgi.com/fr',
@@ -978,7 +978,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'SOIE (Service Orientation Insertion)',
     shortDescription:
       "Service d'orientation et d'insertion professionnelle de l'Université Lyon 1, facilitant la transition des étudiants vers le monde professionnel.",
-    logo: 'images/logos/originals/soie.png',
+    logo: '/images/logos/originals/soie.png',
     relatedFields: ['INFO', 'MAM', 'SIR', 'MAT', 'MECA', 'GBM'],
     details: {
       websiteUrl: 'https://soie.univ-lyon1.fr/',
@@ -1012,7 +1012,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'Polyenco',
     shortDescription:
       "Junior-Entreprise de l'école, offrant des services de conseil et d'ingénierie pour les entreprises.",
-    logo: 'images/logos/originals/polyenco.png',
+    logo: '/images/logos/originals/polyenco.png',
     relatedFields: ['INFO', 'MAM', 'SIR', 'MAT', 'MECA', 'GBM'],
     details: {
       websiteUrl: 'https://junior-polyenco.fr/',

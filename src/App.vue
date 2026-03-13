@@ -7,7 +7,7 @@ import { RouterLink, RouterView } from 'vue-router'
   <nav class="header-nav">
     <div class="header-nav-content">
       <RouterLink class="header-brand" to="/">
-        <img src="../images/logos/polytech.png" alt="Logo Polytech Lyon" class="header-nav-logo" />
+        <img src="/images/logos/polytech.png" alt="Logo Polytech Lyon" class="header-nav-logo" />
         <p class="header-nav-title">
           <strong>Forum 2026</strong>
           <span>Polytech Lyon</span>
@@ -15,7 +15,7 @@ import { RouterLink, RouterView } from 'vue-router'
       </RouterLink>
 
       <button id="menu-toggle">
-        <img src="../images/icons/menu-burger.svg" alt="MENU" width="32" height="32" />
+        <img src="/images/icons/menu-burger.svg" alt="MENU" width="32" height="32" />
       </button>
 
       <ul id="nav-items-container" class="nav-items">
