@@ -24,13 +24,15 @@ const handleCardClick = (company: CompanyData) => {
     <span class="company-name">{{ company.name }}</span>
     <span class="company-description">{{ company.shortDescription }}</span>
 
-     <span
+    <span class="related-fields">
+      <span
         v-for="field in company.relatedFields"
         :key="field"
         :class="`related-field ${field === selectedField ? 'related-field-selected' : ''}`"
       >
         {{ field }}
       </span>
+    </span>
   </button>
 </template>
 
@@ -69,13 +71,19 @@ const handleCardClick = (company: CompanyData) => {
   font-weight: bold;
 }
 
+.related-fields {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
 .related-field {
   display: inline-block;
   background-color: rgba(var(--polytech-color), 0.2);
   color: rgb(var(--polytech-color-foreground));
   padding: 5px 10px;
   border-radius: 15px;
-  margin: 5px 5px 0 0;
   font-size: 0.8em;
 }
 
