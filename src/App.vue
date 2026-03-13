@@ -181,7 +181,7 @@ footer a {
 }
 
 @media screen and (min-width: 780px) {
-  #menu-toggle {
+  .menu-toggle {
     display: none;
   }
 
