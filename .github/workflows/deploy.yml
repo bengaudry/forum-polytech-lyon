@@ -10,6 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v2
+      - run: git config user.name "bengaudry"
+      - run: git config user.email "bengaudry@outlook.fr"
       - run: pnpm install
       - run: pnpm run build
       - run: pnpm run deploy
