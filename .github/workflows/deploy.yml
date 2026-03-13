@@ -12,6 +12,4 @@ jobs:
       - uses: pnpm/action-setup@v2
       - run: pnpm install
       - run: pnpm run build
-      - run: git config --global user.name "bengaudry"
-      - run: git config --global user.email "bengaudry@outlook.fr"
       - run: pnpm run deploy
