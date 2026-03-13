@@ -33,7 +33,7 @@ const { currentCompany } = useModalContent()
         rel="noopener noreferrer"
         class="modal-company-website-link"
       >
-        <span>Site Web</span>
+        <span>Portail Carrières</span>
         <img src="/images/icons/arrow-up-right-from-square.svg" />
       </a>
     </div>
