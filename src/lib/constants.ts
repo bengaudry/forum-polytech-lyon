@@ -1,4 +1,4 @@
-import infoLogo from "/images/specialites/info.png"
+import infoLogo from '/images/specialites/info.png'
 import matLogo from '/images/specialites/mat.png'
 import mamLogo from '/images/specialites/mam.png'
 import gbmLogo from '/images/specialites/gbm.png'

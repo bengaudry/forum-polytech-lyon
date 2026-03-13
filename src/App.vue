@@ -10,10 +10,16 @@ try {
   const redirectPage = currentUrl.searchParams.get('page')
   if (redirectPage && ['planning', 'plan'].includes(redirectPage.toString())) {
     console.warn("Redirection de l'ancienne URL vers la nouvelle")
-    replace(`/${redirectPage.toString()}`)
+    if (process.env.NODE_ENV === 'production') {
+      replace(`/forum-polytech-lyon/${redirectPage.toString()}`)
+    } else {
+      replace(`/${redirectPage.toString()}`)
+    }
   }
 } catch (_) {
-  console.warn("Impossible d'analyser l'URL actuelle pour la redirection, aucune action de redirection effectuée")
+  console.warn(
+    "Impossible d'analyser l'URL actuelle pour la redirection, aucune action de redirection effectuée",
+  )
 }
 
 const links = [
