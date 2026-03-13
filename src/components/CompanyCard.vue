@@ -75,7 +75,8 @@ const handleCardClick = (company: CompanyData) => {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 5px;
+  margin-top: 6px;
+  gap: 4px;
 }
 
 .related-field {
