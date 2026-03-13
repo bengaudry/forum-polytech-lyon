@@ -48,6 +48,7 @@ const handleCardClick = (company: CompanyData) => {
 /* Style des cartes */
 .company-card {
   display: flex;
+  width: calc(100% - 32px);
   max-width: 400px;
   text-align: left;
   flex-direction: column;
@@ -88,6 +89,7 @@ const handleCardClick = (company: CompanyData) => {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: 6px;
   gap: 4px;
 }
