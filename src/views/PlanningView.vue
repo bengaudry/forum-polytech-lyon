@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import VLazyImage from "v-lazy-image";
 import { computed, ref } from 'vue'
 import { POLYTECH_SPECIALITIES, type SpecialitePolytech } from '@/lib/constants'
 import { plannings } from '@/lib/plannings'
@@ -53,7 +54,7 @@ const planning = computed(() => {
       class="speciality-link"
       @click="selectedSpecialityName = speciality.name"
     >
-      <img :src="speciality.logo" :alt="speciality.name" />
+      <VLazyImage :src="speciality.logo" :alt="speciality.name" />
       <span>
         {{ speciality.name }}
       </span>
