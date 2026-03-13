@@ -71,6 +71,11 @@ const handleCardClick = (company: CompanyData) => {
   font-weight: bold;
 }
 
+.company-description {
+  margin-top: 0.2rem;
+  margin-bottom: 0.7rem;
+}
+
 .related-fields {
   display: flex;
   flex-direction: row;
