@@ -1,6 +1,14 @@
 <script setup lang="ts">
 import './styles/common.css'
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView, useRouter } from 'vue-router'
+
+const { currentRoute } = useRouter()
+
+const links = [
+  { name: 'Mur des entreprises', path: '/' },
+  { name: 'Plan', path: '/plan' },
+  { name: 'Planning', path: '/planning' },
+]
 </script>
 
 <template>
@@ -19,14 +27,14 @@ import { RouterLink, RouterView } from 'vue-router'
       </button>
 
       <ul id="nav-items-container" class="nav-items">
-        <li class="nav-item">
-          <RouterLink class="nav-link current" to="/">Mur des entreprises</RouterLink>
-        </li>
-        <li class="nav-item">
-          <RouterLink class="nav-link" to="/plan">Plan</RouterLink>
-        </li>
-        <li class="nav-item">
-          <RouterLink class="nav-link" to="/planning">Planning</RouterLink>
+        <li v-for="link in links" :key="link.path">
+          <RouterLink
+            class="nav-link"
+            :class="{ current: currentRoute.path === link.path }"
+            :to="link.path"
+          >
+            {{ link.name }}
+          </RouterLink>
         </li>
       </ul>
     </div>

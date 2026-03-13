@@ -4,6 +4,11 @@ import CompaniesView from '../views/CompaniesView.vue'
 
 const routes = [
   { path: '/', component: CompaniesView },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'NotFound',
+    component: () => import('../views/NotFoundView.vue'),
+  },
 ]
 
 const router = createRouter({
