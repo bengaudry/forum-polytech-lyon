@@ -3,7 +3,18 @@ import './styles/common.css'
 import { ref } from 'vue'
 import { RouterLink, RouterView, useRouter } from 'vue-router'
 
-const { currentRoute } = useRouter()
+const { currentRoute, replace } = useRouter()
+
+try {
+  const currentUrl = new URL(window.location.href)
+  const redirectPage = currentUrl.searchParams.get('page')
+  if (redirectPage && ['planning', 'plan'].includes(redirectPage.toString())) {
+    console.warn("Redirection de l'ancienne URL vers la nouvelle")
+    replace(`/${redirectPage.toString()}`)
+  }
+} catch (_) {
+  console.warn("Impossible d'analyser l'URL actuelle pour la redirection, aucune action de redirection effectuée")
+}
 
 const links = [
   { name: 'Mur des entreprises', path: '/' },
