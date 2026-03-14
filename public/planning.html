@@ -7,7 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <script>
-    window.location.href = "/?page=planning"
+    if (window.location.toString().includes("github.io")) {
+      window.location.href = "/forum-polytech-lyon/?page=planning"
+    } else {
+      window.location.href = "/?page=plan"
+    }
   </script>
 </head>
 </html>
