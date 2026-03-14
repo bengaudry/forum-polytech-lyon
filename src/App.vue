@@ -10,7 +10,7 @@ try {
   const redirectPage = currentUrl.searchParams.get('page')
   if (redirectPage && ['planning', 'plan'].includes(redirectPage.toString())) {
     console.warn("Redirection de l'ancienne URL vers la nouvelle")
-    replace(`/forum-polytech-lyon/${redirectPage.toString()}`)
+    replace(`/${redirectPage.toString()}`)
   }
 } catch (_) {
   console.warn(
