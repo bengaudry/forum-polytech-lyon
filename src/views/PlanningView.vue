@@ -3,6 +3,7 @@ import VLazyImage from 'v-lazy-image'
 import { computed, ref } from 'vue'
 import { POLYTECH_SPECIALITIES, type SpecialitePolytech } from '@/lib/constants'
 import { plannings } from '@/lib/plannings'
+import PlanningEvent from '@/components/PlanningEvent.vue'
 
 const selectedSpecialityName = ref<SpecialitePolytech | null>(null)
 
@@ -32,32 +33,8 @@ const planning = computed(() => {
       Revenir
     </button>
 
-    <ul class="planning">
-      <li v-for="event in planning" :key="event.startHour.toDateString()" class="planning-event">
-        <span class="event-time"
-          >{{
-            event.startHour.toLocaleTimeString(undefined, {
-              hour: '2-digit',
-              minute: '2-digit',
-            })
-          }}
-          -
-          {{
-            event.endHour.toLocaleTimeString(undefined, {
-              hour: '2-digit',
-              minute: '2-digit',
-            })
-          }}</span
-        >
-        <div v-if="event.companies">
-          <strong>{{ event.companies.length > 1 ? 'Entreprises' : 'Entreprise' }} : </strong>
-          {{ event.companies.map((c) => c.name).join(', ') }}
-        </div>
-        <div v-if="event.speakers">
-          <strong>{{ event.speakers.length > 1 ? 'Intervenants' : 'Intervenant' }} : </strong>
-          {{ event.speakers.map((s) => s.name).join(', ') }}
-        </div>
-      </li>
+    <ul class="planning" v-if="planning">
+      <PlanningEvent v-for="event in planning" :event="event" :planning="planning" />
     </ul>
   </div>
 
@@ -106,12 +83,6 @@ const planning = computed(() => {
   }
 }
 
-.event-time {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
 .planning {
   list-style-type: none;
   max-width: 480px;
@@ -145,14 +116,6 @@ const planning = computed(() => {
   max-width: 660px;
   width: fit-content;
   margin: 0 auto;
-}
-
-.planning-event {
-  padding: 1.5rem 2rem;
-}
-
-.planning-event:not(:last-child) {
-  border-bottom: 1px solid #e6e6e6;
 }
 
 .speciality-link {

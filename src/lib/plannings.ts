@@ -1,13 +1,13 @@
 import type { SpecialitePolytech } from './constants'
 
-type Planning = {
+export type PlanningEvent = {
   startHour: Date
   endHour: Date
   companies?: { name: string; logo?: string }[]
   speakers?: { name: string; details?: string }[]
 }
 
-export const plannings: Record<SpecialitePolytech, Array<Planning>> = {
+export const plannings: Record<SpecialitePolytech, Array<PlanningEvent>> = {
   MAM: [
     {
       startHour: new Date(2026, 3, 26, 9, 0),
@@ -32,11 +32,6 @@ export const plannings: Record<SpecialitePolytech, Array<Planning>> = {
       speakers: [{ name: 'Mathieu Mure' }, { name: 'Mohamed Djebali' }, { name: 'Antoine Caron' }],
     },
     {
-      startHour: new Date(2026, 3, 26, 10, 0),
-      endHour: new Date(2026, 3, 26, 11, 0),
-      companies: [{ name: 'Coexya' }],
-    },
-    {
       startHour: new Date(2026, 3, 26, 11, 0),
       endHour: new Date(2026, 3, 26, 11, 30),
       companies: [{ name: 'Dattico' }],
@@ -57,14 +52,6 @@ export const plannings: Record<SpecialitePolytech, Array<Planning>> = {
       startHour: new Date(2026, 3, 26, 10, 0),
       endHour: new Date(2026, 3, 26, 11, 0),
       companies: [{ name: 'Andrice' }, { name: 'Basseti' }, { name: 'Vicinity' }],
-    },
-    {
-      startHour: new Date(2026, 3, 26, 11, 0),
-      endHour: new Date(2026, 3, 26, 11, 30),
-      speakers: [
-        { name: 'Damien Cabut', details: 'Promotion 2017' },
-        { name: 'Christophe Garnier', details: 'Promotion 1995' },
-      ],
     },
     {
       startHour: new Date(2026, 3, 26, 11, 30),
@@ -109,17 +96,9 @@ export const plannings: Record<SpecialitePolytech, Array<Planning>> = {
       companies: [{ name: 'Andrice' }, { name: 'Basseti' }, { name: 'Vicinity' }],
     },
     {
-      startHour: new Date(2026, 3, 26, 11, 0),
-      endHour: new Date(2026, 3, 26, 11, 30),
-      speakers: [
-        { name: 'Damien Cabut', details: 'Promotion 2017' },
-        { name: 'Christophe Garnier', details: 'Promotion 1995' },
-      ],
-    },
-    {
       startHour: new Date(2026, 3, 26, 11, 30),
       endHour: new Date(2026, 3, 26, 12, 30),
-      companies: [{ name: 'SFEN' }],
+      companies: [{ name: 'ABB' }],
     },
   ],
   GBM: [

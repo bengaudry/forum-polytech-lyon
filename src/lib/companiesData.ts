@@ -24,6 +24,8 @@ import sfenLogo from '/images/logos/compressed/sfen.webp'
 import cgiLogo from '/images/logos/compressed/cgi.webp'
 import soieLogo from '/images/logos/compressed/soie.webp'
 import polyencoLogo from '/images/logos/compressed/polyenco.webp'
+import codeoLogo from "/images/logos/compressed/codeo.webp"
+import stepoutAbroadLogo from "/images/logos/compressed/stepout-abroad.webp"
 
 export type CompanyData = {
   name: string
@@ -1072,6 +1074,79 @@ export const companies: Record<string, CompanyData> = {
             "Flexibilité, réactivité, regard neuf sur vos problématiques, accès aux dernières connaissances académiques et outils de l'école.",
         },
       ],
+    },
+  },
+  codeo: {
+    name: 'Codeo Medical',
+    shortDescription:
+      'Leader Français du rachat / revente de matériel médical de seconde main.',
+    logo: codeoLogo,
+    relatedFields: ['GBM'],
+    details: {
+      degreesResearched: ['Bac +3', 'Bac +4'],
+      websiteUrl:
+        'https://codeo-medical.com/?srsltid=AfmBOooeK0KjXaQVFx-fJ1JI56slv7i4mdzZu_Pbgrf5wh-Q_ZhPxo2R',
+      presentation:
+        "Codeo Medical est le spécialiste européen du réemploi d'équipements médicaux. Nous rachetons, reconditionnons et revendons du matériel médical d'occasion (imagerie, endoscopie, monitoring, échographie) pour les hôpitaux et cliniques. En donnant une seconde vie aux dispositifs médicaux, nous permettons aux établissements de santé d'optimiser leur budget tout en s'inscrivant dans une véritable démarche d'économie circulaire et de développement durable.",
+      points: [
+        {
+          title: 'Économie circulaire',
+          content:
+            "Acteur majeur de la RSE en santé, prolongeant la durée de vie des équipements et réduisant l'empreinte carbone hospitalière.",
+        },
+        {
+          title: 'Ingénierie Biomédicale',
+          content:
+            'Au cœur des enjeux de maintenance, de test et de reconditionnement de dispositifs médicaux complexes.',
+        },
+        {
+          title: 'Équipements multimarques',
+          content:
+            "Opportunité de travailler sur une grande diversité d'appareils (GE, Philips, Siemens, etc.) et de spécialités.",
+        },
+        {
+          title: 'Dimension internationale',
+          content:
+            "Un marché d'achat et de revente qui s'étend à l'échelle mondiale, nécessitant rigueur et adaptabilité.",
+        },
+      ],
+      offers: [],
+    },
+  },
+  'stepout-abroad': {
+    name: 'Stepout Abroad',
+    shortDescription:
+      'Organisation proposant des stages dans des pays asiatiques pour les étudiants.',
+    logo: stepoutAbroadLogo,
+    relatedFields: ['GBM', 'MAM', 'MAT', 'INFO', 'SIR', 'MECA'],
+    details: {
+      degreesResearched: ['Bac +3', 'Bac +4', 'Bac +5', 'Diplomé'],
+      websiteUrl: 'https://www.stepoutabroad.com',
+      presentation:
+        "Stepout Abroad est une agence spécialisée dans l'accompagnement d'étudiants et de jeunes diplômés souhaitant réaliser un stage professionnel en Asie. Nous facilitons la mobilité internationale en proposant un accompagnement de A à Z : placement en entreprise, aide à l'obtention du visa, recherche de logement et assistance sur place. Notre objectif est de vous permettre de booster votre carrière tout en vivant une immersion culturelle inoubliable.",
+      points: [
+        {
+          title: 'Mobilité internationale',
+          content:
+            'Opportunité unique de s’expatrier et de découvrir le marché du travail dans des pays asiatiques dynamiques.',
+        },
+        {
+          title: 'Accompagnement clé en main',
+          content:
+            'Prise en charge des démarches administratives complexes (visas, conventions) pour un départ serein.',
+        },
+        {
+          title: 'Ouverture culturelle',
+          content:
+            "Développement de « soft skills » très prisées par les recruteurs : adaptabilité, ouverture d'esprit et anglais professionnel.",
+        },
+        {
+          title: 'Stages multidisciplinaires',
+          content:
+            "Réseau d'entreprises partenaires permettant de trouver des missions dans l'ensemble des filières d'ingénierie.",
+        },
+      ],
+      offers: [],
     },
   },
 }
