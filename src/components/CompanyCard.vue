@@ -54,11 +54,11 @@ const handleCardClick = (company: CompanyData) => {
   justify-content: center;
   align-items: flex-start;
   background-color: #fff;
+  border: 1px solid #e7e7e7;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: inherit;
   cursor: pointer;
-  border: none;
   padding: 48px 32px 32px;
   transition: transform 0.2s;
 }

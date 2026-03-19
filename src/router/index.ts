@@ -8,8 +8,8 @@ const routes: RouterOptions['routes'] = [
     component: () => import('../views/PlanningView.vue'),
   },
   {
-    path: '/companies',
-    redirect: '/entreprises',
+    path: '/plan',
+    component: () => import('../views/PlanView.vue'),
   },
   {
     path: '/entreprises.html',

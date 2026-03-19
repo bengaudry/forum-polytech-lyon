@@ -86,7 +86,7 @@ export const continuedAnimations = [
     emojiIcon: '🎁',
     name: 'Stand goodies BDE',
     description:
-      "Venez faire un tour au stand du BDE pour repartir avec des goodies exclusifs du forum et de l'école !",
+      "Venez faire un tour au stand du BDE pour repartir avec des goodies exclusifs !",
     room: 'Hall Polytech',
     startTime: new Date(2026, 2, 26, 14, 0),
     endTime: new Date(2026, 2, 26, 17),

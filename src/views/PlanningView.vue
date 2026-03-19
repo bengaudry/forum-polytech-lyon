@@ -57,15 +57,12 @@ const planning = computed(() => {
 <style scoped lang="scss">
 .logo-filiere {
   display: block;
-  margin: 0 auto;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
+  margin: 3rem auto 1rem;
 }
 
 .back-btn {
   width: 100%;
   max-width: 480px;
-  margin: 0 auto;
   background-color: transparent;
   font-size: 1.1rem;
   border: none;
@@ -73,7 +70,7 @@ const planning = computed(() => {
   flex-direction: row;
   align-items: center;
   gap: 0.4rem;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
 
   img {
     transform: translateY(0.5px);
@@ -121,7 +118,6 @@ const planning = computed(() => {
 
 .speciality-link {
   background-color: #fff;
-  border: none;
   display: flex;
   flex-grow: 1;
   flex-shrink: 0;
@@ -133,6 +129,7 @@ const planning = computed(() => {
   margin: 10px;
   height: 150px;
   padding: 20px 40px;
+  border: 1px solid #e7e7e7;
   border-radius: 8px;
   text-decoration: none;
   transition: background-color 0.3s;

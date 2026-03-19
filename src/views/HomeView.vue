@@ -78,7 +78,7 @@ const isUpcoming = (startTime?: Date) => Boolean(startTime && now.value < startT
 
     <div class="actions">
       <RouterLink class="cta" to="/entreprises">Voir le mur des entreprises</RouterLink>
-      <RouterLink class="cta cta-secondary" to="/planning">Voir le planning</RouterLink>
+      <RouterLink class="cta cta-secondary" to="/planning">Planning des conférences</RouterLink>
     </div>
 
     <section
@@ -142,11 +142,6 @@ const isUpcoming = (startTime?: Date) => Boolean(startTime && now.value < startT
   max-width: 980px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 2rem;
-}
-
-h1 {
-  margin-bottom: 0.75rem;
 }
 
 p {
@@ -167,13 +162,13 @@ p {
   padding: 0.6rem 1rem;
   border-radius: 6px;
   text-decoration: none;
-  background: #1f6feb;
+  background: rgba(var(--polytech-color-foreground));
   color: white;
   font-weight: 600;
 }
 
 .cta-secondary {
-  background: #f3f4f6;
+  background: rgba(var(--polytech-color), 0.2);
   color: #111;
 }
 
