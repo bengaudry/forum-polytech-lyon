@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { computed, onBeforeUnmount, ref } from 'vue'
 import { continuedAnimations, scheduledAnimations } from '../lib/animations'
 
 const dateFormatter = new Intl.DateTimeFormat('fr-FR', {
@@ -7,46 +8,64 @@ const dateFormatter = new Intl.DateTimeFormat('fr-FR', {
 })
 
 const formatSchedule = (startTime?: Date, endTime?: Date) => {
-  if (!startTime || !endTime) return 'Toute la journée'
+  if (!startTime || !endTime) return 'Toute la journee'
   return `${dateFormatter.format(startTime)} - ${dateFormatter.format(endTime)}`
-}
-
-const isSameDay = (left: Date, right: Date) =>
-  left.getFullYear() === right.getFullYear() &&
-  left.getMonth() === right.getMonth() &&
-  left.getDate() === right.getDate()
-
-const now = new Date()
-const eventReferenceDate = scheduledAnimations[0]?.startTime ?? continuedAnimations[0]?.startTime
-const shouldShowScheduledAnimations = eventReferenceDate
-  ? isSameDay(now, eventReferenceDate)
-  : false
-
-const getTimeIndicator = (startTime?: Date, endTime?: Date) => {
-  if (!startTime || !endTime) return 'Horaire à confirmer'
-
-  const diffToStartMs = startTime.getTime() - now.getTime()
-  const diffToEndMs = endTime.getTime() - now.getTime()
-
-  if (diffToEndMs < 0) return 'Terminé'
-  if (diffToStartMs <= 0) return 'En cours'
-
-  const diffMinutes = Math.ceil(diffToStartMs / 60000)
-  if (diffMinutes > 60) return "Dans plus d'une heure"
-  return `Dans ${diffMinutes} minutes`
 }
 
 const shuffle = <T,>(items: T[]): T[] => {
   const shuffled = [...items]
   for (let i = shuffled.length - 1; i > 0; i -= 1) {
     const j = Math.floor(Math.random() * (i + 1))
-    ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+    const valueAtI = shuffled[i]
+    const valueAtJ = shuffled[j]
+    if (valueAtI === undefined || valueAtJ === undefined) continue
+    shuffled[i] = valueAtJ
+    shuffled[j] = valueAtI
   }
   return shuffled
 }
 
 const randomizedContinuedAnimations = shuffle(continuedAnimations)
 const randomizedScheduledAnimations = shuffle(scheduledAnimations)
+
+const now = ref(new Date())
+const timerId = window.setInterval(() => {
+  now.value = new Date()
+}, 30000)
+
+onBeforeUnmount(() => {
+  window.clearInterval(timerId)
+})
+
+const scheduledAnimationsToDisplay = computed(() =>
+  randomizedScheduledAnimations
+    .filter((animation) => {
+      const { startTime, endTime } = animation
+      if (!startTime || !endTime) return false
+
+      const displayStart = new Date(startTime.getTime() - 15 * 60 * 1000)
+      return now.value >= displayStart && now.value <= endTime
+    })
+    .sort((left, right) => left.startTime.getTime() - right.startTime.getTime()),
+)
+
+const shouldShowScheduledAnimations = computed(() => scheduledAnimationsToDisplay.value.length > 0)
+
+const getTimeIndicator = (startTime?: Date, endTime?: Date) => {
+  if (!startTime || !endTime) return 'Horaire a confirmer'
+
+  const diffToStartMs = startTime.getTime() - now.value.getTime()
+  const diffToEndMs = endTime.getTime() - now.value.getTime()
+
+  if (diffToEndMs < 0) return 'Termine'
+  if (diffToStartMs <= 0) return 'En cours'
+
+  const diffMinutes = Math.ceil(diffToStartMs / 60000)
+  if (diffMinutes > 60) return "Dans plus d'une heure"
+  return diffMinutes === 1 ? 'Dans 1 minute' : `Dans ${diffMinutes} minutes`
+}
+
+const isUpcoming = (startTime?: Date) => Boolean(startTime && now.value < startTime)
 </script>
 
 <template>
@@ -61,6 +80,35 @@ const randomizedScheduledAnimations = shuffle(scheduledAnimations)
       <RouterLink class="cta" to="/entreprises">Voir le mur des entreprises</RouterLink>
       <RouterLink class="cta cta-secondary" to="/planning">Voir le planning</RouterLink>
     </div>
+
+    <section
+      v-if="shouldShowScheduledAnimations"
+      class="animations"
+      aria-labelledby="scheduled-animations-title"
+    >
+      <h2 id="scheduled-animations-title">Animations programmées</h2>
+      <div class="animations-column">
+        <article
+          v-for="animation in scheduledAnimationsToDisplay"
+          :key="animation.name"
+          class="animation-card"
+          :class="{ upcoming: isUpcoming(animation.startTime) }"
+        >
+          <div class="card-header">
+            <h3>
+              <span class="emoji-icon">{{ animation.emojiIcon }}</span> {{ animation.name }}
+            </h3>
+            <span class="time-indicator">{{
+                getTimeIndicator(animation.startTime, animation.endTime)
+              }}</span>
+          </div>
+          <p>{{ animation.description }}</p>
+          <div class="animation-meta">
+            <span>{{ formatSchedule(animation.startTime, animation.endTime) }}</span>
+          </div>
+        </article>
+      </div>
+    </section>
 
     <section class="animations" aria-labelledby="animations-title">
       <h2 id="animations-title">Animations continues</h2>
@@ -82,34 +130,6 @@ const randomizedScheduledAnimations = shuffle(scheduledAnimations)
           <div class="animation-meta">
             <span>{{ formatSchedule(animation.startTime, animation.endTime) }}</span>
             <span>{{ animation.room ?? 'Lieu a confirmer' }}</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section
-      v-if="shouldShowScheduledAnimations"
-      class="animations"
-      aria-labelledby="scheduled-animations-title"
-    >
-      <h2 id="scheduled-animations-title">Animations programmees</h2>
-      <div class="animations-column">
-        <article
-          v-for="animation in randomizedScheduledAnimations"
-          :key="animation.name"
-          class="animation-card"
-        >
-          <div class="card-header">
-            <h3>
-              <span class="emoji-icon">{{ animation.emojiIcon }}</span> {{ animation.name }}
-            </h3>
-            <span class="time-indicator">{{
-              getTimeIndicator(animation.startTime, animation.endTime)
-            }}</span>
-          </div>
-          <p>{{ animation.description }}</p>
-          <div class="animation-meta">
-            <span>{{ formatSchedule(animation.startTime, animation.endTime) }}</span>
           </div>
         </article>
       </div>
@@ -226,5 +246,11 @@ p {
   gap: 0.75rem;
   font-size: 0.9rem;
   color: #555;
+}
+
+
+.animation-card.upcoming .time-indicator {
+  background: #fff3bf;
+  color: #8a6d00;
 }
 </style>

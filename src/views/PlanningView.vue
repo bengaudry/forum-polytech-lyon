@@ -26,7 +26,8 @@ const planning = computed(() => {
     height="90"
     class="logo-filiere"
   />
-  <h1>Planning {{ selectedSpecialityName }}</h1>
+  <h1>Planning conférences {{ selectedSpecialityName }}</h1>
+
   <div v-if="selectedSpecialityName">
     <button @click="selectedSpecialityName = null" class="back-btn">
       <img src="/images/icons/angle-left.svg" alt="<" width="16" height="16" fetchpriority="high" />
@@ -45,7 +46,7 @@ const planning = computed(() => {
       class="speciality-link"
       @click="selectedSpecialityName = speciality.name"
     >
-      <VLazyImage :src="speciality.logo" :alt="speciality.name" />
+      <VLazyImage :src="speciality.logo" :alt="speciality.name" fetchpriority="high" />
       <span>
         {{ speciality.name }}
       </span>

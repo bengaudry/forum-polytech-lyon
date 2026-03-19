@@ -10,20 +10,16 @@ export type PlanningEvent = {
 export const plannings: Record<SpecialitePolytech, Array<PlanningEvent>> = {
   MAM: [
     {
-      startHour: new Date(2026, 3, 26, 9, 0),
-      endHour: new Date(2026, 3, 26, 10, 0),
+      startHour: new Date(2026, 3, 26, 10, 0),
+      endHour: new Date(2026, 3, 26, 10, 30),
       companies: [{ name: 'Thelio', logo: '/images/logos/compressed/thelio.png' }],
     },
     {
-      startHour: new Date(2026, 3, 26, 10, 0),
-      endHour: new Date(2026, 3, 26, 11, 0),
+      startHour: new Date(2026, 3, 26, 10, 30),
+      endHour: new Date(2026, 3, 26, 11, 30),
       companies: [{ name: 'Dattico', logo: '/images/logos/originals/dattico.svg' }],
-    },
-    {
-      startHour: new Date(2026, 3, 26, 11, 0),
-      endHour: new Date(2026, 3, 26, 12, 0),
       speakers: [{ name: 'Ambroise Kitohou' }, { name: 'Cheikh Fall', details: 'Promotion 2025' }],
-    },
+    }
   ],
   INFO: [
     {
@@ -32,8 +28,8 @@ export const plannings: Record<SpecialitePolytech, Array<PlanningEvent>> = {
       speakers: [{ name: 'Mathieu Mure' }, { name: 'Mohamed Djebali' }, { name: 'Antoine Caron' }],
     },
     {
-      startHour: new Date(2026, 3, 26, 11, 0),
-      endHour: new Date(2026, 3, 26, 11, 30),
+      startHour: new Date(2026, 3, 26, 10, 0),
+      endHour: new Date(2026, 3, 26, 10, 30),
       companies: [{ name: 'Dattico' }],
     },
     {
@@ -104,7 +100,7 @@ export const plannings: Record<SpecialitePolytech, Array<PlanningEvent>> = {
   GBM: [
     {
       startHour: new Date(2026, 3, 26, 11, 30),
-      endHour: new Date(2026, 3, 26, 12, 30),
+      endHour: new Date(2026, 3, 26, 12, 0),
       companies: [{ name: 'Hecapp' }],
     },
   ],
