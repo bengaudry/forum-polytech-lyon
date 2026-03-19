@@ -19,7 +19,8 @@ try {
 }
 
 const links = [
-  { name: 'Mur des entreprises', path: '/' },
+  { name: 'Accueil', path: '/' },
+  { name: 'Mur des entreprises', path: '/entreprises' },
   { name: 'Plan', path: '/plan' },
   { name: 'Planning', path: '/planning' },
 ]

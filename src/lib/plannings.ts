@@ -20,8 +20,8 @@ export const plannings: Record<SpecialitePolytech, Array<PlanningEvent>> = {
       companies: [{ name: 'Dattico', logo: '/images/logos/originals/dattico.svg' }],
     },
     {
-      startHour: new Date(2026, 3, 26, 11, 30),
-      endHour: new Date(2026, 3, 26, 12, 30),
+      startHour: new Date(2026, 3, 26, 11, 0),
+      endHour: new Date(2026, 3, 26, 12, 0),
       speakers: [{ name: 'Ambroise Kitohou' }, { name: 'Cheikh Fall', details: 'Promotion 2025' }],
     },
   ],
