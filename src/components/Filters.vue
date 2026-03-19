@@ -43,4 +43,13 @@ const { query, selectedField } = useFilters()
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
+#fieldSelect {
+  margin-left: 6px;
+  padding: 6px;
+  width: 200px;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 </style>
