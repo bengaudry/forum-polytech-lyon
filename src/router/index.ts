@@ -12,7 +12,7 @@ const routes: RouterOptions['routes'] = [
     component: () => import('../views/PlanView.vue'),
   },
   {
-    path: '/entreprises.html',
+    path: '/index.html',
     redirect: '/entreprises',
   },
   {
