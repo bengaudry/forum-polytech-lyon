@@ -1,1 +1,0 @@
-import{_ as a,a as s,c as o,b as n,F as r}from"./index-CovSU1su.js";const t={};function l(c,e){return s(),o(r,null,[e[0]||(e[0]=n("h1",null,"Plan du forum",-1)),e[1]||(e[1]=n("p",null,"Le plan n'est pas encore disponible.",-1))],64)}const d=a(t,[["render",l],["__scopeId","data-v-1265cc54"]]);export{d as default};
