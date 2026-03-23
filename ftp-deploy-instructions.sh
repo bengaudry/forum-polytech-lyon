@@ -1,7 +1,6 @@
 set ftp:ssl-allow no
-mkdir deployment
 
-mput dist/* deployment
+mkdir -p deployment
 mirror -R --parallel=5 --delete dist deployment
 mv public_html public_html_old
 mv deployment public_html
