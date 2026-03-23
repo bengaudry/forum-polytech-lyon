@@ -18,14 +18,17 @@ import nextDecisionLogo from '/images/logos/compressed/next-decision.webp'
 import parlymLogo from '/images/logos/originals/parlym.svg'
 import soprasteriaLogo from '/images/logos/compressed/soprasteria.webp'
 import technordLogo from '/images/logos/compressed/technord.webp'
-import foselevLogo from '/images/logos/compressed/foselev.webp'
 import lhoistLogo from '/images/logos/originals/lhoist.svg'
 import sfenLogo from '/images/logos/compressed/sfen.webp'
 import cgiLogo from '/images/logos/compressed/cgi.webp'
 import soieLogo from '/images/logos/compressed/soie.webp'
 import polyencoLogo from '/images/logos/compressed/polyenco.webp'
-import codeoLogo from "/images/logos/compressed/codeo.webp"
-import stepoutAbroadLogo from "/images/logos/compressed/stepout-abroad.webp"
+import codeoLogo from '/images/logos/compressed/codeo.webp'
+import stepoutAbroadLogo from '/images/logos/compressed/stepout-abroad.webp'
+import reelLogo from '/images/logos/compressed/reel.webp'
+import oranoLogo from '/images/logos/compressed/orano.webp'
+import mindrayLogo from '/images/logos/compressed/mindray.webp'
+import iesfLogo from '/images/logos/compressed/iesf.webp'
 
 export type CompanyData = {
   name: string
@@ -852,40 +855,6 @@ export const companies: Record<string, CompanyData> = {
       ],
     },
   },
-  foselev: {
-    name: 'Foselev',
-    shortDescription:
-      "Groupe indépendant leader dans les services à l'industrie, au BTP et au nucléaire.",
-    logo: foselevLogo,
-    relatedFields: ['MECA'],
-    details: {
-      websiteUrl: 'https://www.foselev.com/',
-      careersPortalUrl: 'https://foselev.tzportal.io/fr/jobs',
-      presentation:
-        "FOSELEV, fondé en 1970, est un groupe indépendant spécialisé dans les services à l'industrie, au BTP et au nucléaire, réalisant un chiffre d'affaires de 500 M€.\n\nPlus de 3000 collaborateurs sont employés au travers d'un réseau de 120 implantations en France comme à l'international.\n\nL'offre de service s'articule autour de 3 pôles de compétences complémentaires :\n- Services & Logistique : Levage, Transport, Manutention...\n- Maintenance Industrielle : Contrats de Maintenance, Travaux d'Arrêts...\n- Contracting : Constructions d'Unités, Levages Lourds...",
-      degreesResearched: ['Bac +5', 'Diplomé'],
-      points: [
-        {
-          title: "Pôles d'expertise",
-          content: "Levage, maintenance industrielle et contracting pour des projets d'envergure.",
-        },
-        {
-          title: 'Réseau étendu',
-          content:
-            "120 implantations en France et à l'international avec plus de 3000 collaborateurs.",
-        },
-        {
-          title: 'Secteurs stratégiques',
-          content: 'Interventions critiques dans le nucléaire et les grands ensembles industriels.',
-        },
-        {
-          title: 'Multi-métiers',
-          content: 'Opportunités en constructions modulaires, maintenance et logistique.',
-        },
-      ],
-      offers: [],
-    },
-  },
   lhoist: {
     name: 'Lhoist France',
     shortDescription:
@@ -1078,8 +1047,7 @@ export const companies: Record<string, CompanyData> = {
   },
   codeo: {
     name: 'Codeo Medical',
-    shortDescription:
-      'Leader Français du rachat / revente de matériel médical de seconde main.',
+    shortDescription: 'Leader Français du rachat / revente de matériel médical de seconde main.',
     logo: codeoLogo,
     relatedFields: ['GBM'],
     details: {
@@ -1147,6 +1115,133 @@ export const companies: Record<string, CompanyData> = {
         },
       ],
       offers: [],
+    },
+  },
+  reel: {
+    name: 'REEL',
+    logo: reelLogo,
+    relatedFields: ['MECA', 'SIR'],
+    shortDescription:
+      'Concepteur et fabricant de systèmes de levage et de manutention pour des environnements industriels critiques.',
+    details: {
+      websiteUrl: 'https://www.reelinternational.com/',
+      careersPortalUrl: 'https://www.reelinternational.com/carrieres/',
+      presentation:
+        'Créé en 1946, REEL International conçoit, fabrique et maintient des systèmes de levage et de manutention pour des environnements industriels critiques : aéronautique, nucléaire, défense, offshore & Energies Marines et hydroélectricité. Présent dans 16 pays, le groupe développe des savoir-faire d’excellence portés par ses équipes, ses valeurs et une gouvernance solide.\n' +
+        'REEL est un groupe industriel fondé sur l’ancrage, la qualité et la transmission du savoir-faire. Son développement s’inscrit dans une logique de long terme, au service de ses clients et de ses équipes.\n' +
+        '\n' +
+        'Dès l’origine, REEL s’appuie sur une exigence simple : faire juste, faire bien, faire fiable. Cette rigueur irrigue toujours sa culture industrielle.\n' +
+        '\n' +
+        'Cette vision à long terme se traduit par une gouvernance structurée, une attention portée à la formation continue et une exigence constante envers la sécurité, l’innovation et la performance durable.',
+      degreesResearched: ['Bac+5', 'Diplomé'],
+      points: [
+        {
+          title: 'Systèmes de levage industriels',
+          content:
+            "Spécialisation dans la conception et la fabrication de solutions de levage pour des environnements critiques.",
+        },
+        {
+          title: 'Excellence opérationnelle',
+          content:
+            "Culture d'entreprise axée sur la rigueur, la qualité et la fiabilité des produits.",
+        },
+        {
+          title: 'Gouvernance solide',
+          content:
+            "Engagement dans une vision à long terme avec une attention particulière à la formation et au développement des équipes.",
+        },
+      ]
+    },
+  },
+  orano: {
+    name: 'Orano',
+    logo: oranoLogo,
+    relatedFields: ['MAT', 'MECA', 'SIR', 'MAM'],
+    shortDescription:
+      'Orano est un acteur majeur de l’énergie nucléaire, avec des technologies de pointe pour faire du nucléaire une ressource du futur.',
+    details: {
+      websiteUrl: 'https://www.orano.group/fr',
+      careersPortalUrl: 'https://www.orano.group/jobs/fr',
+      presentation:
+        'Groupe international de référence, Orano est un acteur majeur de l’énergie nucléaire. Avec 17 500 collaborateurs dans le monde, le groupe s’engage au quotidien pour répondre aux enjeux énergétiques mondiaux et fournir une électricité puissante, sécurisée, bas carbone et compétitive.\nChez Orano, nous sommes engagés pour le climat, pour l’économie des ressources et la santé. Forts de nos technologies de pointe, nous ouvrons le champ des possibles pour nous réinventer et faire du nucléaire une ressource du futur. Alors faites vos bagages et partons à la conquête de l’avenir !',
+      degreesResearched: ['Bac+4', 'Bac+5', 'Diplomé'],
+      points: [
+        {
+          title: 'Acteur majeur du nucléaire',
+          content:
+            "Orano est un leader mondial dans le domaine de l'énergie nucléaire, offrant des opportunités de carrière dans un secteur stratégique.",
+        },
+        {
+          title: 'Technologies de pointe',
+          content:
+            "Travailler chez Orano, c'est être au cœur de l'innovation technologique pour faire du nucléaire une ressource du futur.",
+        },
+        {
+          title: 'Engagement pour le climat',
+          content:
+            "Orano s'engage pour le climat, l'économie des ressources et la santé, offrant un environnement de travail aligné avec des valeurs fortes.",
+        }
+      ]
+    },
+  },
+  mindray: {
+    name: 'Mindray',
+    logo: mindrayLogo,
+    relatedFields: ['GBM'],
+    shortDescription:
+      'Mindray est une société spécialisée, notamment, dans la conception, la fabrication et la commercialisation d’équipements médicaux et de solutions innovantes, destinés à améliorer la qualité des soins hospitaliers.',
+    details: {
+      websiteUrl: 'https://www.mindray.com',
+      careersPortalUrl: 'https://www.mindray.com/en/career/career-search',
+      presentation:
+        'Mindray est une société spécialisée, notamment, dans la conception, la fabrication et la commercialisation d’équipements médicaux et de solutions innovantes, destinés à améliorer la qualité des soins hospitaliers.',
+      degreesResearched: ['Bac+3', 'Bac+4', 'Bac+5'],
+      points: [
+        {
+          title: 'Équipements médicaux innovants',
+          content:
+            "Mindray conçoit et fabrique des équipements médicaux de pointe pour améliorer les soins hospitaliers.",
+        },
+        {
+          title: 'Opportunités internationales',
+          content:
+            "En tant que société mondiale, Mindray offre des opportunités de carrière à l'international dans le secteur de la santé.",
+        },
+        {
+          title: 'Engagement envers la qualité des soins',
+          content:
+            "Travailler chez Mindray, c'est contribuer à l'amélioration de la qualité des soins hospitaliers à travers des solutions innovantes.",
+        },
+      ]
+    },
+  },
+  iesf: {
+    name: 'IESF (Ingénieurs et Scientifiques de France)',
+    logo: iesfLogo,
+    relatedFields: ['MECA', 'SIR'],
+    shortDescription:
+      "L'IESF est une association qui regroupe les ingénieurs et scientifiques de France, avec pour mission de représenter et défendre les intérêts de la communauté scientifique et technique, de promouvoir les métiers de l'ingénierie et de la science, et de favoriser les échanges entre les professionnels du secteur.",
+    details: {
+      presentation:
+        "L'IESF est une association qui regroupe les ingénieurs et scientifiques de France. Elle a pour mission de représenter et défendre les intérêts de la communauté scientifique et technique, de promouvoir les métiers de l'ingénierie et de la science, et de favoriser les échanges entre les professionnels du secteur.",
+      degreesResearched: ['Bac+3', 'Bac+4', 'Bac+5', 'Diplomé'],
+      points: [
+        {
+          title: 'Représentation professionnelle',
+          content:
+            "L'IESF agit en tant que porte-parole des ingénieurs et scientifiques auprès des pouvoirs publics, des entreprises et de la société.",
+        },
+        {
+          title: 'Promotion des métiers',
+          content:
+            "L'association travaille à valoriser les métiers de l'ingénierie et de la science auprès du grand public et des jeunes générations.",
+        },
+        {
+          title: 'Réseau professionnel',
+          content:
+            "L'IESF favorise les échanges et le networking entre les professionnels du secteur à travers des événements, des conférences et des publications.",
+        },
+      ]
     },
   },
 }
