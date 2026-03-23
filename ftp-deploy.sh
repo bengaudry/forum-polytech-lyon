@@ -3,8 +3,6 @@ if [ $# -ne 2 ]; then
     exit 1
 fi
 
-pnpm build
-
 lftp "ftp://$1:$2@ftp.forum-polytech-lyon.org" < ftp-deploy-instructions.sh
 
 if $? -ne 0; then

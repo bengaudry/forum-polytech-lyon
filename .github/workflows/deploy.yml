@@ -14,6 +14,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install lftp
+        run: sudo apt-get install -y lftp
+
       - name: Install pnpm
         run: npm install -g pnpm
 
@@ -30,7 +33,7 @@ jobs:
         run: pnpm run build
 
       - name: Deploy to FTP server
-        run: ./ftp-deploy.sh ${secrets.FTP_USERNAME} ${secrets.FTP_PASSWORD}
+        run: ./ftp-deploy.sh ${{ secrets.FTP_USERNAME }} ${{ secrets.FTP_PASSWORD }}
         env:
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
