@@ -77,7 +77,7 @@ export const continuedAnimations = [
     emojiIcon: '📚',
     name: 'Atelier CV Anglais',
     description:
-      "Venez vous faire aider ou faire relire votre CV en Anglais par le service d'orientation de l'université (SOIE) et béneficiez de leurs conseils pour le rendre plus attractif pour les recruteurs internationaux.",
+      "Venez créer ou faire relire votre CV en Anglais par le service d'orientation de l'université (SOIE) et béneficiez de leurs conseils pour le rendre plus attractif pour les recruteurs internationaux.",
     room: 'Hall Polytech',
     startTime: new Date(2026, 2, 26, 14, 0),
     endTime: new Date(2026, 2, 26, 17),
@@ -95,7 +95,7 @@ export const continuedAnimations = [
     emojiIcon: '🎲',
     name: 'Polygames',
     description:
-      "Venez jouer a des jeux de societe avec Polygames, l'association de jeux de l'école.",
+      "Venez jouer a des jeux de société avec Polygames, l'association de jeux de l'école.",
     room: 'Hall Polytech',
     startTime: new Date(2026, 2, 26, 14, 0),
     endTime: new Date(2026, 2, 26, 17),
