@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import CompanyModalContent from './CompanyModalContent.vue'
-import { useModalVisibility } from '@/composables/useModalVisibility'
+import { useModalVisibility } from '@/composables/useModalVisibility.ts'
 
 const { isModalVisible, hideModal } = useModalVisibility()
 </script>

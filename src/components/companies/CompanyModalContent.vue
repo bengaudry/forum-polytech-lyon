@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useModalContent } from '@/composables/useModalContent'
+import { useModalContent } from '@/composables/useModalContent.ts'
 
 const { currentCompany } = useModalContent()
 </script>

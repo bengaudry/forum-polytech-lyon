@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useFilteredCompaniesData } from '@/composables/useFilteredCompaniesData'
+import { useFilteredCompaniesData } from '@/composables/useFilteredCompaniesData.ts'
 import CompanyCard from './CompanyCard.vue'
 
 const companies = useFilteredCompaniesData()

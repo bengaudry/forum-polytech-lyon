@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useFilters } from '@/composables/useFilters'
+import { useFilters } from '@/composables/useFilters.ts'
 
 const { query, selectedField } = useFilters()
 </script>

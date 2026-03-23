@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { PlanningEvent } from '@/lib/plannings'
+import type { PlanningEvent } from '@/lib/plannings.ts'
 import { computed } from 'vue'
 
 const { event, planning } = defineProps<{ event: PlanningEvent; planning: Array<PlanningEvent> }>()

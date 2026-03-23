@@ -1,4 +1,13 @@
-export const scheduledAnimations = [
+export type Animation = {
+  name: string;
+  description: string;
+  startTime: Date;
+  endTime: Date;
+  emojiIcon?: string;
+  room?: string;
+}
+
+export const scheduledAnimations: Array<Animation> = [
   {
     emojiIcon: '🎤',
     name: 'Mot du directeur',
@@ -39,7 +48,7 @@ export const scheduledAnimations = [
   },
 ]
 
-export const continuedAnimations = [
+export const continuedAnimations: Array<Animation> = [
   {
     emojiIcon: '📸',
     name: 'Stand photos IA',

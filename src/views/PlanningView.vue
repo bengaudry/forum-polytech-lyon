@@ -3,7 +3,7 @@ import VLazyImage from 'v-lazy-image'
 import { computed, ref } from 'vue'
 import { POLYTECH_SPECIALITIES, type SpecialitePolytech } from '@/lib/constants'
 import { plannings } from '@/lib/plannings'
-import PlanningEvent from '@/components/PlanningEvent.vue'
+import PlanningEvent from '@/components/planning/PlanningEvent.vue'
 
 const selectedSpecialityName = ref<SpecialitePolytech | null>(null)
 
