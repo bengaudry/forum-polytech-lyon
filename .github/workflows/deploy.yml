@@ -30,7 +30,7 @@ jobs:
         run: pnpm run build
 
       - name: Deploy to FTP server
-        run: ./ftp-deploy.sh ${{ secrets.FTP_HOST }} ${{ secrets.FTP_PASSWORD }}
+        run: ./ftp-deploy.sh ${secrets.FTP_HOST} ${secrets.FTP_PASSWORD}
         env:
           FTP_USER: ${{ secrets.FTP_USER }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
