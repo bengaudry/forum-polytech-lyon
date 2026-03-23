@@ -1,5 +1,7 @@
+#!/usr/bin/env bash
+
 if [ $# -ne 2 ]; then
-    echo "Usage: $0 <ftp_username> <ftp_password>"
+    echo "Usage: $0 <ftp_username> <ftp_password> ($# args passed)"
     exit 1
 fi
 
