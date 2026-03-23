@@ -29,6 +29,7 @@ const planning = computed(() => {
     />
     <h1>Planning conférences {{ speciality.name }}</h1>
   </div>
+  <h1 v-else>Planning conférences</h1>
 
   <PlanningEventList v-if="planning" :planning="planning" />
   <PlanningSpecialitiesGrid v-else />
