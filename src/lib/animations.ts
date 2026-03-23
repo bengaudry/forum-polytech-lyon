@@ -3,7 +3,7 @@ export const scheduledAnimations = [
     emojiIcon: '🎤',
     name: 'Mot du directeur',
     description:
-      "Découvrez les différentes filières de Polytech Lyon et leurs spécificités lors d'une présentation animée par les étudiants de chaque filière.",
+      "Le directeur de Polytech Lyon, M. Jean-Baptiste POURET ouvrira officiellement le forum en accueillant les visiteurs et en présentant les objectifs de l'événement.",
     startTime: new Date(2026, 2, 26, 14, 0),
     endTime: new Date(2026, 2, 26, 14, 5),
   },
@@ -43,7 +43,7 @@ export const continuedAnimations = [
   {
     emojiIcon: '📸',
     name: 'Stand photos IA',
-    description: "Generez des photos de votre stand grace a l'intelligence artificielle.",
+    description: "Générez des photos professionnelles (pour CV, Linkedin...) grâce a l'intelligence artificielle.",
     room: 'Salle 126',
     startTime: new Date(2026, 2, 26, 14, 0),
     endTime: new Date(2026, 2, 26, 17),
@@ -51,7 +51,7 @@ export const continuedAnimations = [
   {
     emojiIcon: '♟️',
     name: 'Polychess',
-    description: 'Venez jouer des parties "Blitz" d\'echecs avec Polychess.',
+    description: 'Venez jouer des parties "Blitz" d\'échecs avec Polychess.',
     startTime: new Date(2026, 2, 26, 16, 0),
     endTime: new Date(2026, 2, 26, 17),
   },
@@ -59,7 +59,7 @@ export const continuedAnimations = [
     emojiIcon: '🎨',
     name: 'Fresque artistique',
     description:
-      "Participez a la creation d'une fresque artistique collaborative organisee par le BDA.",
+      "Participez a la création d'une fresque artistique collaborative organisée par le BDA.",
     room: "Mur de l'amphi ISTIL",
     startTime: new Date(2026, 2, 26, 14, 0),
     endTime: new Date(2026, 2, 26, 17),
@@ -68,7 +68,7 @@ export const continuedAnimations = [
     emojiIcon: '🏎️',
     name: 'Exposition PolyMeca',
     description:
-      "Venez voir la voiture de course de PolyMeca, l'association de mecanique de l'ecole, et decouvrez les coulisses de sa conception et de sa fabrication.",
+      "Venez voir la voiture de course de PolyMeca, l'association de mécanique de l'école, et découvrez les coulisses de sa conception et de sa fabrication.",
     room: 'Hall Polytech',
     startTime: new Date(2026, 2, 26, 14, 0),
     endTime: new Date(2026, 2, 26, 17),
@@ -77,7 +77,7 @@ export const continuedAnimations = [
     emojiIcon: '📚',
     name: 'Atelier CV Anglais',
     description:
-      "Venez faire relire votre CV en anglais par le service d'orientation de l'université (SOIE) et beneficiez de leurs conseils pour le rendre plus attractif pour les recruteurs internationaux.",
+      "Venez vous faire aider ou faire relire votre CV en Anglais par le service d'orientation de l'université (SOIE) et béneficiez de leurs conseils pour le rendre plus attractif pour les recruteurs internationaux.",
     room: 'Hall Polytech',
     startTime: new Date(2026, 2, 26, 14, 0),
     endTime: new Date(2026, 2, 26, 17),
