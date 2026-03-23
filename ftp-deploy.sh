@@ -12,8 +12,11 @@ if [ -z "$FTP_USERNAME" ] || [ -z "$FTP_PASSWORD" ]; then
     exit 1
 fi
 
-lftp "ftp://$FTP_USERNAME:$FTP_PASSWORD@ftp.forum-polytech-lyon.org" < ftp-deploy-instructions.sh || {
+lftp "ftp://$FTP_USERNAME:$FTP_PASSWORD@ftp.forum-polytech-lyon.org" < ftp-deploy-instructions.sh
+
+if [ $? -ne 0 ]; then
     echo "Error: FTP upload failed."
     exit 1
-}
+fi
+
 echo Done!
