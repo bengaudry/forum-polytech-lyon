@@ -29,6 +29,8 @@ import reelLogo from '/images/logos/compressed/reel.webp'
 import oranoLogo from '/images/logos/compressed/orano.webp'
 import mindrayLogo from '/images/logos/compressed/mindray.webp'
 import iesfLogo from '/images/logos/compressed/iesf.webp'
+import rirLogo from '/images/logos/compressed/rir.webp'
+import aplebLogo from '/images/logos/compressed/apleb.webp'
 
 export type CompanyData = {
   name: string
@@ -923,7 +925,6 @@ export const companies: Record<string, CompanyData> = {
             "Accès à une information de référence sur les évolutions technologiques de l'énergie.",
         },
       ],
-      offers: [],
     },
   },
   cgi: {
@@ -1138,7 +1139,7 @@ export const companies: Record<string, CompanyData> = {
         {
           title: 'Systèmes de levage industriels',
           content:
-            "Spécialisation dans la conception et la fabrication de solutions de levage pour des environnements critiques.",
+            'Spécialisation dans la conception et la fabrication de solutions de levage pour des environnements critiques.',
         },
         {
           title: 'Excellence opérationnelle',
@@ -1148,9 +1149,9 @@ export const companies: Record<string, CompanyData> = {
         {
           title: 'Gouvernance solide',
           content:
-            "Engagement dans une vision à long terme avec une attention particulière à la formation et au développement des équipes.",
+            'Engagement dans une vision à long terme avec une attention particulière à la formation et au développement des équipes.',
         },
-      ]
+      ],
     },
   },
   orano: {
@@ -1180,8 +1181,8 @@ export const companies: Record<string, CompanyData> = {
           title: 'Engagement pour le climat',
           content:
             "Orano s'engage pour le climat, l'économie des ressources et la santé, offrant un environnement de travail aligné avec des valeurs fortes.",
-        }
-      ]
+        },
+      ],
     },
   },
   mindray: {
@@ -1200,7 +1201,7 @@ export const companies: Record<string, CompanyData> = {
         {
           title: 'Équipements médicaux innovants',
           content:
-            "Mindray conçoit et fabrique des équipements médicaux de pointe pour améliorer les soins hospitaliers.",
+            'Mindray conçoit et fabrique des équipements médicaux de pointe pour améliorer les soins hospitaliers.',
         },
         {
           title: 'Opportunités internationales',
@@ -1212,7 +1213,7 @@ export const companies: Record<string, CompanyData> = {
           content:
             "Travailler chez Mindray, c'est contribuer à l'amélioration de la qualité des soins hospitaliers à travers des solutions innovantes.",
         },
-      ]
+      ],
     },
   },
   iesf: {
@@ -1241,7 +1242,80 @@ export const companies: Record<string, CompanyData> = {
           content:
             "L'IESF favorise les échanges et le networking entre les professionnels du secteur à travers des événements, des conférences et des publications.",
         },
-      ]
+      ],
+    },
+  },
+  rir: {
+    name: 'RIR (Robotique des Ingénieurs de Roanne)',
+    logo: rirLogo,
+    relatedFields: ['SIR', 'INFO', 'MECA'],
+    shortDescription:
+      "Association étudiante de robotique affiliée à Polytech Lyon, centrée sur les projets techniques, le prototypage et la participation à Eurobot.",
+    details: {
+      websiteUrl: 'https://www.helloasso.com/associations/rir-robotique-des-ingenieurs-de-roanne',
+      presentation:
+        "Le RIR est une association étudiante indépendante de robotique affiliée à Polytech Lyon, sur le site de Roanne. Créée à l'origine pour participer aux coupes Eurobot en France et en Europe, l'association est devenue un véritable pôle de développement de compétences techniques. Son local met à disposition un espace de création et de bricolage avec des outils de prototypage (dont des imprimantes 3D) pour accompagner les projets étudiants et personnels.",
+      points: [
+        {
+          title: 'Participation à Eurobot',
+          content:
+            "Le RIR s'est construit autour de la participation aux compétitions Eurobot, un cadre concret pour concevoir, tester et améliorer des robots.",
+        },
+        {
+          title: 'Association étudiante affiliée à Polytech Lyon',
+          content:
+            "Le club est porté par des élèves ingénieurs, avec un ancrage fort sur la filière Systèmes Industriels et Robotiques de Roanne.",
+        },
+        {
+          title: 'Atelier et prototypage',
+          content:
+            "Le local dispose d'outils variés (ordinateurs, imprimantes 3D, outillage) pour passer rapidement de l'idée au prototype.",
+        },
+        {
+          title: 'Développement de compétences techniques',
+          content:
+            'Les projets permettent de progresser en conception, électronique, mécanique, programmation et travail en équipe.',
+        },
+      ],
+    },
+  },
+  apleb: {
+    name: 'APLEB',
+    logo: aplebLogo,
+    relatedFields: ['GBM'],
+    shortDescription: "L'APLEB est une association étudiante de Polytech Lyon visant à faciliter l'intégration des étudiants dans des projets liés au monde biomédical.",
+    details: {
+      presentation:
+        "L'APLEB est l'association de Polytech Lyon des élèves ingénieurs en génie biomédical. Ouverte à tous, elle organise des événements accessibles à l'ensemble des étudiants de l'école. L'association s'articule autour de cinq projets: Le Ptit Biomed, Biom'aide, La Minute Biomed, les Ateliers biomédicaux et le Guide du GBM. Ces projets permettent de développer des compétences techniques, de créer du lien avec les professionnels du secteur, de contribuer à des actions solidaires et de faire de la veille sur les innovations médicales.",
+      websiteUrl:
+        'https://etu.univ-lyon1.fr/activites/associations-etudiantes/apleb-association-de-polytech-lyon-des-eleves-ingenieurs-en-genie-biomedical',
+      points: [
+        {
+          title: 'Le Ptit Biomed et partenariat AFIB',
+          content:
+            "Projet partenaire de l'AFIB: les étudiants synthétisent les conférences des journées AFIB, publient un guide avec annuaire d'exposants et participent aussi à SANTEXPO avec des interviews d'acteurs du secteur.",
+        },
+        {
+          title: "Biom'aide (projet humanitaire)",
+          content:
+            "En partenariat avec Horizons Sahel, le projet collecte des dispositifs médicaux pour les établissements de soins au Sahel et inclut des actions de maintenance et de formation sur place.",
+        },
+        {
+          title: 'Ateliers biomédicaux',
+          content:
+            "Organisation de rencontres entre étudiants, entreprises et professionnels (interventions à l'école ou visites d'entreprises) pour découvrir les métiers et le terrain.",
+        },
+        {
+          title: 'Guide du GBM',
+          content:
+            'Rédaction de fiches pédagogiques sur les techniques médicales, les dispositifs biomédicaux et les services de soins, accessibles à toute personne intéressée par le domaine.',
+        },
+        {
+          title: 'La Minute Biomed',
+          content:
+            'Newsletter mensuelle de veille technologique qui diffuse des articles sur les innovations biomédicales auprès de la communauté étudiante et professionnelle.',
+        },
+      ],
     },
   },
 }
