@@ -8,6 +8,15 @@
         >Polytech Lyon</a
       >
     </p>
+    <p>
+      Code source sur
+      <a
+        href="https://github.com/bengaudry/forum-polytech-lyon"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Github</a
+      >
+    </p>
   </footer>
 </template>
 
@@ -22,5 +31,10 @@ footer {
 footer a {
   color: inherit;
   text-decoration: underline;
+}
+
+p {
+  margin-bottom: 0.3rem;
+  margin-top: 0;
 }
 </style>
