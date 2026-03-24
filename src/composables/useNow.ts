@@ -1,4 +1,4 @@
-import { onBeforeUnmount, ref } from 'vue'
+import { onBeforeUnmount, ref } from "vue"
 
 const now = ref(new Date())
 const timerId = window.setInterval(() => {

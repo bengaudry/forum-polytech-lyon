@@ -1,5 +1,5 @@
-import { ref } from 'vue'
-import type { CompanyData } from '@/lib/standsData.ts'
+import { ref } from "vue"
+import type { CompanyData } from "@/lib/standsData.ts"
 
 type CompaniesMap = Record<string, CompanyData>
 
@@ -16,13 +16,13 @@ async function ensureLoaded() {
   isLoading.value = true
   loadError.value = null
 
-  loadPromise = import('@/lib/standsData.ts')
+  loadPromise = import("@/lib/standsData.ts")
     .then(({ companies: importedCompanies }) => {
       companies.value = importedCompanies
     })
     .catch((error: unknown) => {
-      console.error('Impossible de charger les donnees des stands:', error)
-      loadError.value = 'Impossible de charger les entreprises pour le moment.'
+      console.error("Impossible de charger les donnees des stands:", error)
+      loadError.value = "Impossible de charger les entreprises pour le moment."
     })
     .finally(() => {
       isLoading.value = false
@@ -37,6 +37,6 @@ export function useStandsCompanies() {
     companies,
     isLoading,
     loadError,
-    ensureLoaded,
+    ensureLoaded
   }
 }

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import VLazyImage from 'v-lazy-image'
-import { useFilters } from '@/composables/useFilters.ts'
-import type { CompanyData } from '../../lib/standsData.ts'
-import { useModalContent } from '@/composables/useModalContent.ts'
-import { useModalVisibility } from '@/composables/useModalVisibility.ts'
+import VLazyImage from "v-lazy-image"
+import { useFilters } from "@/composables/useFilters.ts"
+import type { CompanyData } from "../../lib/standsData.ts"
+import { useModalContent } from "@/composables/useModalContent.ts"
+import { useModalVisibility } from "@/composables/useModalVisibility.ts"
 
 defineProps<{
   index: number

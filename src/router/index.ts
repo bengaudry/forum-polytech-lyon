@@ -1,30 +1,30 @@
-import { createRouter, createWebHistory, type RouterOptions } from 'vue-router'
+import { createRouter, createWebHistory, type RouterOptions } from "vue-router"
 
-const routes: RouterOptions['routes'] = [
-  { path: '/', component: () => import('../views/HomeView.vue') },
-  { path: '/stands', component: () => import('../views/StandsView.vue') },
+const routes: RouterOptions["routes"] = [
+  { path: "/", component: () => import("../views/HomeView.vue") },
+  { path: "/stands", component: () => import("../views/StandsView.vue") },
   {
-    path: '/planning',
-    component: () => import('../views/PlanningView.vue'),
+    path: "/planning",
+    component: () => import("../views/PlanningView.vue")
   },
   {
-    path: '/plan',
-    component: () => import('../views/PlanView.vue'),
+    path: "/plan",
+    component: () => import("../views/PlanView.vue")
   },
   {
-    path: '/index.html',
-    redirect: '/',
+    path: "/index.html",
+    redirect: "/"
   },
   {
-    path: '/:pathMatch(.*)*',
-    name: 'NotFound',
-    component: () => import('../views/NotFoundView.vue'),
-  },
+    path: "/:pathMatch(.*)*",
+    name: "NotFound",
+    component: () => import("../views/NotFoundView.vue")
+  }
 ]
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes,
+  routes
 })
 
 export default router

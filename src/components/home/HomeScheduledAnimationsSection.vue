@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { scheduledAnimations } from '@/lib/animations.ts'
-import { useNow } from '@/composables/useNow.ts'
-import HomeAnimationsWrapper from '@/components/home/HomeAnimationsWrapper.vue'
-import HomeAnimationCard from '@/components/home/HomeAnimationCard.vue'
+import { computed } from "vue"
+import { scheduledAnimations } from "@/lib/animations.ts"
+import { useNow } from "@/composables/useNow.ts"
+import HomeAnimationsWrapper from "@/components/home/HomeAnimationsWrapper.vue"
+import HomeAnimationCard from "@/components/home/HomeAnimationCard.vue"
 
 // affiche les animations qui commencent dans moins de 15 minutes
 const now = useNow()
@@ -16,12 +16,15 @@ const scheduledAnimationsToDisplay = computed(() =>
       const displayStart = new Date(startTime.getTime() - 15 * 60 * 1000)
       return now.value >= displayStart && now.value <= endTime
     })
-    .sort((left, right) => left.startTime.getTime() - right.startTime.getTime()),
+    .sort((left, right) => left.startTime.getTime() - right.startTime.getTime())
 )
 
-const shouldShowScheduledAnimations = computed(() => scheduledAnimationsToDisplay.value.length > 0)
+const shouldShowScheduledAnimations = computed(
+  () => scheduledAnimationsToDisplay.value.length > 0
+)
 
-const isUpcoming = (startTime?: Date) => Boolean(startTime && now.value < startTime)
+const isUpcoming = (startTime?: Date) =>
+  Boolean(startTime && now.value < startTime)
 </script>
 
 <template>

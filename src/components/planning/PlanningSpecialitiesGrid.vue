@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import VLazyImage from 'v-lazy-image'
-import { POLYTECH_SPECIALITIES } from '@/lib/constants'
-import { usePlanningSpeciality } from '@/composables/usePlanningSpeciality.ts'
+import VLazyImage from "v-lazy-image"
+import { POLYTECH_SPECIALITIES } from "@/lib/constants"
+import { usePlanningSpeciality } from "@/composables/usePlanningSpeciality.ts"
 
 const { setCurrentSpeciality } = usePlanningSpeciality()
 </script>

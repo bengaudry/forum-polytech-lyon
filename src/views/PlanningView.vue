@@ -1,16 +1,19 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-import { POLYTECH_SPECIALITIES, type SpecialitePolytech } from '@/lib/constants'
-import { plannings } from '@/lib/plannings'
-import PlanningSpecialitiesGrid from '@/components/planning/PlanningSpecialitiesGrid.vue'
-import { usePlanningSpeciality } from '@/composables/usePlanningSpeciality.ts'
-import PlanningEventList from '@/components/planning/PlanningEventList.vue'
+import { computed, ref } from "vue"
+import { POLYTECH_SPECIALITIES, type SpecialitePolytech } from "@/lib/constants"
+import { plannings } from "@/lib/plannings"
+import PlanningSpecialitiesGrid from "@/components/planning/PlanningSpecialitiesGrid.vue"
+import { usePlanningSpeciality } from "@/composables/usePlanningSpeciality.ts"
+import PlanningEventList from "@/components/planning/PlanningEventList.vue"
 
 const { currentSpeciality } = usePlanningSpeciality()
 
 const speciality = computed(() => {
   if (!currentSpeciality.value) return null
-  return POLYTECH_SPECIALITIES.find((s) => s.name === currentSpeciality.value) || null
+  return (
+    POLYTECH_SPECIALITIES.find((s) => s.name === currentSpeciality.value) ||
+    null
+  )
 })
 
 const planning = computed(() => {

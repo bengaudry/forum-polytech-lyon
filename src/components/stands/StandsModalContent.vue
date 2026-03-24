@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useModalContent } from '@/composables/useModalContent.ts'
+import { useModalContent } from "@/composables/useModalContent.ts"
 
 const { currentCompany } = useModalContent()
 </script>
@@ -42,7 +42,9 @@ const { currentCompany } = useModalContent()
     <p>{{ currentCompany.details.presentation }}</p>
 
     <div v-if="currentCompany.details.points">
-      <h3 class="modal-section-title">Informations pour les élèves ingénieurs</h3>
+      <h3 class="modal-section-title">
+        Informations pour les élèves ingénieurs
+      </h3>
       <ul>
         <li v-for="point in currentCompany.details.points" :key="point.title">
           <strong>{{ point.title }} : </strong>{{ point.content }}
@@ -52,14 +54,21 @@ const { currentCompany } = useModalContent()
 
     <div v-if="currentCompany.details.degreesResearched">
       <h3 class="modal-section-title">Diplômes recherchés</h3>
-      <p>{{ currentCompany.details.degreesResearched.join(', ') }}</p>
+      <p>{{ currentCompany.details.degreesResearched.join(", ") }}</p>
     </div>
 
-    <div v-if="currentCompany.details.offers && currentCompany.details.offers.length > 0">
+    <div
+      v-if="
+        currentCompany.details.offers &&
+        currentCompany.details.offers.length > 0
+      "
+    >
       <h3 class="modal-section-title">Offres de Stage</h3>
       <ul class="offer-list">
         <li v-for="offer in currentCompany.details.offers" :key="offer.title">
-          <a :href="offer.file" target="_blank" rel="noopener noreferrer">📄 {{ offer.title }}</a>
+          <a :href="offer.file" target="_blank" rel="noopener noreferrer"
+            >📄 {{ offer.title }}</a
+          >
         </li>
       </ul>
     </div>

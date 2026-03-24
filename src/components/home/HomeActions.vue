@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
+import { RouterLink } from "vue-router"
 </script>
 
 <template>
   <div class="actions">
     <RouterLink class="cta" to="/stands">Voir la liste des stands</RouterLink>
-    <RouterLink class="cta cta-secondary" to="/planning">Planning des conférences</RouterLink>
+    <RouterLink class="cta cta-secondary" to="/planning"
+      >Planning des conférences</RouterLink
+    >
   </div>
 </template>
 

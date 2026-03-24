@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { useFilteredCompaniesData } from '@/composables/useFilteredCompaniesData.ts'
-import { useStandsCompanies } from '@/composables/useStandsCompanies'
-import StandsCard from './StandsCard.vue'
-import { computed, onMounted } from 'vue'
+import { useFilteredCompaniesData } from "@/composables/useFilteredCompaniesData.ts"
+import { useStandsCompanies } from "@/composables/useStandsCompanies"
+import StandsCard from "./StandsCard.vue"
+import { computed, onMounted } from "vue"
 
 const companies = useFilteredCompaniesData()
 const { ensureLoaded, isLoading, loadError } = useStandsCompanies()
@@ -15,9 +15,13 @@ onMounted(() => {
 </script>
 
 <template>
-  <p v-if="isLoading" id="company-grid-error-container">Chargement des entreprises...</p>
+  <p v-if="isLoading" id="company-grid-error-container">
+    Chargement des entreprises...
+  </p>
   <p v-else-if="loadError" id="company-grid-error-container">{{ loadError }}</p>
-  <p v-else-if="!hasResults" id="company-grid-error-container">Aucune entreprise trouvee.</p>
+  <p v-else-if="!hasResults" id="company-grid-error-container">
+    Aucune entreprise trouvee.
+  </p>
   <div v-else class="companies-grid">
     <StandsCard
       v-for="(company, key, index) in companies"

@@ -1,7 +1,9 @@
-import { readonly, ref } from 'vue'
+import { readonly, ref } from "vue"
 
-const query = ref('')
-const selectedField = ref<'INFO' | 'GBM' | 'MAM' | 'SIR' | 'MECA' | 'MAT' | 'all'>('all')
+const query = ref("")
+const selectedField = ref<
+  "INFO" | "GBM" | "MAM" | "SIR" | "MECA" | "MAT" | "all"
+>("all")
 
 export function useFilters() {
   return {
@@ -10,8 +12,10 @@ export function useFilters() {
     setQuery: (newQuery: string) => {
       query.value = newQuery
     },
-    setSelectedField: (field: 'INFO' | 'GBM' | 'MAM' | 'SIR' | 'MECA' | 'MAT' | 'all') => {
+    setSelectedField: (
+      field: "INFO" | "GBM" | "MAM" | "SIR" | "MECA" | "MAT" | "all"
+    ) => {
       selectedField.value = field
-    },
+    }
   }
 }

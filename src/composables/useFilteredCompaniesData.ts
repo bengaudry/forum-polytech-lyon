@@ -1,13 +1,16 @@
-import { computed } from 'vue'
-import type { CompanyData } from '@/lib/standsData.ts'
-import { useFilters } from './useFilters'
-import { useStandsCompanies } from './useStandsCompanies'
+import { computed } from "vue"
+import type { CompanyData } from "@/lib/standsData.ts"
+import { useFilters } from "./useFilters"
+import { useStandsCompanies } from "./useStandsCompanies"
 
 function randomizeKeysOrder(companies: Record<string, CompanyData>) {
   const companyKeys = Object.keys(companies)
   for (let i = companyKeys.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1))
-    ;[companyKeys[i], companyKeys[j]] = [companyKeys[j] as string, companyKeys[i] as string]
+    ;[companyKeys[i], companyKeys[j]] = [
+      companyKeys[j] as string,
+      companyKeys[i] as string
+    ]
   }
   return companyKeys
 }
@@ -24,10 +27,16 @@ const data = computed(() => {
     const company = companies.value[key]
     if (!company) continue
 
-    if (selectedField.value !== 'all' && !company.relatedFields.includes(selectedField.value)) {
+    if (
+      selectedField.value !== "all" &&
+      !company.relatedFields.includes(selectedField.value)
+    ) {
       continue
     }
-    if (query.value && !company.name.toLowerCase().includes(query.value.toLowerCase())) {
+    if (
+      query.value &&
+      !company.name.toLowerCase().includes(query.value.toLowerCase())
+    ) {
       continue
     }
     filteredCompanies[key] = company

@@ -1,15 +1,20 @@
 <script setup lang="ts">
-import type { Animation } from '@/lib/animations.ts'
-import { formatSchedule, getTimeIndicator } from '@/lib/functions.ts'
+import type { Animation } from "@/lib/animations.ts"
+import { formatSchedule, getTimeIndicator } from "@/lib/functions.ts"
 
 defineProps<{ animation: Animation; upcoming?: boolean }>()
 </script>
 
 <template>
-  <article :key="animation.name" class="animation-card" :class="{ upcoming: upcoming === true }">
+  <article
+    :key="animation.name"
+    class="animation-card"
+    :class="{ upcoming: upcoming === true }"
+  >
     <div class="card-header">
       <h3>
-        <span class="emoji-icon">{{ animation.emojiIcon }}</span> {{ animation.name }}
+        <span class="emoji-icon">{{ animation.emojiIcon }}</span>
+        {{ animation.name }}
       </h3>
       <span class="time-indicator">{{
         getTimeIndicator(animation.startTime, animation.endTime)
@@ -18,7 +23,7 @@ defineProps<{ animation: Animation; upcoming?: boolean }>()
     <p>{{ animation.description }}</p>
     <div class="animation-meta">
       <span>{{ formatSchedule(animation.startTime, animation.endTime) }}</span>
-      <span>{{ animation.room ?? 'Lieu a confirmer' }}</span>
+      <span>{{ animation.room ?? "Lieu a confirmer" }}</span>
     </div>
   </article>
 </template>

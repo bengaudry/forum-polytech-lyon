@@ -4,7 +4,10 @@
   <footer>
     <p>
       © 2026
-      <a href="https://polytech.univ-lyon1.fr/" target="_blank" rel="noopener noreferrer"
+      <a
+        href="https://polytech.univ-lyon1.fr/"
+        target="_blank"
+        rel="noopener noreferrer"
         >Polytech Lyon</a
       >
     </p>
