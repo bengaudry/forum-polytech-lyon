@@ -2,7 +2,12 @@
 
 <template>
   <footer>
-    <p>© 2026 <a href="https://polytech.univ-lyon1.fr/" target="_blank">Polytech Lyon</a></p>
+    <p>
+      © 2026
+      <a href="https://polytech.univ-lyon1.fr/" target="_blank" rel="noopener noreferrer"
+        >Polytech Lyon</a
+      >
+    </p>
   </footer>
 </template>
 
