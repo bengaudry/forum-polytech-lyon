@@ -13,7 +13,7 @@ import datticoLogo from "@/assets/images/logos/entreprises/dattico.svg"
 import capgeminiLogo from "@/assets/images/logos/entreprises/capgemini.webp"
 import amiltoneLogo from "@/assets/images/logos/entreprises/amiltone.webp"
 import g2sLogo from "@/assets/images/logos/entreprises/g2s.webp"
-import coexyadLogo from "@/assets/images/logos/entreprises/coexya.webp"
+import coexyaLogo from "@/assets/images/logos/entreprises/coexya.webp"
 import nextDecisionLogo from "@/assets/images/logos/entreprises/next-decision.webp"
 import parlymLogo from "@/assets/images/logos/entreprises/parlym.svg"
 import soprasteriaLogo from "@/assets/images/logos/entreprises/soprasteria.webp"
@@ -38,6 +38,8 @@ import sqliLogo from "@/assets/images/logos/entreprises/sqli.webp"
 // import assystemLogo from '@/assets/images/logos/entreprises/assystem.svg'
 import aiplLogo from "@/assets/images/logos/entreprises/aipl.webp"
 import abmiLogo from "@/assets/images/logos/entreprises/abmi.svg"
+import catsLogo from "@/assets/images/logos/entreprises/cats.webp"
+import andriceLogo from "@/assets/images/logos/entreprises/andrice.webp"
 
 export type CompanyData = {
   name: string
@@ -70,8 +72,7 @@ export const companies: Record<string, CompanyData> = {
     relatedFields: ["INFO", "GBM", "MAM", "SIR"],
     details: {
       websiteUrl: "https://www.agixis.com",
-      presentation:
-        "Développement logiciel dans la santé, l'IoT et la transformation digitale",
+      presentation: "Développement logiciel dans la santé, l'IoT et la transformation digitale",
       degreesResearched: ["Bac +4", "Bac +5", "Diplomé", "Bac +3"],
       points: [
         {
@@ -91,8 +92,7 @@ export const companies: Record<string, CompanyData> = {
         },
         {
           title: "Diversité des profils",
-          content:
-            "Entreprise ouverte aux étudiants et jeunes diplômés (Bac+3 à Bac+5)."
+          content: "Entreprise ouverte aux étudiants et jeunes diplômés (Bac+3 à Bac+5)."
         }
       ],
       offers: [
@@ -104,7 +104,7 @@ export const companies: Record<string, CompanyData> = {
       ]
     }
   },
-  pharea: {
+  /*pharea: {
     name: "PHAREA",
     shortDescription:
       "Un groupe multi-expertises accompagnant les grands projets industriels via la conception, la simulation numérique et le génie électrique.",
@@ -144,7 +144,7 @@ export const companies: Record<string, CompanyData> = {
       ],
       offers: []
     }
-  },
+  },*/
   dymasco: {
     name: "Dymasco",
     shortDescription:
@@ -175,8 +175,7 @@ export const companies: Record<string, CompanyData> = {
         },
         {
           title: "Cycle en V et Agilité",
-          content:
-            "Intervention complète, de l'analyse du besoin jusqu'à l'amélioration continue."
+          content: "Intervention complète, de l'analyse du besoin jusqu'à l'amélioration continue."
         }
       ],
       offers: [
@@ -201,8 +200,7 @@ export const companies: Record<string, CompanyData> = {
     logo: carrierLogo,
     relatedFields: ["INFO", "MAM", "SIR", "MAT", "MECA"],
     details: {
-      websiteUrl:
-        "https://www.carrier.com/commercial/fr/fr/a-propos/carrier-france/",
+      websiteUrl: "https://www.carrier.com/commercial/fr/fr/a-propos/carrier-france/",
       careersPortalUrl: "https://jobs.carrier.com/fr/recherche-d%27offres",
       presentation:
         "Le site Carrier de Montluel est un site industriel majeur du groupe Carrier, spécialisé dans la conception, la fabrication et le développement d'équipements aérauliques et frigorifiques industriels, principalement dans le domaine du CVC (Chauffage, Ventilation, Climatisation) et de la réfrigération.",
@@ -220,8 +218,7 @@ export const companies: Record<string, CompanyData> = {
         },
         {
           title: "Enjeux thermodynamiques",
-          content:
-            "Fort besoin d'expertises en mécanique, acoustique, modélisation et énergies."
+          content: "Fort besoin d'expertises en mécanique, acoustique, modélisation et énergies."
         },
         {
           title: "Rôle clé dans le cycle de production",
@@ -251,8 +248,7 @@ export const companies: Record<string, CompanyData> = {
         },
         {
           title: "Dimension réglementaire",
-          content:
-            "Forte implication des cadres légaux relatifs aux marchés publics (Loi de 2016)."
+          content: "Forte implication des cadres légaux relatifs aux marchés publics (Loi de 2016)."
         },
         {
           title: "Fonctions supports et achats",
@@ -276,8 +272,7 @@ export const companies: Record<string, CompanyData> = {
     relatedFields: ["INFO"],
     details: {
       websiteUrl: "https://atos.net/fr/",
-      careersPortalUrl:
-        "https://atos.net/fr/rejoignez-nous/stagiaires-et-alternants",
+      careersPortalUrl: "https://atos.net/fr/rejoignez-nous/stagiaires-et-alternants",
       presentation:
         "Nous sommes une équipe de 72 000 collaborateurs passionnés avec une ambition claire : utiliser le numérique pour faire avancer ce qui compte pour nos clients et la société dans 68 pays.\nChaque jour, nous travaillons ensemble pour créer des fondations numériques fiables et évolutives pour les stands, les institutions et les communautés du monde entier. \nAvec nos experts et nos partenaires de classe mondiale, nous développons des solutions numériques du quotidien à la mission critique - en matière d'intelligence artificielle, de cloud hybride, de gestion des infrastructures, de décarbonation et d'expérience collaborateur.\n\nNotre objectif ? \nAvoir un impact significatif pour nos clients et l'ensemble de la société. C'est ce que nous appelons le « Power of We ».\n\nChez Atos Tech Foundations, nous concevons des solutions numériques de la vie quotidienne aux activités critiques – en matière d'intelligence artificielle, de cloud hybride, de gestion des infrastructures, de décarbonation et d'expérience utilisateur.",
       degreesResearched: ["Bac +5"],
@@ -413,8 +408,7 @@ export const companies: Record<string, CompanyData> = {
     relatedFields: ["INFO", "MAM"],
     details: {
       websiteUrl: "https://www.thelio.fr/",
-      careersPortalUrl:
-        "https://www.welcometothejungle.com/fr/companies/thelio",
+      careersPortalUrl: "https://www.welcometothejungle.com/fr/companies/thelio",
       presentation:
         "Thélio est un cabinet de conseil et d'intégration 100 % data, accompagnant les organisations sur toute la chaîne de valeur de leurs données, de la stratégie et de la gouvernance jusqu'à l'ingénierie, l'analytics et les usages IA.\nNotre mission est de démystifier la donnée pour la rendre accessible, exploitable et source de performance pour les stands.\nAvec une équipe d'experts répartie sur plusieurs agences en France, nous aidons nos clients à transformer leurs données en leviers de décision et d'innovation.",
       degreesResearched: ["Bac +5", "Diplomé"],
@@ -426,8 +420,7 @@ export const companies: Record<string, CompanyData> = {
         },
         {
           title: "Variété des métiers",
-          content:
-            "Nombreux rôles allant de Data Engineer à Data Scientist et ML Engineer."
+          content: "Nombreux rôles allant de Data Engineer à Data Scientist et ML Engineer."
         },
         {
           title: "Démocratisation de la donnée",
@@ -498,8 +491,7 @@ export const companies: Record<string, CompanyData> = {
       points: [
         {
           title: "Société à taille humaine",
-          content:
-            "Basée à Lyon avec un ancrage local fort et une volonté de proximité."
+          content: "Basée à Lyon avec un ancrage local fort et une volonté de proximité."
         },
         {
           title: "Métier de l'ingénierie d'affaires",
@@ -599,8 +591,7 @@ export const companies: Record<string, CompanyData> = {
         },
         {
           title: "Outil de transformation",
-          content:
-            "Approche de bout en bout de la stratégie au design et à l'ingénierie tech."
+          content: "Approche de bout en bout de la stratégie au design et à l'ingénierie tech."
         },
         {
           title: "Multitude des rôles",
@@ -630,8 +621,7 @@ export const companies: Record<string, CompanyData> = {
         },
         {
           title: "Ouverture des profils",
-          content:
-            "Accessible très vite dans le cursus (dès Bac+3) jusqu'au niveau ingénieur."
+          content: "Accessible très vite dans le cursus (dès Bac+3) jusqu'au niveau ingénieur."
         }
       ],
       offers: []
@@ -652,13 +642,11 @@ export const companies: Record<string, CompanyData> = {
       points: [
         {
           title: "GIE du Groupe Groupama",
-          content:
-            "Rôle central dans la transformation digitale d'un grand groupe mutualiste."
+          content: "Rôle central dans la transformation digitale d'un grand groupe mutualiste."
         },
         {
           title: "Technologies innovantes",
-          content:
-            "Projets impliquant data, IA, cybersécurité, robotique, IoT et smart building."
+          content: "Projets impliquant data, IA, cybersécurité, robotique, IoT et smart building."
         },
         {
           title: "Large spectre de métiers IT",
@@ -667,8 +655,7 @@ export const companies: Record<string, CompanyData> = {
         },
         {
           title: "Valeurs mutualistes",
-          content:
-            "Engagement dans des valeurs fortes de solidarité, proximité et responsabilité."
+          content: "Engagement dans des valeurs fortes de solidarité, proximité et responsabilité."
         }
       ],
       offers: []
@@ -678,7 +665,7 @@ export const companies: Record<string, CompanyData> = {
     name: "COEXYA",
     shortDescription:
       "Acteur multi-spécialiste du numérique, combinant conseil, édition logicielle et intégration pour accélérer la transformation digitale.",
-    logo: coexyadLogo,
+    logo: coexyaLogo,
     relatedFields: ["INFO"],
     details: {
       websiteUrl: "https://www.coexya.eu",
@@ -689,13 +676,11 @@ export const companies: Record<string, CompanyData> = {
       points: [
         {
           title: "Triple compétence",
-          content:
-            "Agit à la fois comme intégrateur, éditeur et société de conseil."
+          content: "Agit à la fois comme intégrateur, éditeur et société de conseil."
         },
         {
           title: "Envergure internationale",
-          content:
-            "Adossement récent au groupe Talan, augmentant sa capacité de projection."
+          content: "Adossement récent au groupe Talan, augmentant sa capacité de projection."
         },
         {
           title: "Valeur de la donnée",
@@ -711,8 +696,7 @@ export const companies: Record<string, CompanyData> = {
       offers: [
         {
           type: "alternance",
-          title:
-            "Apprenti ingénieur études et développement F/H Search & Sémantique",
+          title: "Apprenti ingénieur études et développement F/H Search & Sémantique",
           file: "offers/coexya/ALTSSLSA25.pdf"
         },
         {
@@ -722,8 +706,7 @@ export const companies: Record<string, CompanyData> = {
         },
         {
           type: "alternance",
-          title:
-            "Apprenti ingénieur études et développement F/H Mobilité Urbaine Intelligente",
+          title: "Apprenti ingénieur études et développement F/H Mobilité Urbaine Intelligente",
           file: "offers/coexya/ALTMUI25.pdf"
         },
         {
@@ -734,8 +717,7 @@ export const companies: Record<string, CompanyData> = {
         },
         {
           type: "alternance",
-          title:
-            "Apprenti ingénieur études et développement F/H Master Data Management",
+          title: "Apprenti ingénieur études et développement F/H Master Data Management",
           file: "offers/coexya/ALTDGM24.pdf"
         }
       ]
@@ -766,8 +748,7 @@ export const companies: Record<string, CompanyData> = {
         },
         {
           title: "Enjeux multiples",
-          content:
-            "Touche des thématiques modernes comme la RSE/ESG ou le pilotage financier."
+          content: "Touche des thématiques modernes comme la RSE/ESG ou le pilotage financier."
         },
         {
           title: "Spécialisation",
@@ -829,8 +810,7 @@ export const companies: Record<string, CompanyData> = {
       points: [
         {
           title: "Leader européen",
-          content:
-            "Parmi les plus grandes ESN d'Europe (50 000 collaborateurs)."
+          content: "Parmi les plus grandes ESN d'Europe (50 000 collaborateurs)."
         },
         {
           title: "Enjeux prospectifs",
@@ -919,8 +899,7 @@ export const companies: Record<string, CompanyData> = {
         },
         {
           title: "Projets Industriels",
-          content:
-            "Pilotage d'investissements majeurs dans un contexte de production continue."
+          content: "Pilotage d'investissements majeurs dans un contexte de production continue."
         }
       ]
     }
@@ -975,8 +954,7 @@ export const companies: Record<string, CompanyData> = {
       points: [
         {
           title: "Expertise Multidimensionnelle",
-          content:
-            "Intervient dans le conseil, l'intégration de systèmes et les services managés."
+          content: "Intervient dans le conseil, l'intégration de systèmes et les services managés."
         },
         {
           title: "Culture d'Associés",
@@ -985,13 +963,11 @@ export const companies: Record<string, CompanyData> = {
         },
         {
           title: "Innovation Technologique",
-          content:
-            "Projets d'envergure en cybersécurité, Big Data et Intelligence Artificielle."
+          content: "Projets d'envergure en cybersécurité, Big Data et Intelligence Artificielle."
         },
         {
           title: "Échelle Mondiale",
-          content:
-            "Une présence internationale forte offrant des parcours de carrière diversifiés."
+          content: "Une présence internationale forte offrant des parcours de carrière diversifiés."
         }
       ],
       offers: [
@@ -1083,8 +1059,7 @@ export const companies: Record<string, CompanyData> = {
   },
   codeo: {
     name: "Codeo Medical",
-    shortDescription:
-      "Leader Français du rachat / revente de matériel médical de seconde main.",
+    shortDescription: "Leader Français du rachat / revente de matériel médical de seconde main.",
     logo: codeoLogo,
     relatedFields: ["GBM"],
     details: {
@@ -1118,7 +1093,7 @@ export const companies: Record<string, CompanyData> = {
       offers: []
     }
   },
-  "stepout-abroad": {
+  /* "stepout-abroad": {
     name: "Stepout Abroad",
     shortDescription:
       "Organisation proposant des stages dans des pays asiatiques pour les étudiants.",
@@ -1153,7 +1128,7 @@ export const companies: Record<string, CompanyData> = {
       ],
       offers: []
     }
-  },
+  }, */
   reel: {
     name: "REEL",
     logo: reelLogo,
@@ -1222,7 +1197,7 @@ export const companies: Record<string, CompanyData> = {
     }
   },
   mindray: {
-    name: "Mindray",
+    name: "Mindray Medical France",
     logo: mindrayLogo,
     relatedFields: ["GBM"],
     shortDescription:
@@ -1288,8 +1263,7 @@ export const companies: Record<string, CompanyData> = {
     shortDescription:
       "Association étudiante de robotique affiliée à Polytech Lyon, centrée sur les projets techniques, le prototypage et la participation à Eurobot.",
     details: {
-      websiteUrl:
-        "https://www.helloasso.com/associations/rir-robotique-des-ingenieurs-de-roanne",
+      websiteUrl: "https://www.helloasso.com/associations/rir-robotique-des-ingenieurs-de-roanne",
       presentation:
         "Le RIR est une association étudiante indépendante de robotique affiliée à Polytech Lyon, sur le site de Roanne. Créée à l'origine pour participer aux coupes Eurobot en France et en Europe, l'association est devenue un véritable pôle de développement de compétences techniques. Son local met à disposition un espace de création et de bricolage avec des outils de prototypage (dont des imprimantes 3D) pour accompagner les projets étudiants et personnels.",
       points: [
@@ -1444,7 +1418,7 @@ export const companies: Record<string, CompanyData> = {
       ],
     },
   }, */
-  sqli: {
+  /* sqli: {
     name: "SQLI",
     shortDescription:
       "Entreprise de services numériques spécialisée dans les expériences digitales, le e-commerce et la transformation des systèmes d’information.",
@@ -1472,7 +1446,7 @@ export const companies: Record<string, CompanyData> = {
         }
       ]
     }
-  },
+  }, */
   /* assystem: {
     name: 'ASSystem',
     shortDescription:
@@ -1567,6 +1541,77 @@ export const companies: Record<string, CompanyData> = {
           title: "Évolution professionnelle",
           content:
             "Cadre propice à la montée en compétences techniques, au travail en équipe projet et à la prise de responsabilités."
+        }
+      ]
+    }
+  },
+  cats: {
+    name: "Crédit Agricole Technologies & Services",
+    shortDescription:
+      "Partenaire informatique et technologique des Caisses régionales du Crédit Agricole, en charge du système d'information bancaire.",
+    logo: catsLogo,
+    relatedFields: ["INFO", "MAM"],
+    details: {
+      websiteUrl:
+        "https://www.credit-agricole.com/marques-et-metiers/toutes-nos-marques/credit-agricole-technologies-et-services",
+      careersPortalUrl: "https://ca-technoservices-recrute.talent-soft.com/accueil.aspx?LCID=1036",
+      presentation:
+        "Crédit Agricole Technologies et Services (CA-TS) est le partenaire informatique et technologique des 39 Caisses régionales du Crédit Agricole. L'entité assure la conception, la fabrication et la maintenance du système d'information bancaire, au service d'une banque de proximité à très grande échelle.",
+      points: [
+        {
+          title: "Cœur technologique des Caisses régionales",
+          content:
+            "CA-TS conçoit, fabrique et maintient le système d'information bancaire utilisé par les 39 Caisses régionales du Crédit Agricole."
+        },
+        {
+          title: "Implantation multi-sites",
+          content:
+            "Les équipes sont réparties sur plusieurs sites en France, notamment Annecy, Lyon, Montpellier, Nantes, Paris et Vannes."
+        },
+        {
+          title: "Culture produit et transformation agile",
+          content:
+            "L'organisation met en avant des modes de travail agiles pour livrer des services numériques robustes et évolutifs."
+        },
+        {
+          title: "Engagement numérique responsable",
+          content:
+            "CA-TS déploie une politique RSE depuis 2019 et a obtenu le label Numérique Responsable niveau 2 en 2023."
+        }
+      ]
+    }
+  },
+  andrice: {
+    name: "Andrice",
+    shortDescription:
+      "Société d'ingénierie multi-expertises accompagnant ses clients de l'idée à l'industrialisation, en assistance technique et au forfait.",
+    logo: andriceLogo,
+    relatedFields: ["INFO", "MAM", "SIR", "MECA"],
+    details: {
+      websiteUrl: "https://andricegroup.com/",
+      careersPortalUrl: "https://www.linkedin.com/company/andrice/jobs/?viewAsMember=true",
+      presentation:
+        "Andrice se positionne comme une société d'ingénierie qui accompagne ses clients sur toutes les phases d'un projet, de l'idée à l'industrialisation. Le groupe intervient en assistance technique et au forfait via son bureau d'études, avec un positionnement multi-sectoriel orienté R&D, innovation et ingénierie.",
+      points: [
+        {
+          title: "Cycle produit complet",
+          content:
+            "Interventions sur l'ensemble du cycle de vie produit, incluant conception, développement et industrialisation."
+        },
+        {
+          title: "Expertises pluridisciplinaires",
+          content:
+            "Domaines cités sur le site: mécanique, électronique, EIA, méthodes industrielles et fonctions business/management."
+        },
+        {
+          title: "Bureau d'études et double mode d'intervention",
+          content:
+            "Réalisation de projets en assistance technique chez le client ou au forfait au sein du bureau d'études Andrice."
+        },
+        {
+          title: "Culture d'accompagnement",
+          content:
+            "Mise en avant d'un management de proximité, de la montée en compétences et d'un cadre structuré par des certifications (ISO 9001, MASE, EcoVadis)."
         }
       ]
     }
