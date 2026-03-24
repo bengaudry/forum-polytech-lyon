@@ -1,5 +1,4 @@
-name: Deploy to GitHub Pages
-
+name: Deploy to FTP Server
 on:
   push:
     branches: [master]
@@ -46,33 +45,3 @@ jobs:
       - name: Deploy to FTP server
         run: ./ftp-deploy.sh
 
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Install pnpm
-        run: npm install -g pnpm
-
-      - name: 'Setup Node.js'
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-          cache: 'pnpm'
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Build the project
-        run: pnpm run build
-
-      - name: Deploy to GitHub Pages
-        run: |
-          git config --global user.name "github-actions-bot"
-          git config --global user.email "support+actions@github.com"
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          pnpm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
