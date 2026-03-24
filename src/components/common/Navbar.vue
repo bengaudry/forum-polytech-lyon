@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import polytechLogo32 from "@/assets/images/logos/polytech/polytech-logo-32.webp"
+import menuBurgerIcon from "@/assets/images/icons/menu-burger.svg"
 import { RouterLink, useRouter } from "vue-router"
 import { ref } from "vue"
 
@@ -19,7 +21,7 @@ const isMenuExpanded = ref(false)
     <div class="header-nav-content">
       <RouterLink class="header-brand" to="/">
         <img
-          src="/images/logos/polytech/polytech-logo-32.webp"
+          :src="polytechLogo32"
           alt="Logo Polytech Lyon"
           class="header-nav-logo"
           fetchpriority="high"
@@ -37,19 +39,10 @@ const isMenuExpanded = ref(false)
         @click="isMenuExpanded = !isMenuExpanded"
         aria-label="Toggle navigation menu"
       >
-        <img
-          src="/images/icons/menu-burger.svg"
-          alt="MENU"
-          width="32"
-          height="32"
-        />
+        <img :src="menuBurgerIcon" alt="MENU" width="32" height="32" />
       </button>
 
-      <ul
-        id="nav-items-container"
-        class="nav-items"
-        :class="{ expanded: isMenuExpanded }"
-      >
+      <ul id="nav-items-container" class="nav-items" :class="{ expanded: isMenuExpanded }">
         <li v-for="link in links" :key="link.path">
           <RouterLink
             class="nav-link"

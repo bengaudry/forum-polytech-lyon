@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import chevronLeftIcon from "@/assets/images/icons/angle-left.svg"
 import PlanningEvent from "@/components/planning/PlanningEvent.vue"
 import type { Planning } from "@/lib/plannings.ts"
 import { usePlanningSpeciality } from "@/composables/usePlanningSpeciality.ts"
@@ -12,22 +13,12 @@ const { setCurrentSpeciality } = usePlanningSpeciality()
   <p class="room">{{ planning.room }}</p>
 
   <button @click="setCurrentSpeciality(null)" class="back-btn">
-    <img
-      src="/images/icons/angle-left.svg"
-      alt="<"
-      width="16"
-      height="16"
-      fetchpriority="high"
-    />
+    <img :src="chevronLeftIcon" alt="<" width="16" height="16" fetchpriority="high" />
     Revenir
   </button>
 
   <ul class="planning" v-if="planning">
-    <PlanningEvent
-      v-for="event in planning.events"
-      :event="event"
-      :eventsList="planning.events"
-    />
+    <PlanningEvent v-for="event in planning.events" :event="event" :eventsList="planning.events" />
   </ul>
 </template>
 

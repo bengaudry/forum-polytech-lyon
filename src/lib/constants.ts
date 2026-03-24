@@ -1,9 +1,9 @@
-import infoLogo from "/images/logos/specialites/info-compressed.webp"
-import matLogo from "/images/logos/specialites/mat-compressed.webp"
-import mamLogo from "/images/logos/specialites/mam-compressed.webp"
-import gbmLogo from "/images/logos/specialites/gbm-compressed.webp"
-import mecaLogo from "/images/logos/specialites/meca-compressed.webp"
-import sirLogo from "/images/logos/specialites/sir-compressed.webp"
+import infoLogo from "@/assets/images/logos/polytech/specialites/info-compressed.webp"
+import matLogo from "@/assets/images/logos/polytech/specialites/mat-compressed.webp"
+import mamLogo from "@/assets/images/logos/polytech/specialites/mam-compressed.webp"
+import gbmLogo from "@/assets/images/logos/polytech/specialites/gbm-compressed.webp"
+import mecaLogo from "@/assets/images/logos/polytech/specialites/meca-compressed.webp"
+import sirLogo from "@/assets/images/logos/polytech/specialites/sir-compressed.webp"
 
 export const POLYTECH_SPECIALITIES = [
   { name: "INFO", logo: infoLogo },

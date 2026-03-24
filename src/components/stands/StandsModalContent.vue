@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import arrowUpRightIcon from "@/assets/images/icons/arrow-up-right-from-square.svg"
 import { useModalContent } from "@/composables/useModalContent.ts"
 
 const { currentCompany } = useModalContent()
@@ -23,7 +24,7 @@ const { currentCompany } = useModalContent()
         class="modal-company-website-link"
       >
         <span>Site Web</span>
-        <img src="/images/icons/arrow-up-right-from-square.svg" />
+        <img :src="arrowUpRightIcon" alt="↗" width="16" height="16" />
       </a>
 
       <a
@@ -34,7 +35,7 @@ const { currentCompany } = useModalContent()
         class="modal-company-website-link"
       >
         <span>Portail Carrières</span>
-        <img src="/images/icons/arrow-up-right-from-square.svg" />
+        <img :src="arrowUpRightIcon" alt="↗" width="16" height="16" />
       </a>
     </div>
 
