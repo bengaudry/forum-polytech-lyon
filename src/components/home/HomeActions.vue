@@ -23,7 +23,11 @@ import { RouterLink } from 'vue-router'
   padding: 0.6rem 1rem;
   border-radius: 6px;
   text-decoration: none;
-  background: rgba(var(--polytech-color-foreground));
+  background: linear-gradient(
+    145deg,
+    rgba(var(--polytech-color-foreground)),
+    rgba(var(--polytech-color-foreground), 0.85)
+  );
   color: white;
   font-weight: 600;
 }

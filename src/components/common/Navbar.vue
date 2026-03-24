@@ -62,7 +62,7 @@ const isMenuExpanded = ref(false)
   position: fixed;
   z-index: 20;
   top: 0;
-  background-color: #fafafa;
+  background-color: var(--background-color);
   border-bottom: 1px solid #ddd;
   width: 100%;
 }

@@ -29,13 +29,17 @@ const planning = computed(() => {
     />
     <h1>Planning conférences {{ speciality.name }}</h1>
   </div>
-  <h1 v-else>Planning conférences</h1>
+  <h1 v-else class="single-title">Planning conférences</h1>
 
   <PlanningEventList v-if="planning" :planning="planning" />
   <PlanningSpecialitiesGrid v-else />
 </template>
 
 <style scoped lang="scss">
+.single-title {
+  margin-bottom: 2rem;
+}
+
 .logo-filiere {
   display: block;
   margin: 3rem auto 1rem;
