@@ -37,6 +37,7 @@ import wimovaLogo from '/images/logos/compressed/wimova.webp'
 import sqliLogo from '/images/logos/compressed/sqli.webp'
 import assystemLogo from '/images/logos/originals/assystem.svg'
 import aiplLogo from '/images/logos/compressed/aipl.webp'
+import abmiLogo from '/images/logos/originals/abmi.svg'
 
 export type CompanyData = {
   name: string
@@ -1506,4 +1507,40 @@ export const companies: Record<string, CompanyData> = {
       ],
     },
   },
+  abmi: {
+    name: 'ABMI',
+    shortDescription:
+      "Groupe de conseil en ingénierie accompagnant les industriels sur des projets techniques complexes, de l'étude à l'exploitation.",
+    relatedFields: ['INFO', 'SIR', 'MECA', 'MAT', 'MAM'],
+    logo: abmiLogo,
+    details: {
+      websiteUrl: 'https://abmi-groupe.com/',
+      presentation:
+        "ABMI accompagne ses clients industriels dans la réalisation de projets d'ingénierie et de transformation. Les équipes interviennent sur des activités de conception, méthodes, industrialisation, pilotage de projet et digitalisation des processus, au service de secteurs techniques exigeants.",
+      points: [
+        {
+          title: 'Conseil en ingénierie multi-secteurs',
+          content:
+            "Interventions sur des environnements industriels variés avec des problématiques techniques de haut niveau.",
+        },
+        {
+          title: 'Cycle projet complet',
+          content:
+            "Missions allant des phases d'études et de conception jusqu'à l'industrialisation et l'amélioration continue.",
+        },
+        {
+          title: 'Double compétence ingénierie et digital',
+          content:
+            "Opportunités sur des sujets de systèmes d'information industriels, data et optimisation des processus métiers.",
+        },
+        {
+          title: "Évolution professionnelle",
+          content:
+            "Cadre propice à la montée en compétences techniques, au travail en équipe projet et à la prise de responsabilités.",
+        },
+      ],
+    },
+  }
+
+
 }
