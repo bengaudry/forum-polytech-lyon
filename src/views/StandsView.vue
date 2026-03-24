@@ -5,7 +5,7 @@ import StandsModal from '@/components/stands/StandsModal.vue'
 </script>
 
 <template>
-  <h1>Mur des Entreprises</h1>
+  <h1>Mur des Stands</h1>
   <Stands />
   <StandsGrid />
   <StandsModal />

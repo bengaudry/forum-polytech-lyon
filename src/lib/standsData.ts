@@ -1220,7 +1220,7 @@ export const companies: Record<string, CompanyData> = {
     logo: iesfLogo,
     relatedFields: ['MECA', 'SIR'],
     shortDescription:
-      "L'IESF est une association qui regroupe les ingénieurs et scientifiques de France, avec pour mission de représenter et défendre les intérêts de la communauté scientifique et technique, de promouvoir les métiers de l'ingénierie et de la science, et de favoriser les échanges entre les professionnels du secteur.",
+      "L'IESF est l'association des ingénieurs et scientifiques de France, avec pour mission de représenter la communauté scientifique et promouvoir les métiers scientifiques.",
     details: {
       presentation:
         "L'IESF est une association qui regroupe les ingénieurs et scientifiques de France. Elle a pour mission de représenter et défendre les intérêts de la communauté scientifique et technique, de promouvoir les métiers de l'ingénierie et de la science, et de favoriser les échanges entre les professionnels du secteur.",
