@@ -2,12 +2,15 @@
 import type { PlanningEvent } from '@/lib/plannings.ts'
 import { computed } from 'vue'
 
-const { event, planning } = defineProps<{ event: PlanningEvent; planning: Array<PlanningEvent> }>()
+const { event, eventsList } = defineProps<{
+  event: PlanningEvent
+  eventsList: Array<PlanningEvent>
+}>()
 
-const eventIndex = computed(() => (event ? planning.indexOf(event) : null))
+const eventIndex = computed(() => (event ? eventsList.indexOf(event) : null))
 const nextEvent = computed(() =>
-  eventIndex.value !== null && eventIndex.value < planning.length - 1
-    ? planning[eventIndex.value + 1]
+  eventIndex.value !== null && eventIndex.value < eventsList.length - 1
+    ? eventsList[eventIndex.value + 1]
     : null,
 )
 const breakDuration = computed(() => {
@@ -22,10 +25,15 @@ const formatBreakDuration = (duration: number) => {
   const minutes = duration % 60
   return `${hours}h${minutes > 0 ? ` ${minutes}min` : ''}`
 }
+
+const formatSpeaker = (s: { name: string; details?: string }) => {
+  return s.details ? `${s.name} (${s.details})` : s.name
+}
 </script>
 
 <template>
   <li :key="event.startHour.toDateString()" class="planning-event">
+    <h3 v-if="event.topic">{{ event.topic }}</h3>
     <span class="event-time"
       >{{
         event.startHour.toLocaleTimeString(undefined, {
@@ -47,7 +55,15 @@ const formatBreakDuration = (duration: number) => {
     </div>
     <div v-if="event.speakers">
       <strong>{{ event.speakers.length > 1 ? 'Intervenants' : 'Intervenant' }} : </strong>
-      {{ event.speakers.map((s) => s.name).join(', ') }}
+      <span v-if="event.speakers.length == 1 && event.speakers[0]">
+        {{ formatSpeaker(event.speakers[0]) }}
+      </span>
+      <ul v-else>
+        <li v-for="speaker in event.speakers">
+          {{ speaker.name }}
+          <i v-if="speaker.details">- {{ speaker.details }}</i>
+        </li>
+      </ul>
     </div>
   </li>
 
@@ -65,6 +81,10 @@ const formatBreakDuration = (duration: number) => {
   padding: 1.5rem 2rem;
 }
 
+h3 {
+  margin-top: 0;
+}
+
 .planning-event:not(:last-child) {
   border-bottom: 1px solid #e6e6e6;
 }
@@ -80,5 +100,22 @@ const formatBreakDuration = (duration: number) => {
   font-weight: bold;
   display: block;
   margin-bottom: 0.5rem;
+}
+
+.event-companies-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.event-company {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+
+  img {
+    object-fit: contain;
+  }
 }
 </style>

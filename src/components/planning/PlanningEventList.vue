@@ -1,21 +1,23 @@
 <script setup lang="ts">
 import PlanningEvent from '@/components/planning/PlanningEvent.vue'
-import type { PlanningEvent as PlanningEventT } from '@/lib/plannings.ts'
+import type { Planning } from '@/lib/plannings.ts'
 import { usePlanningSpeciality } from '@/composables/usePlanningSpeciality.ts'
 
-defineProps<{ planning: PlanningEventT[] }>()
+defineProps<{ planning: Planning }>()
 
 const { setCurrentSpeciality } = usePlanningSpeciality()
 </script>
 
 <template>
+  <p class="room">{{ planning.room }}</p>
+
   <button @click="setCurrentSpeciality(null)" class="back-btn">
     <img src="/images/icons/angle-left.svg" alt="<" width="16" height="16" fetchpriority="high" />
     Revenir
   </button>
 
   <ul class="planning" v-if="planning">
-    <PlanningEvent v-for="event in planning" :event="event" :planning="planning" />
+    <PlanningEvent v-for="event in planning.events" :event="event" :eventsList="planning.events" />
   </ul>
 </template>
 
@@ -27,21 +29,9 @@ const { setCurrentSpeciality } = usePlanningSpeciality()
   padding: 0;
 }
 
-.event-companies-list {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.event-company {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5rem;
-
-  img {
-    object-fit: contain;
-  }
+.room {
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 .back-btn {
