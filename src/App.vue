@@ -11,7 +11,7 @@ const { replace } = useRouter()
 try {
   const currentUrl = new URL(window.location.href)
   const redirectPage = currentUrl.searchParams.get('page')
-  if (redirectPage && ['planning', 'plan', 'entreprises'].includes(redirectPage.toString())) {
+  if (redirectPage && ['planning', 'plan', 'stands'].includes(redirectPage.toString())) {
     console.warn("Redirection de l'ancienne URL vers la nouvelle")
     replace(`/${redirectPage.toString()}`)
   }

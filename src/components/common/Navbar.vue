@@ -6,7 +6,7 @@ const { currentRoute } = useRouter()
 
 const links = [
   { name: 'Accueil', path: '/' },
-  { name: 'Mur des entreprises', path: '/entreprises' },
+  { name: 'Stands', path: '/stands' },
   { name: 'Plan', path: '/plan' },
   { name: 'Planning', path: '/planning' },
 ]

@@ -1,4 +1,4 @@
-import { companies, type CompanyData } from '@/lib/companiesData'
+import { companies, type CompanyData } from '@/lib/standsData.ts'
 import { computed } from 'vue'
 import { useFilters } from './useFilters'
 

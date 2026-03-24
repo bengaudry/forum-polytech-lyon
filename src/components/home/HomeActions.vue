@@ -4,7 +4,7 @@ import { RouterLink } from 'vue-router'
 
 <template>
   <div class="actions">
-    <RouterLink class="cta" to="/entreprises">Voir le mur des entreprises</RouterLink>
+    <RouterLink class="cta" to="/stands">Voir la liste des stands</RouterLink>
     <RouterLink class="cta cta-secondary" to="/planning">Planning des conférences</RouterLink>
   </div>
 </template>

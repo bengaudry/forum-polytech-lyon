@@ -2,7 +2,7 @@ import { createRouter, createWebHistory, type RouterOptions } from 'vue-router'
 
 const routes: RouterOptions['routes'] = [
   { path: '/', component: () => import('../views/HomeView.vue') },
-  { path: '/entreprises', component: () => import('../views/CompaniesView.vue') },
+  { path: '/stands', component: () => import('../views/StandsView.vue') },
   {
     path: '/planning',
     component: () => import('../views/PlanningView.vue'),
@@ -13,7 +13,7 @@ const routes: RouterOptions['routes'] = [
   },
   {
     path: '/index.html',
-    redirect: '/entreprises',
+    redirect: '/',
   },
   {
     path: '/:pathMatch(.*)*',

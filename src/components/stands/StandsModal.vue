@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import CompanyModalContent from './CompanyModalContent.vue'
+import StandsModalContent from './StandsModalContent.vue'
 import { useModalVisibility } from '@/composables/useModalVisibility.ts'
 
 const { isModalVisible, hideModal } = useModalVisibility()
@@ -9,7 +9,7 @@ const { isModalVisible, hideModal } = useModalVisibility()
   <div :class="`modal ${isModalVisible ? 'modal-visible' : ''}`" @click.self="hideModal">
     <div class="modal-body">
       <span class="close" @click="hideModal">&times;</span>
-      <CompanyModalContent />
+      <StandsModalContent />
     </div>
   </div>
 </template>

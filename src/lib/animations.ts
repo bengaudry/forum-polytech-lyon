@@ -42,7 +42,7 @@ export const scheduledAnimations: Array<Animation> = [
     emojiIcon: '🍹',
     name: 'Afterwork',
     description:
-      "Venez discuter et échanger avec les entreprises et les autres visiteurs autour d'un verre !",
+      "Venez discuter et échanger avec les stands et les autres visiteurs autour d'un verre !",
     startTime: new Date(2026, 2, 26, 17, 30),
     endTime: new Date(2026, 2, 26, 19, 30),
   },

@@ -264,7 +264,7 @@ export const companies: Record<string, CompanyData> = {
       websiteUrl: 'https://atos.net/fr/',
       careersPortalUrl: 'https://atos.net/fr/rejoignez-nous/stagiaires-et-alternants',
       presentation:
-        "Nous sommes une équipe de 72 000 collaborateurs passionnés avec une ambition claire : utiliser le numérique pour faire avancer ce qui compte pour nos clients et la société dans 68 pays.\nChaque jour, nous travaillons ensemble pour créer des fondations numériques fiables et évolutives pour les entreprises, les institutions et les communautés du monde entier. \nAvec nos experts et nos partenaires de classe mondiale, nous développons des solutions numériques du quotidien à la mission critique - en matière d'intelligence artificielle, de cloud hybride, de gestion des infrastructures, de décarbonation et d'expérience collaborateur.\n\nNotre objectif ? \nAvoir un impact significatif pour nos clients et l'ensemble de la société. C'est ce que nous appelons le « Power of We ».\n\nChez Atos Tech Foundations, nous concevons des solutions numériques de la vie quotidienne aux activités critiques – en matière d'intelligence artificielle, de cloud hybride, de gestion des infrastructures, de décarbonation et d'expérience utilisateur.",
+        "Nous sommes une équipe de 72 000 collaborateurs passionnés avec une ambition claire : utiliser le numérique pour faire avancer ce qui compte pour nos clients et la société dans 68 pays.\nChaque jour, nous travaillons ensemble pour créer des fondations numériques fiables et évolutives pour les stands, les institutions et les communautés du monde entier. \nAvec nos experts et nos partenaires de classe mondiale, nous développons des solutions numériques du quotidien à la mission critique - en matière d'intelligence artificielle, de cloud hybride, de gestion des infrastructures, de décarbonation et d'expérience collaborateur.\n\nNotre objectif ? \nAvoir un impact significatif pour nos clients et l'ensemble de la société. C'est ce que nous appelons le « Power of We ».\n\nChez Atos Tech Foundations, nous concevons des solutions numériques de la vie quotidienne aux activités critiques – en matière d'intelligence artificielle, de cloud hybride, de gestion des infrastructures, de décarbonation et d'expérience utilisateur.",
       degreesResearched: ['Bac +5'],
       points: [
         {
@@ -359,7 +359,7 @@ export const companies: Record<string, CompanyData> = {
     details: {
       websiteUrl: 'https://worldline.com/fr-fr/home',
       presentation:
-        "Nous façonnons un nouveau monde de paiements et de transactions fiables. Grâce à notre technologie de paiement avancée, à notre expertise en matière de paiements locaux et à nos solutions personnalisées pour des centaines de marchés et d'industries, nous aidons des millions d'entreprises de toutes tailles à réaliser leurs ambitions - plus rapidement, plus simplement et de manière plus sûre.",
+        "Nous façonnons un nouveau monde de paiements et de transactions fiables. Grâce à notre technologie de paiement avancée, à notre expertise en matière de paiements locaux et à nos solutions personnalisées pour des centaines de marchés et d'industries, nous aidons des millions d'stands de toutes tailles à réaliser leurs ambitions - plus rapidement, plus simplement et de manière plus sûre.",
       degreesResearched: ['Bac +4', 'Bac +5'],
       points: [
         {
@@ -389,14 +389,14 @@ export const companies: Record<string, CompanyData> = {
   thelio: {
     name: 'THELIO',
     shortDescription:
-      'Cabinet de conseil 100% data, expert en ingénierie, analytics et intelligence artificielle pour piloter la performance des entreprises.',
+      'Cabinet de conseil 100% data, expert en ingénierie, analytics et intelligence artificielle pour piloter la performance des stands.',
     logo: thelioLogo,
     relatedFields: ['INFO', 'MAM'],
     details: {
       websiteUrl: 'https://www.thelio.fr/',
       careersPortalUrl: 'https://www.welcometothejungle.com/fr/companies/thelio',
       presentation:
-        "Thélio est un cabinet de conseil et d'intégration 100 % data, accompagnant les organisations sur toute la chaîne de valeur de leurs données, de la stratégie et de la gouvernance jusqu'à l'ingénierie, l'analytics et les usages IA.\nNotre mission est de démystifier la donnée pour la rendre accessible, exploitable et source de performance pour les entreprises.\nAvec une équipe d'experts répartie sur plusieurs agences en France, nous aidons nos clients à transformer leurs données en leviers de décision et d'innovation.",
+        "Thélio est un cabinet de conseil et d'intégration 100 % data, accompagnant les organisations sur toute la chaîne de valeur de leurs données, de la stratégie et de la gouvernance jusqu'à l'ingénierie, l'analytics et les usages IA.\nNotre mission est de démystifier la donnée pour la rendre accessible, exploitable et source de performance pour les stands.\nAvec une équipe d'experts répartie sur plusieurs agences en France, nous aidons nos clients à transformer leurs données en leviers de décision et d'innovation.",
       degreesResearched: ['Bac +5', 'Diplomé'],
       points: [
         {
@@ -436,7 +436,7 @@ export const companies: Record<string, CompanyData> = {
     relatedFields: ['INFO', 'GBM', 'MAM', 'SIR', 'MAT', 'MECA'],
     details: {
       presentation:
-        "En tant que correctrice-relectrice professionnelle, je mets mes compétences linguisitiques au service des textes de mes clients. \nJe m'attache à relire et corriger tout support écrit traditionnel et/ou digital tant au niveau de la grammaire, de la conjugaison, de la syntaxe qu'au niveau de l'orthotypographie afin d'en améliorer la forme linguistique, la cohérence, la justesse et ainsi la compréhension par le public de lecteurs visés. \nJe propose donc mes prestations de service aux étudiants pour leur mémoire de fin d'études ou rapports de stage, aux enseignants pour leur thèse et sujets d'étude, aux organismes d'enseignement et de formation pour leurs supports pédagogiques, ainsi qu'aux entreprises et aux administrations pour leurs rapports, leurs notices et/ou leurs communications internes et/ou externes.",
+        "En tant que correctrice-relectrice professionnelle, je mets mes compétences linguisitiques au service des textes de mes clients. \nJe m'attache à relire et corriger tout support écrit traditionnel et/ou digital tant au niveau de la grammaire, de la conjugaison, de la syntaxe qu'au niveau de l'orthotypographie afin d'en améliorer la forme linguistique, la cohérence, la justesse et ainsi la compréhension par le public de lecteurs visés. \nJe propose donc mes prestations de service aux étudiants pour leur mémoire de fin d'études ou rapports de stage, aux enseignants pour leur thèse et sujets d'étude, aux organismes d'enseignement et de formation pour leurs supports pédagogiques, ainsi qu'aux stands et aux administrations pour leurs rapports, leurs notices et/ou leurs communications internes et/ou externes.",
       degreesResearched: ['Bac +3', 'Bac +4', 'Bac +5', 'Diplomé'],
       points: [
         {
@@ -522,13 +522,13 @@ export const companies: Record<string, CompanyData> = {
   dattico: {
     name: 'Dattico',
     shortDescription:
-      'Cabinet de conseil spécialisé dans la création de plateformes de données uniques qui génèrent une valeur stratégique pour les entreprises.',
+      'Cabinet de conseil spécialisé dans la création de plateformes de données uniques qui génèrent une valeur stratégique pour les stands.',
     logo: datticoLogo,
     relatedFields: ['INFO'],
     details: {
       websiteUrl: 'https://www.dattico.com',
       presentation:
-        "Dattico est un cabinet de conseil spécialisé dans la création de plateformes de données uniques qui génèrent une valeur stratégique pour les entreprises. Nous commençons par comprendre votre stratégie, puis nous concentrons vos données afin de créer une solution personnalisée qui répond à vos besoins. Recrutement pour les projets : nous helpons les entreprises à recruter du personnel pour leurs projets. Projets : nous sommes convaincus que notre équipe est capable de fournir d'excellents produits de données. Revendeur Azure/AWS : nous pouvons héberger votre solution de données.",
+        "Dattico est un cabinet de conseil spécialisé dans la création de plateformes de données uniques qui génèrent une valeur stratégique pour les stands. Nous commençons par comprendre votre stratégie, puis nous concentrons vos données afin de créer une solution personnalisée qui répond à vos besoins. Recrutement pour les projets : nous helpons les stands à recruter du personnel pour leurs projets. Projets : nous sommes convaincus que notre équipe est capable de fournir d'excellents produits de données. Revendeur Azure/AWS : nous pouvons héberger votre solution de données.",
       degreesResearched: ['Diplomé', 'Bac +5'],
       points: [
         {
@@ -554,7 +554,7 @@ export const companies: Record<string, CompanyData> = {
   capgemini: {
     name: 'Capgemini',
     shortDescription:
-      "Géant mondial de la tech accompagnant la transformation des entreprises à travers l'IA, le Cloud, la Data et l'ingénierie durable.",
+      "Géant mondial de la tech accompagnant la transformation des stands à travers l'IA, le Cloud, la Data et l'ingénierie durable.",
     logo: capgeminiLogo,
     relatedFields: ['INFO', 'MAM', 'SIR', 'MECA'],
     details: {
@@ -616,14 +616,14 @@ export const companies: Record<string, CompanyData> = {
   groupama: {
     name: 'Groupama Support & Service',
     shortDescription:
-      "GIE informatique du Groupe Groupama, spécialisé dans la transformation digitale et l'innovation technologique pour les entreprises du groupe.",
+      "GIE informatique du Groupe Groupama, spécialisé dans la transformation digitale et l'innovation technologique pour les stands du groupe.",
     logo: g2sLogo,
     relatedFields: ['INFO'],
     details: {
       websiteUrl: 'https://www.g2s-groupama-technologies.fr/',
       careersPortalUrl: 'https://www.groupama-gan-recrute.com/',
       presentation:
-        "Groupama Support & Service (G2S) est le GIE informatique du Groupe Groupama.\nNous mettons la puissance des nouvelles technologies – data, intelligence artificielle, cybersécurité, robotique, objets connectés, smart building, … – au service des entreprises du groupe Groupama et les transforme en solutions métiers innovantes pour apporter de la valeur ajoutée à ses 12 millions de sociétaires et clients. \nNos 1500 collaborateurs, répartis sur une dizaine de sites en France, interviennent sur tous les métiers de l'IT et aussi sur l'Immobilier d'exploitation et les Achats.  Nous nous inscrivons pleinement dans les valeurs portées par notre Groupe qui sont celles du mutualisme : Solidarité, Engagement, Proximité, Responsabilité.",
+        "Groupama Support & Service (G2S) est le GIE informatique du Groupe Groupama.\nNous mettons la puissance des nouvelles technologies – data, intelligence artificielle, cybersécurité, robotique, objets connectés, smart building, … – au service des stands du groupe Groupama et les transforme en solutions métiers innovantes pour apporter de la valeur ajoutée à ses 12 millions de sociétaires et clients. \nNos 1500 collaborateurs, répartis sur une dizaine de sites en France, interviennent sur tous les métiers de l'IT et aussi sur l'Immobilier d'exploitation et les Achats.  Nous nous inscrivons pleinement dans les valeurs portées par notre Groupe qui sont celles du mutualisme : Solidarité, Engagement, Proximité, Responsabilité.",
       degreesResearched: ['Bac +4', 'Bac +5', 'Bac +3'],
       points: [
         {
@@ -657,7 +657,7 @@ export const companies: Record<string, CompanyData> = {
       websiteUrl: 'https://www.coexya.eu',
       careersPortalUrl: 'https://jobs.coexya.eu',
       presentation:
-        "Coexya est un actor du numérique, multi-spécialiste exerçant les métiers d'intégrateur, d'éditeur de software et de conseil. Nous accompagnons les entreprises dans leur transformation digitale et l'exploitation de leur data, par le développement de solutions répondant aux nouveaux usages pour leurs collaborateurs et leurs clients. En 2024, Coexya a rejoint le groupe Talan, acteur international de conseil et d'expertises technologiques qui accélère la transformation de ses clients par les leviers de l'innovation, la technologie et la data.",
+        "Coexya est un actor du numérique, multi-spécialiste exerçant les métiers d'intégrateur, d'éditeur de software et de conseil. Nous accompagnons les stands dans leur transformation digitale et l'exploitation de leur data, par le développement de solutions répondant aux nouveaux usages pour leurs collaborateurs et leurs clients. En 2024, Coexya a rejoint le groupe Talan, acteur international de conseil et d'expertises technologiques qui accélère la transformation de ses clients par les leviers de l'innovation, la technologie et la data.",
       degreesResearched: ['Bac +3', 'Bac +5', 'Bac +4'],
       points: [
         {
@@ -791,7 +791,7 @@ export const companies: Record<string, CompanyData> = {
       websiteUrl: 'https://www.soprasteria.fr/accueil',
       careersPortalUrl: 'https://www.soprasteria.fr/carrieres',
       presentation:
-        "En tant que leader européen des services du numérique, nous faisons le lien entre les technologies de pointe et les besoins essentiels des entreprises, nous transformons la complexité en solutions tangibles, souveraines et durables, nous repoussons les limites de l'IA, du cyber-espace, du cloud et du quantique.\nEn produisant un impact durable, en accompagnant les transformations audacieuses, en sécurisant les environnements numériques et en étant les pionniers d'une innovation responsable à forte valeur ajoutée, et à grande échelle.\nNous sommes 50 000 collaborateurs et collaboratrices, au sein de 30 pays, au service d'un groupe européen.\n\nNous sommes l'alternative de confiance dans un monde polarisé.",
+        "En tant que leader européen des services du numérique, nous faisons le lien entre les technologies de pointe et les besoins essentiels des stands, nous transformons la complexité en solutions tangibles, souveraines et durables, nous repoussons les limites de l'IA, du cyber-espace, du cloud et du quantique.\nEn produisant un impact durable, en accompagnant les transformations audacieuses, en sécurisant les environnements numériques et en étant les pionniers d'une innovation responsable à forte valeur ajoutée, et à grande échelle.\nNous sommes 50 000 collaborateurs et collaboratrices, au sein de 30 pays, au service d'un groupe européen.\n\nNous sommes l'alternative de confiance dans un monde polarisé.",
       degreesResearched: ['Bac +5'],
       points: [
         {
@@ -1009,13 +1009,13 @@ export const companies: Record<string, CompanyData> = {
   polyenco: {
     name: 'Polyenco',
     shortDescription:
-      "Junior-Entreprise de l'école, offrant des services de conseil et d'ingénierie pour les entreprises.",
+      "Junior-Entreprise de l'école, offrant des services de conseil et d'ingénierie pour les stands.",
     logo: polyencoLogo,
     relatedFields: ['INFO', 'MAM', 'SIR', 'MAT', 'MECA', 'GBM'],
     details: {
       websiteUrl: 'https://junior-polyenco.fr/',
       presentation:
-        'Polyenco (Poly Engineering Consulting) est la Junior- Entreprise de Polytech Lyon, fondée en 2007 et composée de 18 membres étudiants.Structure à but pédagogique et économique, elle met en relation les entreprises avec plus de 500 élèves - ingénieurs de Polytech Lyon à travers ses 6 filières.Finaliste du prix CNJE du meilleur espoir 2023, Polyenco réalise des prestations techniques dans des domaines variés: digital, biomédical et conception mécanique.',
+        'Polyenco (Poly Engineering Consulting) est la Junior- Entreprise de Polytech Lyon, fondée en 2007 et composée de 18 membres étudiants.Structure à but pédagogique et économique, elle met en relation les stands avec plus de 500 élèves - ingénieurs de Polytech Lyon à travers ses 6 filières.Finaliste du prix CNJE du meilleur espoir 2023, Polyenco réalise des prestations techniques dans des domaines variés: digital, biomédical et conception mécanique.',
       points: [
         {
           title: 'Expertise étudiante pluridisciplinaire',
@@ -1111,7 +1111,7 @@ export const companies: Record<string, CompanyData> = {
         {
           title: 'Stages multidisciplinaires',
           content:
-            "Réseau d'entreprises partenaires permettant de trouver des missions dans l'ensemble des filières d'ingénierie.",
+            "Réseau d'stands partenaires permettant de trouver des missions dans l'ensemble des filières d'ingénierie.",
         },
       ],
       offers: [],
@@ -1229,7 +1229,7 @@ export const companies: Record<string, CompanyData> = {
         {
           title: 'Représentation professionnelle',
           content:
-            "L'IESF agit en tant que porte-parole des ingénieurs et scientifiques auprès des pouvoirs publics, des entreprises et de la société.",
+            "L'IESF agit en tant que porte-parole des ingénieurs et scientifiques auprès des pouvoirs publics, des stands et de la société.",
         },
         {
           title: 'Promotion des métiers',

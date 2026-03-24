@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { useFilteredCompaniesData } from '@/composables/useFilteredCompaniesData.ts'
-import CompanyCard from './CompanyCard.vue'
+import StandsCard from './StandsCard.vue'
 
 const companies = useFilteredCompaniesData()
 </script>
 
 <template>
   <div class="companies-grid">
-    <CompanyCard
+    <StandsCard
       v-for="(company, key, index) in companies"
       :key="key"
       :company="company"

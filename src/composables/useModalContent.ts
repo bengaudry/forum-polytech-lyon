@@ -1,5 +1,5 @@
 import { computed, ref } from 'vue'
-import { companies, type CompanyData } from '../lib/companiesData'
+import { companies, type CompanyData } from '../lib/standsData.ts'
 
 const companyKey = ref<keyof typeof companies | null>(null)
 const currentCompany = computed(() => {
