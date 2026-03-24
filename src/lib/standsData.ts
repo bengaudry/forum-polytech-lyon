@@ -31,6 +31,12 @@ import mindrayLogo from '/images/logos/compressed/mindray.webp'
 import iesfLogo from '/images/logos/compressed/iesf.webp'
 import rirLogo from '/images/logos/compressed/rir.webp'
 import aplebLogo from '/images/logos/compressed/apleb.webp'
+import orangeLogo from '/images/logos/originals/orange.svg'
+import alispharmLogo from '/images/logos/originals/alispharm.svg'
+import wimovaLogo from '/images/logos/compressed/wimova.webp'
+import sqliLogo from '/images/logos/compressed/sqli.webp'
+import assystemLogo from '/images/logos/originals/assystem.svg'
+import aiplLogo from '/images/logos/compressed/aipl.webp'
 
 export type CompanyData = {
   name: string
@@ -1250,7 +1256,7 @@ export const companies: Record<string, CompanyData> = {
     logo: rirLogo,
     relatedFields: ['SIR', 'INFO', 'MECA'],
     shortDescription:
-      "Association étudiante de robotique affiliée à Polytech Lyon, centrée sur les projets techniques, le prototypage et la participation à Eurobot.",
+      'Association étudiante de robotique affiliée à Polytech Lyon, centrée sur les projets techniques, le prototypage et la participation à Eurobot.',
     details: {
       websiteUrl: 'https://www.helloasso.com/associations/rir-robotique-des-ingenieurs-de-roanne',
       presentation:
@@ -1264,7 +1270,7 @@ export const companies: Record<string, CompanyData> = {
         {
           title: 'Association étudiante affiliée à Polytech Lyon',
           content:
-            "Le club est porté par des élèves ingénieurs, avec un ancrage fort sur la filière Systèmes Industriels et Robotiques de Roanne.",
+            'Le club est porté par des élèves ingénieurs, avec un ancrage fort sur la filière Systèmes Industriels et Robotiques de Roanne.',
         },
         {
           title: 'Atelier et prototypage',
@@ -1283,7 +1289,8 @@ export const companies: Record<string, CompanyData> = {
     name: 'APLEB',
     logo: aplebLogo,
     relatedFields: ['GBM'],
-    shortDescription: "L'APLEB est une association étudiante de Polytech Lyon visant à faciliter l'intégration des étudiants dans des projets liés au monde biomédical.",
+    shortDescription:
+      "L'APLEB est une association étudiante de Polytech Lyon visant à faciliter l'intégration des étudiants dans des projets liés au monde biomédical.",
     details: {
       presentation:
         "L'APLEB est l'association de Polytech Lyon des élèves ingénieurs en génie biomédical. Ouverte à tous, elle organise des événements accessibles à l'ensemble des étudiants de l'école. L'association s'articule autour de cinq projets: Le Ptit Biomed, Biom'aide, La Minute Biomed, les Ateliers biomédicaux et le Guide du GBM. Ces projets permettent de développer des compétences techniques, de créer du lien avec les professionnels du secteur, de contribuer à des actions solidaires et de faire de la veille sur les innovations médicales.",
@@ -1298,7 +1305,7 @@ export const companies: Record<string, CompanyData> = {
         {
           title: "Biom'aide (projet humanitaire)",
           content:
-            "En partenariat avec Horizons Sahel, le projet collecte des dispositifs médicaux pour les établissements de soins au Sahel et inclut des actions de maintenance et de formation sur place.",
+            'En partenariat avec Horizons Sahel, le projet collecte des dispositifs médicaux pour les établissements de soins au Sahel et inclut des actions de maintenance et de formation sur place.',
         },
         {
           title: 'Ateliers biomédicaux',
@@ -1314,6 +1321,187 @@ export const companies: Record<string, CompanyData> = {
           title: 'La Minute Biomed',
           content:
             'Newsletter mensuelle de veille technologique qui diffuse des articles sur les innovations biomédicales auprès de la communauté étudiante et professionnelle.',
+        },
+      ],
+    },
+  },
+  orange: {
+    name: 'Orange Business',
+    shortDescription:
+      'Intégrateur et opérateur de services numériques pour les entreprises, avec des expertises en cloud, cybersécurité, data et réseaux.',
+    logo: orangeLogo,
+    relatedFields: ['INFO', 'SIR'],
+    details: {
+      websiteUrl: 'https://www.orange-business.com/fr',
+      careersPortalUrl: 'https://orange.jobs/fr/fr',
+      presentation:
+        'Orange Business accompagne les entreprises et les organisations dans leur transformation numérique. Ses activités couvrent notamment les réseaux, le cloud, la cybersécurité, les infrastructures IT, la data et les services numériques managés.',
+      points: [
+        {
+          title: 'Transformation numérique des entreprises',
+          content:
+            'Des missions sur des environnements variés pour concevoir, déployer et exploiter des solutions numériques à grande échelle.',
+        },
+        {
+          title: 'Expertises techniques clés',
+          content:
+            'Les sujets majeurs incluent le cloud, la cybersécurité, les réseaux, la data et les systèmes IT.',
+        },
+        {
+          title: 'Ancrage opérationnel',
+          content:
+            "L'activité combine conseil, intégration et exploitation de services, avec un fort enjeu de fiabilité et de performance.",
+        },
+      ],
+    },
+  },
+  alispharm: {
+    name: 'Alispharm',
+    shortDescription:
+      'Société de conseil en Life Sciences intervenant sur le cycle de vie des produits de santé, de la qualité à la réglementation.',
+    logo: alispharmLogo,
+    relatedFields: ['GBM', 'MAM', 'INFO'],
+    details: {
+      websiteUrl: 'https://www.alispharm.com/',
+      presentation:
+        "Alispharm accompagne les acteurs de la santé et des sciences de la vie à chaque étape du cycle de vie des produits. Les missions couvrent notamment la qualité, la qualification/validation, les affaires réglementaires, l'industrialisation et les dispositifs médicaux.",
+      points: [
+        {
+          title: 'Cycle de vie des produits de santé',
+          content:
+            "Interventions de l'amont au déploiement industriel avec un suivi des exigences de conformité.",
+        },
+        {
+          title: 'Expertises qualité et réglementaire',
+          content:
+            'Les activités incluent quality assurance, quality control et affaires réglementaires dans un cadre fortement normé.',
+        },
+        {
+          title: 'Environnement Life Sciences',
+          content:
+            'Positionnement sur des sujets pharma, biotech et dispositifs médicaux avec des enjeux techniques et opérationnels variés.',
+        },
+      ],
+    },
+  },
+  wimova: {
+    name: 'Wimova',
+    shortDescription:
+      'Solution de mobilité professionnelle pour les entreprises, orientée pilotage des déplacements et approche écoresponsable.',
+    logo: wimovaLogo,
+    relatedFields: ['INFO', 'SIR', 'MAM'],
+    details: {
+      websiteUrl: 'https://wimova.com/',
+      presentation:
+        "Wimova for Business propose une solution de gestion des déplacements professionnels avec une approche digitale et écoresponsable. La plateforme permet aux entreprises de piloter les trajets de leurs collaborateurs, avec des services d'assistance et de suivi adaptés aux usages professionnels.",
+      points: [
+        {
+          title: 'Gestion des déplacements professionnels',
+          content:
+            "La solution centralise l'organisation des trajets et facilite la gestion opérationnelle pour les équipes et les entreprises.",
+        },
+        {
+          title: 'Approche co-responsable',
+          content:
+            'Wimova met en avant une mobilité plus durable, avec un positionnement orienté impact et optimisation des pratiques de déplacement.',
+        },
+        {
+          title: 'Plateforme digitale entreprise',
+          content:
+            "Le service inclut création de compte entreprise, gestion des collaborateurs et pilotage des usages via l'application.",
+        },
+      ],
+    },
+  },
+  sqli: {
+    name: 'SQLI',
+    shortDescription:
+      'Entreprise de services numériques spécialisée dans les expériences digitales, le e-commerce et la transformation des systèmes d’information.',
+    logo: sqliLogo,
+    relatedFields: ['INFO', 'SIR', 'MAM'],
+    details: {
+      websiteUrl: 'https://www.sqli.com/fr-fr',
+      presentation:
+        "SQLI accompagne les entreprises dans leur transformation digitale, de la stratégie à la mise en oeuvre de plateformes numériques. Les équipes interviennent notamment sur les parcours digitaux, les applications web et l'intégration de solutions e-commerce.",
+      points: [
+        {
+          title: 'Transformation digitale de bout en bout',
+          content:
+            'Intervention sur toutes les phases: cadrage, conception, développement, déploiement et amélioration continue.',
+        },
+        {
+          title: 'Expertises web et e-commerce',
+          content:
+            'Projets orientés expériences utilisateurs, plateformes digitales et enjeux de performance technique.',
+        },
+        {
+          title: 'Environnement ESN',
+          content:
+            "Missions variées au contact de clients et d'équipes pluridisciplinaires dans des contextes métiers différents.",
+        },
+      ],
+    },
+  },
+  assystem: {
+    name: 'ASSystem',
+    shortDescription:
+      "Groupe d'ingénierie accompagnant de grands projets industriels, avec une forte présence dans les secteurs de l'énergie et des infrastructures.",
+    logo: assystemLogo,
+    relatedFields: ['MECA', 'SIR', 'MAT'],
+    details: {
+      websiteUrl: 'https://www.assystem.com/fr/',
+      presentation:
+        "Assystem intervient en ingénierie et management de projets techniques complexes. L'entreprise accompagne ses clients industriels sur des sujets de conception, sûreté, performance et pilotage de projets, notamment dans l'énergie et les infrastructures.",
+      points: [
+        {
+          title: 'Ingénierie de projets complexes',
+          content:
+            'Participation à des programmes techniques de grande ampleur avec des exigences élevées de qualité et de sécurité.',
+        },
+        {
+          title: 'Secteurs industriels stratégiques',
+          content:
+            "Positionnement fort sur l'énergie et les infrastructures avec des missions multi-disciplinaires.",
+        },
+        {
+          title: 'Pilotage et expertise technique',
+          content:
+            "Combinaison de compétences d'ingénierie, de gestion de projet et d'appui opérationnel aux équipes clients.",
+        },
+      ],
+    },
+  },
+  aipl: {
+    name: 'AIPL (Association des Ingenieurs de Polytech Lyon)',
+    shortDescription:
+      "Association d'alumni de Polytech Lyon qui anime le reseau des ingenieurs, favorise les echanges professionnels et soutient l'insertion des etudiants.",
+    logo: aiplLogo,
+    relatedFields: ['INFO', 'GBM', 'MAM', 'SIR', 'MECA', 'MAT'],
+    details: {
+      websiteUrl:
+        'https://www.linkedin.com/company/association-des-ing%C3%A9nieurs-de-polytech-lyon-aipl/?originalSubdomain=fr',
+      presentation:
+        "L'AIPL rassemble les ingenieurs de Polytech Lyon autour d'un reseau actif d'alumni. L'association entretient les liens entre diplomes, etudiants et ecole, et contribue au developpement professionnel de la communaute via des actions de mise en relation, de partage d'experience et d'accompagnement.",
+      points: [
+        {
+          title: 'Reseau alumni Polytech Lyon',
+          content:
+            "L'association connecte et fait vivre une communaute d'ingenieurs issue des differentes filieres de Polytech Lyon.",
+        },
+        {
+          title: 'Mise en relation et opportunites',
+          content:
+            "L'AIPL facilite les contacts professionnels entre etudiants, jeunes diplomes et anciens pour favoriser l'insertion et l'evolution de carriere.",
+        },
+        {
+          title: 'Evenements et vie du reseau',
+          content:
+            "L'association anime la communaute a travers des rencontres, des temps d'echange et des initiatives autour du parcours d'ingenieur.",
+        },
+        {
+          title: 'Accompagnement des etudiants et jeunes diplomes',
+          content:
+            'Le reseau alumni constitue un appui concret pour mieux comprendre les metiers, les secteurs et les trajectoires professionnelles.',
         },
       ],
     },
