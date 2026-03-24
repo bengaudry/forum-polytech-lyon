@@ -11,61 +11,122 @@ const { setCurrentSpeciality } = usePlanningSpeciality()
     <button
       v-for="speciality in POLYTECH_SPECIALITIES"
       :key="speciality.name"
+      type="button"
       class="speciality-link"
+      :aria-label="`Afficher la planification de ${speciality.name}`"
       @click="setCurrentSpeciality(speciality.name)"
     >
-      <VLazyImage :src="speciality.logo" :alt="speciality.name" fetchpriority="high" />
-      <span>
+      <span class="logo-shell">
+        <VLazyImage
+          class="speciality-logo"
+          :src="speciality.logo"
+          :alt="speciality.name"
+          fetchpriority="high"
+          width="150"
+          height="80"
+        />
+      </span>
+      <span class="speciality-name">
         {{ speciality.name }}
       </span>
     </button>
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .grid {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 660px;
-  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  max-width: 720px;
+  width: min(100%, 720px);
   margin: 0 auto;
 }
 
 .speciality-link {
-  background-color: #fff;
   display: flex;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  padding: 14px 16px;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 14px;
+  min-height: 112px;
   color: black;
-  width: 200px;
-  margin: 10px;
-  height: 150px;
-  padding: 20px 40px;
-  border: 1px solid #e7e7e7;
-  border-radius: 8px;
+  width: 100%;
+  margin: 0;
+  border: 1px solid #d8e2f0;
+  border-radius: 14px;
   text-decoration: none;
-  transition: background-color 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(160deg, #ffffff 0%, #f8fbff 100%);
+  box-shadow: 0 6px 20px rgba(17, 24, 39, 0.08);
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease,
+    background-color 160ms ease;
+  appearance: none;
+  text-align: left;
+  font: inherit;
 
-  img {
-    width: 80px;
-    aspect-ratio: auto;
-  }
-
-  span {
+  .speciality-name {
     font-weight: bold;
     font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  .logo-shell {
+    display: grid;
+    place-items: center;
+    min-width: 132px;
+    height: 82px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  :deep(.speciality-logo img) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: contain;
   }
 
   &:hover {
     cursor: pointer;
-    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(17, 24, 39, 0.14);
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .speciality-link {
+    min-height: 102px;
+    padding: 12px;
+    gap: 12px;
+
+    .logo-shell {
+      min-width: 118px;
+      height: 74px;
+    }
   }
 }
 </style>
