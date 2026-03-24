@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://forum-polytech-lyon.org/sitemap.xml
