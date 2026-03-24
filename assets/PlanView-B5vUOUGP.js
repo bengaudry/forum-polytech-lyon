@@ -1,0 +1,1 @@
+import{_ as o,o as s,c as a,e as n,F as r}from"./index-CKVZ8aBI.js";const t={};function l(c,e){return s(),a(r,null,[e[0]||(e[0]=n("h1",null,"Plan du forum",-1)),e[1]||(e[1]=n("p",null,"Le plan n'est pas encore disponible.",-1))],64)}const d=o(t,[["render",l],["__scopeId","data-v-1265cc54"]]);export{d as default};
