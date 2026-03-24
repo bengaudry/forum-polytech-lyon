@@ -23,6 +23,8 @@ const isMenuExpanded = ref(false)
           alt="Logo Polytech Lyon"
           class="header-nav-logo"
           fetchpriority="high"
+          width="75"
+          height="80"
         />
         <p class="header-nav-title">
           <strong>Forum 2026</strong>
