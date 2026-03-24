@@ -22,7 +22,6 @@ const { setCurrentSpeciality } = usePlanningSpeciality()
           :src="speciality.logo"
           :alt="speciality.name"
           fetchpriority="high"
-          width="150"
           height="80"
         />
       </span>
@@ -60,7 +59,7 @@ const { setCurrentSpeciality } = usePlanningSpeciality()
   border-radius: 14px;
   text-decoration: none;
   background: linear-gradient(160deg, #ffffff 0%, #f8fbff 100%);
-  box-shadow: 0 6px 20px rgba(17, 24, 39, 0.08);
+  box-shadow: 0 6px 20px rgba(17, 24, 39, 0.02);
   transition:
     transform 160ms ease,
     box-shadow 160ms ease,
@@ -85,18 +84,10 @@ const { setCurrentSpeciality } = usePlanningSpeciality()
     background-color: #fff;
   }
 
-  :deep(.speciality-logo img) {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    object-fit: contain;
-  }
-
   &:hover {
     cursor: pointer;
     transform: translateY(-2px);
-    box-shadow: 0 10px 24px rgba(17, 24, 39, 0.14);
+    box-shadow: 0 10px 24px rgba(17, 24, 39, 0.08);
 
     &::before {
       opacity: 1;
@@ -111,6 +102,12 @@ const { setCurrentSpeciality } = usePlanningSpeciality()
   &:active {
     transform: translateY(0);
   }
+}
+
+.speciality-logo {
+  display: block;
+  height: 70px;
+  object-fit: contain;
 }
 
 @media (max-width: 640px) {
