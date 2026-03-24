@@ -1419,7 +1419,7 @@ export const companies: Record<string, CompanyData> = {
     shortDescription:
       'Entreprise de services numériques spécialisée dans les expériences digitales, le e-commerce et la transformation des systèmes d’information.',
     logo: sqliLogo,
-    relatedFields: ['INFO', 'SIR', 'MAM'],
+    relatedFields: ['INFO', 'MAM'],
     details: {
       websiteUrl: 'https://www.sqli.com/fr-fr',
       presentation:
@@ -1511,7 +1511,7 @@ export const companies: Record<string, CompanyData> = {
     name: 'ABMI',
     shortDescription:
       "Groupe de conseil en ingénierie accompagnant les industriels sur des projets techniques complexes, de l'étude à l'exploitation.",
-    relatedFields: ['INFO', 'SIR', 'MECA', 'MAT', 'MAM'],
+    relatedFields: ['INFO', 'SIR', 'MECA', 'MAT', 'MAM', 'GBM'],
     logo: abmiLogo,
     details: {
       websiteUrl: 'https://abmi-groupe.com/',
