@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Navbar from '@/components/common/Navbar.vue'
 import Footer from '@/components/common/Footer.vue'
-import './styles/common.css'
+import '@/assets/styles/common.css'
 </script>
 
 <template>

@@ -1,43 +1,43 @@
-import agixisLogo from '/images/logos/compressed/agixis.webp'
-import phaeraLogo from '/images/logos/compressed/pharea.webp'
-import dymascoLogo from '/images/logos/compressed/dymasco.webp'
-import carrierLogo from '/images/logos/compressed/carrier.webp'
-import hecappLogo from '/images/logos/compressed/hecapp.webp'
-import atosLogo from '/images/logos/compressed/atos.webp'
-import bassettiLogo from '/images/logos/compressed/bassetti.webp'
-import worldlineLogo from '/images/logos/compressed/worldline.webp'
-import thelioLogo from '/images/logos/compressed/thelio.webp'
-import lesMotsJustesLogo from '/images/logos/compressed/les-mots-justes.webp'
-import vicinityLogo from '/images/logos/compressed/vicinity.webp'
-import datticoLogo from '/images/logos/originals/dattico.svg'
-import capgeminiLogo from '/images/logos/compressed/capgemini.webp'
-import amiltoneLogo from '/images/logos/compressed/amiltone.webp'
-import g2sLogo from '/images/logos/compressed/g2s.webp'
-import coexyadLogo from '/images/logos/compressed/coexya.webp'
-import nextDecisionLogo from '/images/logos/compressed/next-decision.webp'
-import parlymLogo from '/images/logos/originals/parlym.svg'
-import soprasteriaLogo from '/images/logos/compressed/soprasteria.webp'
-import technordLogo from '/images/logos/compressed/technord.webp'
-import lhoistLogo from '/images/logos/originals/lhoist.svg'
-import sfenLogo from '/images/logos/compressed/sfen.webp'
-import cgiLogo from '/images/logos/compressed/cgi.webp'
-import soieLogo from '/images/logos/compressed/soie.webp'
-import polyencoLogo from '/images/logos/compressed/polyenco.webp'
-import codeoLogo from '/images/logos/compressed/codeo.webp'
-import stepoutAbroadLogo from '/images/logos/compressed/stepout-abroad.webp'
-import reelLogo from '/images/logos/compressed/reel.webp'
-import oranoLogo from '/images/logos/compressed/orano.webp'
-import mindrayLogo from '/images/logos/compressed/mindray.webp'
-import iesfLogo from '/images/logos/compressed/iesf.webp'
-import rirLogo from '/images/logos/compressed/rir.webp'
-import aplebLogo from '/images/logos/compressed/apleb.webp'
-import orangeLogo from '/images/logos/originals/orange.svg'
-import alispharmLogo from '/images/logos/originals/alispharm.svg'
-import wimovaLogo from '/images/logos/compressed/wimova.webp'
-import sqliLogo from '/images/logos/compressed/sqli.webp'
-import assystemLogo from '/images/logos/originals/assystem.svg'
-import aiplLogo from '/images/logos/compressed/aipl.webp'
-import abmiLogo from '/images/logos/originals/abmi.svg'
+import agixisLogo from '@/assets/images/logos/entreprises/agixis.webp'
+import phaeraLogo from '@/assets/images/logos/entreprises/pharea.webp'
+import dymascoLogo from '@/assets/images/logos/entreprises/dymasco.webp'
+import carrierLogo from '@/assets/images/logos/entreprises/carrier.webp'
+import hecappLogo from '@/assets/images/logos/entreprises/hecapp.webp'
+import atosLogo from '@/assets/images/logos/entreprises/atos.webp'
+import bassettiLogo from '@/assets/images/logos/entreprises/bassetti.webp'
+import worldlineLogo from '@/assets/images/logos/entreprises/worldline.webp'
+import thelioLogo from '@/assets/images/logos/entreprises/thelio.webp'
+import lesMotsJustesLogo from '@/assets/images/logos/entreprises/les-mots-justes.webp'
+import vicinityLogo from '@/assets/images/logos/entreprises/vicinity.webp'
+import datticoLogo from '@/assets/images/logos/entreprises/dattico.svg'
+import capgeminiLogo from '@/assets/images/logos/entreprises/capgemini.webp'
+import amiltoneLogo from '@/assets/images/logos/entreprises/amiltone.webp'
+import g2sLogo from '@/assets/images/logos/entreprises/g2s.webp'
+import coexyadLogo from '@/assets/images/logos/entreprises/coexya.webp'
+import nextDecisionLogo from '@/assets/images/logos/entreprises/next-decision.webp'
+import parlymLogo from '@/assets/images/logos/entreprises/parlym.svg'
+import soprasteriaLogo from '@/assets/images/logos/entreprises/soprasteria.webp'
+import technordLogo from '@/assets/images/logos/entreprises/technord.webp'
+import lhoistLogo from '@/assets/images/logos/entreprises/lhoist.svg'
+import sfenLogo from '@/assets/images/logos/entreprises/sfen.webp'
+import cgiLogo from '@/assets/images/logos/entreprises/cgi.webp'
+import soieLogo from '@/assets/images/logos/entreprises/soie.webp'
+import polyencoLogo from '@/assets/images/logos/entreprises/polyenco.webp'
+import codeoLogo from '@/assets/images/logos/entreprises/codeo.webp'
+import stepoutAbroadLogo from '@/assets/images/logos/entreprises/stepout-abroad.webp'
+import reelLogo from '@/assets/images/logos/entreprises/reel.webp'
+import oranoLogo from '@/assets/images/logos/entreprises/orano.webp'
+import mindrayLogo from '@/assets/images/logos/entreprises/mindray.webp'
+import iesfLogo from '@/assets/images/logos/entreprises/iesf.webp'
+import rirLogo from '@/assets/images/logos/entreprises/rir.webp'
+import aplebLogo from '@/assets/images/logos/entreprises/apleb.webp'
+import orangeLogo from '@/assets/images/logos/entreprises/orange.svg'
+//import alispharmLogo from '@/assets/images/logos/entreprises/alispharm.svg'
+//import wimovaLogo from '@/assets/images/logos/entreprises/wimova.webp'
+import sqliLogo from '@/assets/images/logos/entreprises/sqli.webp'
+//import assystemLogo from '@/assets/images/logos/entreprises/assystem.svg'
+import aiplLogo from '@/assets/images/logos/entreprises/aipl.webp'
+import abmiLogo from '@/assets/images/logos/entreprises/abmi.svg'
 
 export type CompanyData = {
   name: string
@@ -1356,7 +1356,7 @@ export const companies: Record<string, CompanyData> = {
       ],
     },
   },
-  alispharm: {
+  /*alispharm: {
     name: 'Alispharm',
     shortDescription:
       'Société de conseil en Life Sciences intervenant sur le cycle de vie des produits de santé, de la qualité à la réglementation.',
@@ -1384,8 +1384,8 @@ export const companies: Record<string, CompanyData> = {
         },
       ],
     },
-  },
-  wimova: {
+  },*/
+  /* wimova: {
     name: 'Wimova',
     shortDescription:
       'Solution de mobilité professionnelle pour les entreprises, orientée pilotage des déplacements et approche écoresponsable.',
@@ -1413,7 +1413,7 @@ export const companies: Record<string, CompanyData> = {
         },
       ],
     },
-  },
+  }, */
   sqli: {
     name: 'SQLI',
     shortDescription:
@@ -1443,7 +1443,7 @@ export const companies: Record<string, CompanyData> = {
       ],
     },
   },
-  assystem: {
+  /* assystem: {
     name: 'ASSystem',
     shortDescription:
       "Groupe d'ingénierie accompagnant de grands projets industriels, avec une forte présence dans les secteurs de l'énergie et des infrastructures.",
@@ -1471,7 +1471,7 @@ export const companies: Record<string, CompanyData> = {
         },
       ],
     },
-  },
+  }, */
   aipl: {
     name: 'AIPL (Association des Ingenieurs de Polytech Lyon)',
     shortDescription:
