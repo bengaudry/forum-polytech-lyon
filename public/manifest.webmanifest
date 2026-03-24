@@ -4,8 +4,8 @@
     "description": "Le Forum des Entreprises de Polytech Lyon est un événement annuel qui réunit des entreprises de divers secteurs pour rencontrer les étudiants et les diplômés de l'école. C'est une occasion unique pour les étudiants de découvrir les opportunités de carrière, d'établir des contacts professionnels et de se préparer à leur future carrière. Les entreprises participantes présentent leurs activités, leurs offres de stage et d'emploi, et organisent des ateliers et des conférences pour partager leurs connaissances et leur expertise avec les étudiants.",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#007bff",
+    "background_color": "#f3f2f7",
+    "theme_color": "#f3f2f7",
     "icons": [
         {
             "src": "/images/logos/polytech/polytech-logo-border-512.png",
