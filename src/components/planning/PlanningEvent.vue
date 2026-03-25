@@ -61,7 +61,9 @@ const formatSpeaker = (s: { name: string; details?: string }) => {
         >{{ event.speakers.length > 1 ? "Intervenants" : "Intervenant" }} :
       </strong>
       <span v-if="event.speakers.length == 1 && event.speakers[0]">
-        {{ formatSpeaker(event.speakers[0]) }}
+        <span class="speaker-name">
+          {{ formatSpeaker(event.speakers[0]) }}
+        </span>
         <div v-if="event.speakers[0].job || event.speakers[0].linkedin" class="speaker-info">
           <span v-if="event.speakers[0].job" class="speaker-job">{{ event.speakers[0].job }}</span>
           <a 
@@ -155,7 +157,7 @@ h3 {
 }
 
 .speaker-name {
-  font-weight: 500;
+  text-decoration: underline;
 }
 
 .speaker-info {
