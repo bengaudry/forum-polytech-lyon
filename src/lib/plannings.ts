@@ -1,5 +1,9 @@
 import type { Speaker } from "./conferenceSpeaker"
 import type { SpecialitePolytech } from "./constants"
+import infoPlanning from "./conferences/info"
+import mamPlanning from "./conferences/mam"
+import gbmPlanning from "./conferences/gbm"
+import matSirMecaPlanning from "./conferences/matSirMeca"
 
 export type PlanningEvent = {
   topic?: string
@@ -14,36 +18,24 @@ export type Planning = {
   events: PlanningEvent[]
 }
 
-export type PlanningLoader = () => Promise<Planning>
-
-export const plannings: Record<SpecialitePolytech, PlanningLoader> = {
-  MAM: () => import("./conferences/mam").then((module) => module.default),
-  INFO: () => import("./conferences/info").then((module) => module.default),
-  MAT: () =>
-    import("./conferences/matSirMeca").then((module) => module.default),
-  MECA: () =>
-    import("./conferences/matSirMeca").then((module) => module.default),
-  SIR: () =>
-    import("./conferences/matSirMeca").then((module) => module.default),
-  GBM: () => import("./conferences/gbm").then((module) => module.default)
+export const plannings: Record<SpecialitePolytech, Planning> = {
+  MAM: mamPlanning,
+  INFO: infoPlanning,
+  MAT: matSirMecaPlanning,
+  MECA: matSirMecaPlanning,
+  SIR: matSirMecaPlanning,
+  GBM: gbmPlanning
 }
-
-const planningCache = new Map<SpecialitePolytech, Promise<Planning>>()
 
 export function loadPlanning(
   speciality: SpecialitePolytech
 ): Promise<Planning> {
-  const existingPlanning = planningCache.get(speciality)
-  if (existingPlanning) return existingPlanning
-
-  const planningLoader = plannings[speciality]
-  if (!planningLoader) {
+  const planning = plannings[speciality]
+  if (!planning) {
     return Promise.reject(
       new Error(`Planning introuvable pour la filiere ${speciality}`)
     )
   }
 
-  const loadingPlanning = planningLoader()
-  planningCache.set(speciality, loadingPlanning)
-  return loadingPlanning
+  return Promise.resolve(planning)
 }
