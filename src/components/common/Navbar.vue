@@ -9,7 +9,7 @@ const { currentRoute } = useRouter()
 const links = [
   { name: "Accueil", path: "/" },
   { name: "Stands", path: "/stands" },
-  { name: "Plan", path: "/plan" },
+  /* { name: "Plan", path: "/plan" }, */
   { name: "Planning", path: "/planning" }
 ]
 

@@ -7,10 +7,10 @@ const routes: RouterOptions["routes"] = [
     path: "/planning",
     component: () => import("../views/PlanningView.vue")
   },
-  {
+  /* {
     path: "/plan",
     component: () => import("../views/PlanView.vue")
-  },
+  }, */
   {
     path: "/index.html",
     redirect: "/"
