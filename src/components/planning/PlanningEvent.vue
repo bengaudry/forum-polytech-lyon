@@ -62,11 +62,37 @@ const formatSpeaker = (s: { name: string; details?: string }) => {
       </strong>
       <span v-if="event.speakers.length == 1 && event.speakers[0]">
         {{ formatSpeaker(event.speakers[0]) }}
+        <div v-if="event.speakers[0].job || event.speakers[0].linkedin" class="speaker-info">
+          <span v-if="event.speakers[0].job" class="speaker-job">{{ event.speakers[0].job }}</span>
+          <a 
+            v-if="event.speakers[0].linkedin" 
+            :href="event.speakers[0].linkedin" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="linkedin-link"
+          >
+            LinkedIn
+          </a>
+        </div>
       </span>
       <ul v-else>
-        <li v-for="speaker in event.speakers">
-          {{ speaker.name }}
-          <i v-if="speaker.details">- {{ speaker.details }}</i>
+        <li v-for="speaker in event.speakers" class="speaker-item">
+          <div class="speaker-name">
+            {{ speaker.name }}
+            <i v-if="speaker.details">- {{ speaker.details }}</i>
+          </div>
+          <div v-if="speaker.job || speaker.linkedin" class="speaker-info">
+            <span v-if="speaker.job" class="speaker-job">{{ speaker.job }}</span>
+            <a 
+              v-if="speaker.linkedin" 
+              :href="speaker.linkedin" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="linkedin-link"
+            >
+              LinkedIn
+            </a>
+          </div>
         </li>
       </ul>
     </div>
@@ -121,6 +147,40 @@ h3 {
 
   img {
     object-fit: contain;
+  }
+}
+
+.speaker-item {
+  margin-bottom: 0.75rem;
+}
+
+.speaker-name {
+  font-weight: 500;
+}
+
+.speaker-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.speaker-job {
+  display: block;
+  font-style: italic;
+}
+
+.linkedin-link {
+  display: inline-block;
+  color: #0a66c2;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+    text-decoration: underline;
   }
 }
 </style>
