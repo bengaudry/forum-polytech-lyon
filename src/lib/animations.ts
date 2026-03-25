@@ -10,26 +10,26 @@ export type Animation = {
 export const scheduledAnimations: Array<Animation> = [
   {
     emojiIcon: "🎤",
-    name: "Mot du directeur",
-    description:
-      "Le directeur de Polytech Lyon, M. Jean-Baptiste POURET ouvrira officiellement le forum en accueillant les visiteurs et en présentant les objectifs de l'événement.",
-    startTime: new Date(2026, 2, 26, 14, 0),
-    endTime: new Date(2026, 2, 26, 14, 5)
-  },
-  {
-    emojiIcon: "🎤",
     name: "Présentation des filières",
     description:
       "Découvrez les différentes filières de Polytech Lyon et leurs spécificités lors d'une présentation animée par les étudiants de chaque filière.",
-    startTime: new Date(2026, 2, 26, 15, 5),
-    endTime: new Date(2026, 2, 26, 15, 20)
+    startTime: new Date(2026, 2, 26, 15, 0),
+    endTime: new Date(2026, 2, 26, 15, 15)
   },
   {
     emojiIcon: "❓",
     name: "Quizz",
     description: "Testez vos connaissances au forum et gagnez des prix !",
     startTime: new Date(2026, 2, 26, 15, 0),
-    endTime: new Date(2026, 2, 26, 17)
+    endTime: new Date(2026, 2, 26, 15, 30)
+  },
+  {
+    emojiIcon: "🎤",
+    name: "Mot du directeur",
+    description:
+      "Le directeur de Polytech Lyon, M. Jean-Baptiste POURET ouvrira officiellement le forum en accueillant les visiteurs et en présentant les objectifs de l'événement.",
+    startTime: new Date(2026, 2, 26, 15, 30),
+    endTime: new Date(2026, 2, 26, 15, 40)
   },
   {
     emojiIcon: "🎤",

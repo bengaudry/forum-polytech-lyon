@@ -41,6 +41,7 @@ import abmiLogo from "@/assets/images/logos/entreprises/abmi.svg"
 import catsLogo from "@/assets/images/logos/entreprises/cats.webp"
 import andriceLogo from "@/assets/images/logos/entreprises/andrice.webp"
 import bdeLogo from "@/assets/images/logos/entreprises/bde.webp"
+import apogeeLogo from "@/assets/images/logos/entreprises/apogee.webp"
 
 export type CompanyData = {
   name: string
@@ -1136,35 +1137,36 @@ export const companies: Record<string, CompanyData> = {
     relatedFields: ["MECA", "SIR"],
     shortDescription:
       "Concepteur et fabricant de systèmes de levage et de manutention pour des environnements industriels critiques.",
-    details: {
-      websiteUrl: "https://www.reelinternational.com/",
-      careersPortalUrl: "https://www.reelinternational.com/carrieres/",
-      presentation:
-        "Créé en 1946, REEL International conçoit, fabrique et maintient des systèmes de levage et de manutention pour des environnements industriels critiques : aéronautique, nucléaire, défense, offshore & Energies Marines et hydroélectricité. Présent dans 16 pays, le groupe développe des savoir-faire d’excellence portés par ses équipes, ses valeurs et une gouvernance solide.\n" +
-        "REEL est un groupe industriel fondé sur l’ancrage, la qualité et la transmission du savoir-faire. Son développement s’inscrit dans une logique de long terme, au service de ses clients et de ses équipes.\n" +
-        "\n" +
-        "Dès l’origine, REEL s’appuie sur une exigence simple : faire juste, faire bien, faire fiable. Cette rigueur irrigue toujours sa culture industrielle.\n" +
-        "\n" +
-        "Cette vision à long terme se traduit par une gouvernance structurée, une attention portée à la formation continue et une exigence constante envers la sécurité, l’innovation et la performance durable.",
-      degreesResearched: ["Bac+5", "Diplomé"],
-      points: [
-        {
-          title: "Systèmes de levage industriels",
-          content:
-            "Spécialisation dans la conception et la fabrication de solutions de levage pour des environnements critiques."
-        },
-        {
-          title: "Excellence opérationnelle",
-          content:
-            "Culture d'entreprise axée sur la rigueur, la qualité et la fiabilité des produits."
-        },
-        {
-          title: "Gouvernance solide",
-          content:
-            "Engagement dans une vision à long terme avec une attention particulière à la formation et au développement des équipes."
-        }
-      ]
-    }
+    details:
+      {
+        websiteUrl: "https://www.reelinternational.com/",
+        careersPortalUrl: "https://www.reelinternational.com/carrieres/",
+        presentation:
+          "Créé en 1946, REEL International conçoit, fabrique et maintient des systèmes de levage et de manutention pour des environnements industriels critiques : aéronautique, nucléaire, défense, offshore & Energies Marines et hydroélectricité. Présent dans 16 pays, le groupe développe des savoir-faire d’excellence portés par ses équipes, ses valeurs et une gouvernance solide.\n" +
+          "REEL est un groupe industriel fondé sur l’ancrage, la qualité et la transmission du savoir-faire. Son développement s’inscrit dans une logique de long terme, au service de ses clients et de ses équipes.\n" +
+          "\n" +
+          "Dès l’origine, REEL s’appuie sur une exigence simple : faire juste, faire bien, faire fiable. Cette rigueur irrigue toujours sa culture industrielle.\n" +
+          "\n" +
+          "Cette vision à long terme se traduit par une gouvernance structurée, une attention portée à la formation continue et une exigence constante envers la sécurité, l’innovation et la performance durable.",
+        degreesResearched: ["Bac+5", "Diplomé"],
+        points: [
+          {
+            title: "Systèmes de levage industriels",
+            content:
+              "Spécialisation dans la conception et la fabrication de solutions de levage pour des environnements critiques."
+          },
+          {
+            title: "Excellence opérationnelle",
+            content:
+              "Culture d'entreprise axée sur la rigueur, la qualité et la fiabilité des produits."
+          },
+          {
+            title: "Gouvernance solide",
+            content:
+              "Engagement dans une vision à long terme avec une attention particulière à la formation et au développement des équipes."
+          }
+        ]
+      }
   },
   orano: {
     name: "Orano",
@@ -1642,6 +1644,41 @@ export const companies: Record<string, CompanyData> = {
           title: "Vie étudiante dynamique",
           content:
             "En tant qu'acteur central de la vie étudiante, le BDE favorise les échanges et la convivialité au sein de la communauté de Polytech Lyon."
+        }
+      ]
+    }
+  },
+  apogee: {
+    name: "Apogee Consult",
+    shortDescription:
+      "Agence web lyonnaise spécialisée en développement full-stack, applications IA/RAG et conseil IT pour des solutions sur mesure.",
+    logo: apogeeLogo,
+    relatedFields: ["INFO", "SIR", "MAM"],
+    details: {
+      websiteUrl: "https://apogee-consult.com/",
+      careersPortalUrl: "https://apogee-consult.com/careers",
+      presentation:
+        "Apogee Consult est une agence web basée à Lyon qui accompagne les entreprises dans leur transformation digitale. Le site met en avant des prestations de développement full-stack, d'applications IA & RAG, de conseil IT/DevOps et d'optimisation SEO/performance, avec une approche sur mesure et des livraisons itératives.",
+      points: [
+        {
+          title: "Développement full-stack sur mesure",
+          content:
+            "Conception et réalisation d'applications web et mobiles de bout en bout, du cadrage jusqu'à la mise en production."
+        },
+        {
+          title: "Expertise IA et RAG",
+          content:
+            "Intégration de solutions d'IA générative et de recherche augmentée (RAG) pour automatiser et enrichir les usages métiers."
+        },
+        {
+          title: "Conseil IT et DevOps",
+          content:
+            "Accompagnement sur l'architecture, les pipelines CI/CD, la fiabilité opérationnelle et la montée en charge des projets."
+        },
+        {
+          title: "Positionnement orienté performance",
+          content:
+            "Le site insiste sur l'optimisation SEO, la performance applicative et une logique de résultats mesurables pour les clients."
         }
       ]
     }

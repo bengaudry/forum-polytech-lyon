@@ -60,24 +60,7 @@ const formatSpeaker = (s: { name: string; details?: string }) => {
       <strong
         >{{ event.speakers.length > 1 ? "Intervenants" : "Intervenant" }} :
       </strong>
-      <span v-if="event.speakers.length == 1 && event.speakers[0]">
-        <span class="speaker-name">
-          {{ formatSpeaker(event.speakers[0]) }}
-        </span>
-        <div v-if="event.speakers[0].job || event.speakers[0].linkedin" class="speaker-info">
-          <span v-if="event.speakers[0].job" class="speaker-job">{{ event.speakers[0].job }}</span>
-          <a 
-            v-if="event.speakers[0].linkedin" 
-            :href="event.speakers[0].linkedin" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            class="linkedin-link"
-          >
-            LinkedIn
-          </a>
-        </div>
-      </span>
-      <ul v-else>
+      <ul v-if="event.speakers && event.speakers.length > 0">
         <li v-for="speaker in event.speakers" class="speaker-item">
           <div class="speaker-name">
             {{ speaker.name }}

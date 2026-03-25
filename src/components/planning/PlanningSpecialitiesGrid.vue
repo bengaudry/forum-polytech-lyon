@@ -2,8 +2,14 @@
 import VLazyImage from "v-lazy-image"
 import { POLYTECH_SPECIALITIES } from "@/lib/constants"
 import { usePlanningSpeciality } from "@/composables/usePlanningSpeciality.ts"
+import { loadPlanning } from "@/lib/plannings"
 
 const { setCurrentSpeciality } = usePlanningSpeciality()
+
+function prefetchPlanning(speciality: (typeof POLYTECH_SPECIALITIES)[number]["name"]) {
+  // Fire-and-forget warmup to make opening a speciality feel instantaneous.
+  void loadPlanning(speciality).catch(() => undefined)
+}
 </script>
 
 <template>
@@ -15,6 +21,8 @@ const { setCurrentSpeciality } = usePlanningSpeciality()
       class="speciality-link"
       :aria-label="`Afficher la planification de ${speciality.name}`"
       @click="setCurrentSpeciality(speciality.name)"
+      @mouseenter="prefetchPlanning(speciality.name)"
+      @focus="prefetchPlanning(speciality.name)"
     >
       <span class="logo-shell">
         <VLazyImage

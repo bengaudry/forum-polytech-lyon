@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { computed, ref } from "vue"
-import { POLYTECH_SPECIALITIES, type SpecialitePolytech } from "@/lib/constants"
-import { plannings } from "@/lib/plannings"
+import { computed } from "vue"
+import { POLYTECH_SPECIALITIES } from "@/lib/constants"
 import PlanningSpecialitiesGrid from "@/components/planning/PlanningSpecialitiesGrid.vue"
 import { usePlanningSpeciality } from "@/composables/usePlanningSpeciality.ts"
 import PlanningEventList from "@/components/planning/PlanningEventList.vue"
+import { usePlanningData } from "@/composables/usePlanningData.ts"
 
 const { currentSpeciality } = usePlanningSpeciality()
 
@@ -16,10 +16,7 @@ const speciality = computed(() => {
   )
 })
 
-const planning = computed(() => {
-  if (!currentSpeciality.value) return null
-  return plannings[currentSpeciality.value] || null
-})
+const { planning, isLoading, loadingError } = usePlanningData(currentSpeciality)
 </script>
 
 <template>
@@ -35,12 +32,23 @@ const planning = computed(() => {
   <h1 v-else class="single-title">Planning conférences</h1>
 
   <PlanningEventList v-if="planning" :planning="planning" />
+  <p v-else-if="isLoading" class="planning-state">Chargement du planning...</p>
+  <p v-else-if="loadingError" class="planning-state planning-state--error">{{ loadingError }}</p>
   <PlanningSpecialitiesGrid v-else />
 </template>
 
 <style scoped lang="scss">
 .single-title {
   margin-bottom: 2rem;
+}
+
+.planning-state {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.planning-state--error {
+  color: #b91c1c;
 }
 
 .logo-filiere {
