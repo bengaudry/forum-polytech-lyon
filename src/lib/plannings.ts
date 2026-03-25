@@ -39,6 +39,7 @@ export const plannings: Record<SpecialitePolytech, Planning> = {
         ]
       },
       {
+        topic: "Salle 17",
         startHour: new Date(2026, 3, 26, 11, 30),
         endHour: new Date(2026, 3, 26, 12),
         companies: [{ name: "Vicinity" }]
@@ -62,6 +63,12 @@ export const plannings: Record<SpecialitePolytech, Planning> = {
         endHour: new Date(2026, 3, 26, 10, 30),
         companies: [{ name: "Dattico" }],
         speakers: [{ name: "Nathan DE WINTER" }]
+      },
+      {
+        startHour: new Date(2026, 3, 26, 10, 30),
+        endHour: new Date(2026, 3, 26, 11, 0),
+        companies: [{ name: "Thelio" }],
+        speakers: [{ name: "Laura GUENO" }, { name: "Diane FORIN" }, { name: "Mathieu ARIAUX" }]
       },
       {
         startHour: new Date(2026, 3, 26, 11, 30),
