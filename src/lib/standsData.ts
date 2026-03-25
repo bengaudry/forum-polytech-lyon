@@ -24,7 +24,7 @@ import cgiLogo from "@/assets/images/logos/entreprises/cgi.webp"
 import soieLogo from "@/assets/images/logos/entreprises/soie.webp"
 import polyencoLogo from "@/assets/images/logos/entreprises/polyenco.webp"
 import codeoLogo from "@/assets/images/logos/entreprises/codeo.webp"
-import stepoutAbroadLogo from "@/assets/images/logos/entreprises/stepout-abroad.webp"
+// import stepoutAbroadLogo from "@/assets/images/logos/entreprises/stepout-abroad.webp"
 import reelLogo from "@/assets/images/logos/entreprises/reel.webp"
 import oranoLogo from "@/assets/images/logos/entreprises/orano.webp"
 import mindrayLogo from "@/assets/images/logos/entreprises/mindray.webp"
@@ -34,12 +34,13 @@ import aplebLogo from "@/assets/images/logos/entreprises/apleb.webp"
 import orangeLogo from "@/assets/images/logos/entreprises/orange.svg"
 // import alispharmLogo from '@/assets/images/logos/entreprises/alispharm.svg'
 // import wimovaLogo from '@/assets/images/logos/entreprises/wimova.webp'
-import sqliLogo from "@/assets/images/logos/entreprises/sqli.webp"
+// import sqliLogo from "@/assets/images/logos/entreprises/sqli.webp"
 // import assystemLogo from '@/assets/images/logos/entreprises/assystem.svg'
 import aiplLogo from "@/assets/images/logos/entreprises/aipl.webp"
 import abmiLogo from "@/assets/images/logos/entreprises/abmi.svg"
 import catsLogo from "@/assets/images/logos/entreprises/cats.webp"
 import andriceLogo from "@/assets/images/logos/entreprises/andrice.webp"
+import bdeLogo from "@/assets/images/logos/entreprises/bde.webp"
 
 export type CompanyData = {
   name: string
@@ -104,7 +105,7 @@ export const companies: Record<string, CompanyData> = {
       ]
     }
   },
-  /*pharea: {
+  pharea: {
     name: "PHAREA",
     shortDescription:
       "Un groupe multi-expertises accompagnant les grands projets industriels via la conception, la simulation numérique et le génie électrique.",
@@ -144,7 +145,7 @@ export const companies: Record<string, CompanyData> = {
       ],
       offers: []
     }
-  },*/
+  },
   dymasco: {
     name: "Dymasco",
     shortDescription:
@@ -1612,6 +1613,35 @@ export const companies: Record<string, CompanyData> = {
           title: "Culture d'accompagnement",
           content:
             "Mise en avant d'un management de proximité, de la montée en compétences et d'un cadre structuré par des certifications (ISO 9001, MASE, EcoVadis)."
+        }
+      ]
+    }
+  },
+  bde: {
+    name: "BDE Polytech Lyon",
+    shortDescription:
+      "Bureau des étudiants de Polytech Lyon, organisant des événements et activités pour la vie étudiante sur le campus.",
+    logo: bdeLogo,
+    relatedFields: ["INFO", "GBM", "MAM", "SIR", "MECA", "MAT"],
+    details: {
+      websiteUrl: "https://bdepolytechlyon.fr/",
+      presentation:
+        "Le Bureau des Étudiants (BDE) de Polytech Lyon est une association étudiante qui organise des événements et des activités pour animer la vie sur le campus. Le BDE propose une variété d'initiatives, allant des soirées étudiantes aux activités sportives, en passant par des projets solidaires et des événements culturels. C'est un acteur clé de la vie étudiante à Polytech Lyon, favorisant les échanges, la convivialité et l'engagement au sein de la communauté étudiante. Venez récupérer des goodies sur leur stand !",
+      points: [
+        {
+          title: "Organisation d'événements",
+          content:
+            "Le BDE organise des événements variés pour animer la vie étudiante sur le campus, allant des soirées aux activités sportives."
+        },
+        {
+          title: "Engagement associatif",
+          content:
+            "Le BDE encourage l'engagement des étudiants à travers des projets solidaires et des initiatives culturelles."
+        },
+        {
+          title: "Vie étudiante dynamique",
+          content:
+            "En tant qu'acteur central de la vie étudiante, le BDE favorise les échanges et la convivialité au sein de la communauté de Polytech Lyon."
         }
       ]
     }
