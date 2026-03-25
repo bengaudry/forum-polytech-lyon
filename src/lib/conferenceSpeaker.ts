@@ -78,5 +78,5 @@ export const speakers = {
     linkedin: "https://www.linkedin.com/in/thierry-caillon/"
   },
   "alice-maquestiau": { name: "Alice MAQUESTIAU" },
-  "jean-de-meersman": { name: "Jean DE MEERSMAN" }
+  "jean-de-meersman": { name: "Jean DE MEERSMAN", job: "Acheteur chez HeCaPP", linkedin: "https://www.linkedin.com/in/jean-de-meersman-2254b640/" }
 } as const
