@@ -2,7 +2,9 @@ import { ref, watch, type Ref } from "vue"
 import { loadPlanning, type Planning } from "@/lib/plannings"
 import type { SpecialitePolytech } from "@/lib/constants"
 
-export function usePlanningData(currentSpeciality: Ref<SpecialitePolytech | null>) {
+export function usePlanningData(
+  currentSpeciality: Ref<SpecialitePolytech | null>
+) {
   const planning = ref<Planning | null>(null)
   const isLoading = ref(false)
   const loadingError = ref<string | null>(null)
@@ -44,4 +46,3 @@ export function usePlanningData(currentSpeciality: Ref<SpecialitePolytech | null
 
   return { planning, isLoading, loadingError }
 }
-

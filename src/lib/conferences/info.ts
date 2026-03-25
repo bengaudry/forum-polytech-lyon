@@ -8,7 +8,11 @@ export default {
       topic: "Table ronde de Lyon JS",
       startHour: new Date(2026, 3, 26, 9, 0),
       endHour: new Date(2026, 3, 26, 10, 0),
-      speakers: [speakers["mathieu-mure"], speakers["mohamed-djebali"], speakers["antoine-caron"]]
+      speakers: [
+        speakers["mathieu-mure"],
+        speakers["mohamed-djebali"],
+        speakers["antoine-caron"]
+      ]
     },
     {
       topic: "Présentation de Dattico",
@@ -22,7 +26,11 @@ export default {
       startHour: new Date(2026, 3, 26, 10, 30),
       endHour: new Date(2026, 3, 26, 11, 0),
       companies: [{ name: "Thelio" }],
-      speakers: [speakers["laura-gueno"], speakers["diane-forin"], speakers["mathieu-ariaux"]]
+      speakers: [
+        speakers["laura-gueno"],
+        speakers["diane-forin"],
+        speakers["mathieu-ariaux"]
+      ]
     },
     {
       topic: "Présentation de Vicinity",

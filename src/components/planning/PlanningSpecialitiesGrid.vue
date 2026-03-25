@@ -6,7 +6,9 @@ import { loadPlanning } from "@/lib/plannings"
 
 const { setCurrentSpeciality } = usePlanningSpeciality()
 
-function prefetchPlanning(speciality: (typeof POLYTECH_SPECIALITIES)[number]["name"]) {
+function prefetchPlanning(
+  speciality: (typeof POLYTECH_SPECIALITIES)[number]["name"]
+) {
   // Fire-and-forget warmup to make opening a speciality feel instantaneous.
   void loadPlanning(speciality).catch(() => undefined)
 }

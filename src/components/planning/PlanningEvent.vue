@@ -67,11 +67,13 @@ const formatSpeaker = (s: { name: string; details?: string }) => {
             <i v-if="speaker.details">- {{ speaker.details }}</i>
           </div>
           <div v-if="speaker.job || speaker.linkedin" class="speaker-info">
-            <span v-if="speaker.job" class="speaker-job">{{ speaker.job }}</span>
-            <a 
-              v-if="speaker.linkedin" 
-              :href="speaker.linkedin" 
-              target="_blank" 
+            <span v-if="speaker.job" class="speaker-job">{{
+              speaker.job
+            }}</span>
+            <a
+              v-if="speaker.linkedin"
+              :href="speaker.linkedin"
+              target="_blank"
               rel="noopener noreferrer"
               class="linkedin-link"
             >

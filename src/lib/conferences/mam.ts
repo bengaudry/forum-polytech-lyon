@@ -8,8 +8,14 @@ export default {
       topic: "Table ronde Thelio",
       startHour: new Date(2026, 3, 26, 10, 0),
       endHour: new Date(2026, 3, 26, 10, 30),
-      companies: [{ name: "Thelio", logo: "/images/logos/compressed/thelio.png" }],
-      speakers: [speakers["laura-gueno"], speakers["diane-forin"], speakers["mathieu-ariaux"]]
+      companies: [
+        { name: "Thelio", logo: "/images/logos/compressed/thelio.png" }
+      ],
+      speakers: [
+        speakers["laura-gueno"],
+        speakers["diane-forin"],
+        speakers["mathieu-ariaux"]
+      ]
     },
     {
       topic: "Table ronde",

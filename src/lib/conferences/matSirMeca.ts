@@ -14,7 +14,11 @@ export default {
       topic: "Table ronde - Ingénieur d'affaires",
       startHour: new Date(2026, 3, 26, 10, 0),
       endHour: new Date(2026, 3, 26, 11, 0),
-      companies: [{ name: "Andrice" }, { name: "Basseti" }, { name: "Vicinity" }]
+      companies: [
+        { name: "Andrice" },
+        { name: "Basseti" },
+        { name: "Vicinity" }
+      ]
     },
     {
       topic: "Table ronde",

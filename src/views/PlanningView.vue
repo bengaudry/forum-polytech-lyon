@@ -33,7 +33,9 @@ const { planning, isLoading, loadingError } = usePlanningData(currentSpeciality)
 
   <PlanningEventList v-if="planning" :planning="planning" />
   <p v-else-if="isLoading" class="planning-state">Chargement du planning...</p>
-  <p v-else-if="loadingError" class="planning-state planning-state--error">{{ loadingError }}</p>
+  <p v-else-if="loadingError" class="planning-state planning-state--error">
+    {{ loadingError }}
+  </p>
   <PlanningSpecialitiesGrid v-else />
 </template>
 

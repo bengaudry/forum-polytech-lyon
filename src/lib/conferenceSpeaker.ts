@@ -1,4 +1,9 @@
-export type Speaker = { name: string; details?: string; job?: string; linkedin?: string }
+export type Speaker = {
+  name: string
+  details?: string
+  job?: string
+  linkedin?: string
+}
 
 export const speakers = {
   "laura-gueno": {
@@ -78,5 +83,9 @@ export const speakers = {
     linkedin: "https://www.linkedin.com/in/thierry-caillon/"
   },
   "alice-maquestiau": { name: "Alice MAQUESTIAU" },
-  "jean-de-meersman": { name: "Jean DE MEERSMAN", job: "Acheteur chez HeCaPP", linkedin: "https://www.linkedin.com/in/jean-de-meersman-2254b640/" }
+  "jean-de-meersman": {
+    name: "Jean DE MEERSMAN",
+    job: "Acheteur chez HeCaPP",
+    linkedin: "https://www.linkedin.com/in/jean-de-meersman-2254b640/"
+  }
 } as const

@@ -42,7 +42,11 @@ const isMenuExpanded = ref(false)
         <img :src="menuBurgerIcon" alt="MENU" width="32" height="32" />
       </button>
 
-      <ul id="nav-items-container" class="nav-items" :class="{ expanded: isMenuExpanded }">
+      <ul
+        id="nav-items-container"
+        class="nav-items"
+        :class="{ expanded: isMenuExpanded }"
+      >
         <li v-for="link in links" :key="link.path">
           <RouterLink
             class="nav-link"
