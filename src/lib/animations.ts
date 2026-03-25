@@ -27,7 +27,7 @@ export const scheduledAnimations: Array<Animation> = [
     emojiIcon: "🎤",
     name: "Mot du directeur",
     description:
-      "Le directeur de Polytech Lyon, M. Jean-Baptiste POURET ouvrira officiellement le forum en accueillant les visiteurs et en présentant les objectifs de l'événement.",
+      "Le directeur de Polytech Lyon, M. Jean-Baptiste POURET, fera une courte intervention au milieu du forum pour s'adresser aux participants.",
     startTime: new Date(2026, 2, 26, 15, 30),
     endTime: new Date(2026, 2, 26, 15, 40)
   },
