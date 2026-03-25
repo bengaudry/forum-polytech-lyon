@@ -2,6 +2,7 @@
 import { useFilteredCompaniesData } from "@/composables/useFilteredCompaniesData.ts"
 import { useStandsCompanies } from "@/composables/useStandsCompanies"
 import StandsCard from "./StandsCard.vue"
+import StandsCardSkeleton from "./StandsCardSkeleton.vue"
 import { computed, onMounted } from "vue"
 
 const companies = useFilteredCompaniesData()
@@ -15,11 +16,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <p v-if="isLoading" id="company-grid-error-container">
-    Chargement des entreprises...
-  </p>
-  <p v-else-if="loadError" id="company-grid-error-container">{{ loadError }}</p>
-  <p v-else-if="!hasResults" id="company-grid-error-container">
+  <div v-if="isLoading" class="companies-grid" aria-label="Chargement des entreprises">
+    <StandsCardSkeleton v-for="index in 3" :key="`skeleton-${index}`" />
+  </div>
+  <p v-else-if="loadError" class="company-grid-state">{{ loadError }}</p>
+  <p v-else-if="!hasResults" class="company-grid-state">
     Aucune entreprise trouvee.
   </p>
   <div v-else class="companies-grid">
@@ -33,7 +34,7 @@ onMounted(() => {
 </template>
 
 <style scoped>
-#company-grid-error-container {
+.company-grid-state {
   text-align: center;
   margin-top: 20px;
 }
