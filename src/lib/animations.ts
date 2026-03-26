@@ -13,8 +13,8 @@ export const scheduledAnimations: Array<Animation> = [
     name: "Présentation des filières",
     description:
       "Découvrez les différentes filières de Polytech Lyon et leurs spécificités lors d'une présentation animée par les étudiants de chaque filière.",
-    startTime: new Date(2026, 2, 26, 15, 0),
-    endTime: new Date(2026, 2, 26, 15, 15)
+    startTime: new Date(2026, 2, 26, 14, 10),
+    endTime: new Date(2026, 2, 26, 14, 25)
   },
   {
     emojiIcon: "❓",
